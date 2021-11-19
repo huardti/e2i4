@@ -1,0 +1,14 @@
+On va etudier la lois normale de µ=20 et d'ecart type=2
+
+population:
+	X-> N(µ, sigma^2)
+	E(X) = µ = 20	V(X)=2^2
+
+1) generer un tirage de n=100 valeurs dans cette population /X
+	et comparer /X à µ.
+
+2) repeter cette operation 100 fois
+	on a doc 100 valeurs de /X,
+	calculer E(/X), V(/X) et tracer la distribution
+
+3)refaire 2) mais 1000 foisn quelle est l'effet sur /X ?

@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.dev": "c",
+        "array": "cpp"
+    }
+}
