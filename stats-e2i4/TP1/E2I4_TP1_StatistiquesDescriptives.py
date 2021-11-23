@@ -178,7 +178,6 @@ plt.plot(x,y)
 # soit comprise entre 11 et 17
 print(norm.cdf(17,moy,ecart)-norm.cdf(11,moy,ecart))
 
-
 #%%
 # Exercice 3
 

@@ -53,11 +53,9 @@ plt.xlabel('Valeurs')
 plt.ylabel('Effectifs relatifs')
 plt.show()
 
-'''
-plt.figure()
-plt.bar(bin_edges[:-1], FreqRelatives, width=bin_edges[1]-bin_edges[0], color='red', alpha=0.5)
-plt.plot(x,norm.pdf(x,moy,sigma))
-plt.xlabel('Valeurs')
-plt.ylabel('Effectifs relatifs')
-plt.show()
-'''
+
+#%%
+val =95/100 + (1-(95/100)) /2
+print(val)
+print(norm.ppf(val, 0, 1))
+#%%
