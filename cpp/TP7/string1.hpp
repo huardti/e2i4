@@ -19,8 +19,8 @@ public:
     void saisie();
     void concatene(const char* ch);
     void concatene(const char c);
-    friend bool egal();
-    void minuscule();
+    friend bool egal(String a, String b);
+    String minuscule();
 
 protected:
     char * m_chaine;

@@ -15,9 +15,8 @@ String::String(const char * c)
 String::String(const String& obj)
 {
     m_chaine = new char[std::strlen(obj.m_chaine)];
-    for (size_t i = 0; i < std::strlen(obj.m_chaine); i++) {
-        m_chaine[i] = obj.m_chaine[i];
-    }
+    std::memcpy(m_chaine, obj.m_chaine, sizeof(char)*std::strlen(obj.m_chaine));
+
 }
 
 String::String(const char c, const unsigned int n)
@@ -62,11 +61,12 @@ void String::saisie()
 
 void String::concatene(const char* ch)
 {
-    char* new_str = new char[strlen(m_chaine) + strlen(ch)];
+    char* new_str = new char[strlen(m_chaine) + strlen(ch) + 1];
     strcpy(new_str, m_chaine);
-    strcat(new_str, ch);
     delete [] m_chaine;
     m_chaine = new_str;
+
+    strcat(new_str, ch);
 
 }
 void String::concatene(const char c)
@@ -76,7 +76,18 @@ void String::concatene(const char c)
     concatene(s);
 }
 
-bool egal()
+bool egal(String a, String b)
 {
+    if (strcmp(a.m_chaine, b.m_chaine) == 0)
+    { return 1; }
+    else { return 0; }
+}
 
+String String::minuscule()
+{
+    String r(*this);
+    for (size_t i = 0; i < strlen(r.m_chaine); i++) {
+        r.m_chaine[i] = tolower((unsigned char) m_chaine[i]);
+    }
+    return r;
 }
