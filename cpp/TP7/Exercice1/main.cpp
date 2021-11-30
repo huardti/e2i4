@@ -1,6 +1,8 @@
 #include <iostream>
-#include "string1.hpp"
 
+/* // exo string TP 4
+
+#include "string1.hpp"
 int main() {
     String ch1("essai");
     String ch2 = ch1;
@@ -20,5 +22,26 @@ int main() {
     }
     ch2.minuscule().affiche();// est-ce bien raisonnable ???
     std::cout << std::endl;
+    return 0;
+}
+*/
+#include "string2.hpp"
+
+
+int main() {
+    String2 ch1("essai");
+    String2 ch2 = ch1;
+    String2 ch3('=', 80);
+    const String2 ch4("chaîne de caractères constante");
+    ch1[1] = 'E';
+    // le premier caractère de la chaîne
+    std::cout << ch4[1] << std::endl;
+    ch1 = "<<<< " + ch2 + " >>>>";
+    std::cout << ch1 << std::endl;
+    std::cin >> ch2;
+    ch2 += " de la classe Strin";
+    ch2 += 'g';
+    if ( ch2 != "" ) std::cout << ch2 << std::endl;
+    std::cout << ch2.minuscule() << std::endl;
     return 0;
 }

@@ -3,7 +3,7 @@ all: test
 
 # apres l'etiquete (test:) un .o pour chaque .cpp compilé
 # cette ligne genere un executable appele 'test'
-test: main.o string1.o
+test: main.o string2.o string1.o
 	g++ $(args) -o $@ $^
 
 # cette ligne compile tous les pairs .ccp/.hpp et genere des .o avec le meme nom

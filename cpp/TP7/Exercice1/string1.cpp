@@ -14,9 +14,8 @@ String::String(const char * c)
 
 String::String(const String& obj)
 {
-    m_chaine = new char[std::strlen(obj.m_chaine)];
-    std::memcpy(m_chaine, obj.m_chaine, sizeof(char)*std::strlen(obj.m_chaine));
-
+    m_chaine = new char[std::strlen(obj.m_chaine)+1];
+    std::strcpy(m_chaine, obj.m_chaine);
 }
 
 String::String(const char c, const unsigned int n)
@@ -51,11 +50,11 @@ void String::affiche()
     std::cout << m_chaine;
 }
 
-void String::saisie()
+void String::saisie(std::istream& stream)
 {
     delete [] m_chaine;
     m_chaine = new char[1024+1];
-    std::cin.getline(m_chaine, 1024);
+    stream.getline(m_chaine, 1024);
     m_chaine[1024] = '\0';
 }
 

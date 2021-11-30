@@ -1,7 +1,8 @@
 #pragma once
 
 #include <cstring>
-
+// #include <sstream>
+#include <iostream>
 class String
 {
 public:
@@ -16,7 +17,7 @@ public:
     const char& nieme(const unsigned int n) const;
     void affiche();
 
-    void saisie();
+    void saisie(std::istream& stream = std::cin);
     void concatene(const char* ch);
     void concatene(const char c);
     friend bool egal(String a, String b);
