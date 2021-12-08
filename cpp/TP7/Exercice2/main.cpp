@@ -1,14 +1,19 @@
+#include <iostream>
+
+#include "cercle.hpp"
+
 int main(int argc, const char* argv[])
 {
     Cercle cercle(10,10,4);
-    cout <<endl<<cercle<<" surface="<<cercle.surface()<<endl;
+    std::cout <<std::endl <<cercle<<" surface="<<cercle.surface()<<std::endl;
+#if 0
     Triangle triangle(20,20,3);
-    cout<<endl<<triangle<<" surface="<<triangle.surface()<<endl;
+    std::cout<<std::endl<<triangle<<" surface="<<triangle.surface()<<std::endl;
     Rectangle rectangle(30,30,2,5);
-    cout << endl <surface() << endl << endl;
+    std::cout << std::endl <surface() << std::endl << std::endl;
     cercle.deplace(50,50);
-    cout << "déplacement " << endl;
-    cout << cercle << endl << endl;
+    std::cout << "déplacement " << std::endl;
+    std::cout << cercle << std::endl << std::endl;
     *********;
     //déclaration du tableau initialisé ci-dessous ???
     tab[0] = &cercle;
@@ -19,13 +24,14 @@ int main(int argc, const char* argv[])
     for (int i=0; i<4; i++) {
     surf += *****************;
     }
-    cout << "surface totale : " << surf << endl << endl;
-    cout << "périmètre d'une forme tirée au hasard" << endl;
+    std::cout << "surface totale : " << surf << std::endl << std::endl;
+    std::cout << "périmètre d'une forme tirée au hasard" << std::endl;
     srand((unsigned int) time(NULL));
     ****** ptr = tab[rand()%4]; // définition de ptr
-    cout << **** << " périmètre=" << ******** << endl << endl;
-    cout << "destruction de carré alloué dynamiquement" << endl;
-    ptr = carre; delete ptr; cout << endl;
+    std::cout << **** << " périmètre=" << ******** << std::endl << std::endl;
+    std::cout << "destruction de carré alloué dynamiquement" << std::endl;
+    ptr = carre; delete ptr; std::cout << std::endl;
+#endif
     return 0;
 }
 
