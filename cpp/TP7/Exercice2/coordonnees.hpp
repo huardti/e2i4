@@ -10,6 +10,8 @@ public:
     inline double x() const { return m_x; }
     inline double y() const { return m_y; }
 
+    void depalce(double x, double y);
+
     friend std::ostream& operator<<(std::ostream& stream, const Coordonnees& s);
 
 private:

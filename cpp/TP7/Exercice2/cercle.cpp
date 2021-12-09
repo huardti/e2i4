@@ -3,7 +3,7 @@
 #include <iostream>
 
 Cercle::Cercle(double x, double y, double r)
-    : m_rayon(r), m_coord(x,y)
+    : Forme(x,y), m_rayon(r)
 {
     std::cout << "- Cercle::Cercle -";
 
@@ -14,7 +14,7 @@ Cercle::~Cercle()
     std::cout << "- Cercle::~Cercle -";
 }
 
-std::ostream& operator<<(std::ostream& stream, const Cercle& s)
+std::ostream& Cercle::print(std::ostream& stream) const
 {
-    return stream << "Cercle " << s.m_coord <<  ", r = " << s.m_rayon;
+    return stream << "Cercle " << m_coord <<  ", r = " << m_rayon;
 }

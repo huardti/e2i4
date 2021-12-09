@@ -11,13 +11,12 @@ Coordonnees::Coordonnees(double x, double y)
 Coordonnees::~Coordonnees()
 {
 }
-/*
-void Coordonnees::translate(double x, double y)
+
+void Coordonnees::depalce(double x, double y)
 {
-    m_x += x;
-    m_y += y;
+    m_x = x;
+    m_y = y;
 }
-*/
 
 std::ostream& operator<<(std::ostream& stream, const Coordonnees& s)
 {

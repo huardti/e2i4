@@ -11,12 +11,11 @@ public:
     Cercle(double x, double y, double r);
     ~Cercle();
 
-    double perimetre() { return 2*M_PI*m_rayon; }
-    double surface() {  return M_PI*m_rayon*m_rayon; }
+    double perimetre() const { return 2*M_PI*m_rayon; }
+    double surface() const {  return M_PI*m_rayon*m_rayon; }
 
-    friend std::ostream& operator<<(std::ostream& stream, const Cercle& s);
+    std::ostream& print(std::ostream& stream) const;
 
 protected:
     double m_rayon;
-    Coordonnees m_coord;
 };
