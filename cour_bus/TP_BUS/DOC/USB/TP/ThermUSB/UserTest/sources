@@ -1,0 +1,19 @@
+#
+# TTest sources - sources for TTest 
+#      Copyright (c) 1998, BlueWater Systems, Inc.
+#
+# To add additional source files, list them on the
+# SOURCES line below.
+#
+
+TARGETNAME=TTest
+TARGETPATH=$(WINDK)\lib
+TARGETTYPE=PROGRAM
+INCLUDES=..\Inc
+
+SOURCES= \
+        ThermUsbTest.cpp \
+        TTest.cpp
+
+UMTYPE=console
+UMBASE=0x400000

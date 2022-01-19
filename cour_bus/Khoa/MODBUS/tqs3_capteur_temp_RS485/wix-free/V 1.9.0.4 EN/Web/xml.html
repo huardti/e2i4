@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>WiX web</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+    <script src="Scripts/jQueryCompressed.js" type="text/javascript"></script>
+    <script src="Scripts/js_management.js"    type="text/javascript"></script>
+    <script src="Scripts/dateFormat.js"       type="text/javascript"></script>
+        
+    <script src="Graph/lib/jquery.min.js"></script>
+    <script src="Graph/lib/raphael-min.js"></script>
+    <script src="Graph/lib/morris.js"></script>
+    <script src="Graph/lib/prettify.min.js"></script>
+    <script src="Graph/lib/example.js"></script>
+    <script src="Graph/graph.js"></script>
+    <link rel="stylesheet" href="Graph/lib/example.css">
+    <link rel="stylesheet" href="Graph/lib/prettify.min.css">
+    <link rel="stylesheet" href="Graph/lib/morris.css">
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+  <div style='border: 1px solid #F7941D; background: #FEEFDA; text-align: center; clear: both; height: 75px; position: relative; margin-bottom:30px;'>
+    <div style='position: absolute; right: 3px; top: 3px; font-family: courier new; font-weight: bold;'><a href='#' onclick='javascript:this.parentNode.parentNode.style.display="none"; return false;'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-cornerx.jpg' style='border: none;' alt='Close this notice'/></a></div>
+    <div style='width: 640px; margin: 0 auto; text-align: left; padding: 0; overflow: hidden; color: black;'>
+      <div style='width: 75px; float: left;'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-warning.jpg' alt='Warning!'/></div>
+      <div style='width: 275px; float: left; font-family: Arial, sans-serif;'>
+        <div style='font-size: 14px; font-weight: bold; margin-top: 12px;'>You are using an old version of web browser.</div>
+        <div style='font-size: 12px; margin-top: 6px; line-height: 12px;'>To view this website correctly, please use newer version of your browser.</div>
+      </div>
+      <div style='width: 75px; float: left;'><a href='http://www.google.com/chrome' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-chrome.jpg' style='border: none;' alt='Get Google Chrome'/></a></div>
+      <div style='width: 75px; float: left;'><a href='http://www.firefox.com' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-firefox.jpg' style='border: none;' alt='Get Firefox 3.5'/></a></div>
+      <div style='width: 75px; float: left;'><a href='http://www.browserforthebetter.com/download.html' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-ie8.jpg' style='border: none;' alt='Get Internet Explorer 8'/></a></div>
+      <div style=' float: left;'><a href='http://www.apple.com/safari/download/' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-safari.jpg' style='border: none;' alt='Get Safari 4'/></a></div>     
+    </div>
+  </div>
+  <![endif]-->
+  
+  
+    <div id="container"> 
+    
+      <!-- Top Papouch Bar -->
+      <div id="tBar">
+        <div id="tBar-inner">
+          <img src="images/header.gif" alt="WiX - Papouch.com" usemap="#headermap" />
+          <map name="headermap">
+            <area shape="rect" coords="130,32,240,46" href="http://www.papouch.com" alt="Go to papouch.com website" />
+          </map>
+          <div id="menu-container">
+            <img src="images/papouch.jpg" alt="Papouch" id="parrot" />
+            <div id="menu">
+              <div class="menu-item" data-handler="showData"    > Show current data      </div>
+              <div class="menu-item" data-handler="showSettings"> Settings               </div>
+              <div class="menu-item" data-handler="showHistory" > History                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Settings --> 
+      <div id="settings" class="page-body">
+        <div class="page-header">
+          <div class="page-header-inner">
+            <span class="page-label">Settings</span>          
+           </div>
+        </div> 
+          
+        <div class="page-body-inner">
+          <form>
+          
+            <fieldset>
+              <legend>Data settings</legend>
+              <table>
+                <tr>
+                  <td>Refresh period:</td>
+                  <td><input type="text" class="number" size="4"  id="seconds"/>&nbsp;<span style="color:#969696">seconds</span></td>
+                </tr>
+                <tr>
+                  <td>Allow color scheme import from client:</td>
+                  <td><input type="checkbox" id="import_colors"/></td>
+                </tr>
+              </table>
+            </fieldset>
+            
+            <fieldset>
+              <legend>History settings</legend>
+              <table>
+                <tr>
+                  <td>Number of rows per page:</td>
+                  <td><input type="text" id="rowsPerPage_history" name="rowsPerPage" maxlength="4" size="4" onkeyup="evalRows()"  class="number" /></td>
+                </tr>
+              </table>
+            </fieldset>
+            
+            <div class="page-bottom-bar-buttons">
+              <input type="button" onclick="cancelSettings()" value="Cancel" class="button" />
+              <input type="button" onclick="saveSettings()"   value="Save" class="button" />
+            </div>
+            
+          </form>
+        </div>
+      </div>
+      
+      <!-- Data -->
+      <div id="data" style="display:none; float:left;">       
+      </div>
+      
+      <!-- History -->
+      <div id="history" class="page-body">
+        <div class="page-header">
+          <div class="page-header-inner">
+            <span class="page-label">History</span>
+            <span id="history-pages"></span>
+          </div>
+        </div>
+        
+        <div class="page-body-inner">
+          <form>
+            
+            <fieldset>
+              <legend>Input values</legend>
+              <table>
+                <tr>
+                  <td>Chose inputs you want to show:</td>
+                </tr>
+                <tr>
+                  <td><div id="input_fields"></div></td>
+                </tr>
+              </table>
+            </fieldset>
+            
+            <fieldset>
+              <legend>Data range</legend>
+              <table>
+                <tr>
+                  <td>Beginning:</td>
+                  <td><input type="text" id="hist_beg" class="date" /></td>
+                </tr>
+                <tr>
+                  <td>End:</td>
+                  <td><input type="text" id="hist_end" class="date" /></td>
+                </tr>
+                <tr><td></td> <!-- TODO: nahradit stylem -->
+                </tr>
+                <tr>
+                  <td>All:</td>
+                  <td><input type="checkbox" id="hist_all" onclick="toggleHistAll()" /></td>
+                </tr>
+              </table>
+            </fieldset>
+           
+            <fieldset>
+              <legend>Period</legend>
+              <table>
+                <tr>
+                  <td>Period length:</td>
+                  <td><input type="text" id="history_interval" class="number" value="10" /></td>
+                  <td>
+                    <select id="interval_units">
+                      <option value="0">miliseconds</option>
+                      <option value="1">seconds</option>
+                      <option value="2" selected="selected">minutes</option>
+                      <option value="3">hours</option>
+                      <option value="4">days</option>
+                      <option value="5">months</option>
+                      <option value="6">yers</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </fieldset>
+            
+            <fieldset id="selected_data">
+              <legend>Data</legend>
+              <table>
+                <tr>
+                  <td colspan="2">Chose data to show:</td>
+                </tr>
+                <tr>
+                  <td>       
+                    <div><input value="1" type="checkbox" name="dataMode" />&nbsp;&nbsp;Value</div>
+                    <div><input value="4" type="checkbox" name="dataMode" />&nbsp;&nbsp;Minimum</div>
+                    <div><input value="8" type="checkbox" name="dataMode" />&nbsp;&nbsp;Maximum</div>
+                  </td>
+                  <td>
+                    <div><input value="2"  type="checkbox" name="dataMode" checked="checked" />&nbsp;&nbsp;Average          </div>
+                    <div><input value="16" type="checkbox" name="dataMode"                   />&nbsp;&nbsp;Number of valid  </div>
+                    <div><input value="32" type="checkbox" name="dataMode"                   />&nbsp;&nbsp;Number of invalid</div>
+                  </td>
+                </tr>
+              </table>
+            </fieldset>
+            
+            <div class="page-bottom-bar-buttons">
+              <input type="button" value="Cancel"   class="button" onclick="closeHistory()"/>
+              <input type="button" value="Confirm" class="button" onclick="loadHistory()" />
+            </div>
+            
+          </form>
+        </div>
+
+        <div id="history_displayDivision">
+          <div id="history_data"></div>
+          <div id="download_history">
+            <div id="hBR">
+              <a href="#history-reset" id="changeHSettings" class="wixOrange">Modify selection</a>
+            </div>
+            <div id="download_history_wrapper">Download in format: 
+              <a href="" id="download_xml" class="wixOrange">XML</a> 
+              <a href="" id="download_csv" class="wixOrange">CSV</a>
+            </div>
+          </div>
+        </div>
+        <div id="loader">
+          <img src="images/loader.gif" alt="Loading data" style="margin-right:10px;"/>Please wait, loading data
+        </div>      
+      </div>   
+      
+      <div id="updated">
+        <span id="build">
+        </span>
+        <span class="details" style="margin-right:15px;">
+          <span>
+            last update:
+          </span>
+          <span id="updateTime">
+          </span>
+        </span>
+      </div>   
+      
+    </div>  
+  </body>
+</html>

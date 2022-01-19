@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<language name="language">
+	<forms>
+		<fMain caption="Modbus RTU Configurator">
+			<pButtons>
+				<sbExpertMode caption="Expert mode"/>
+				<bClose caption="Zavřít"/>
+				<bLogClear caption="Smazat log"/>
+				<bLogSave caption="Uložit Log"/>
+			</pButtons>
+			<pConnection>
+				<bCIOpen caption="Otevřít spojení"/>
+				<bCISettings caption="Nové připojení"/>
+				<bCIClose caption="Zavřít spojení"/>
+				<bAbout caption="O programu"/>
+			</pConnection>
+			<pCenter>
+				<Label12 caption="Zařízení:"/>
+				<gbCommunicationParameters caption="Změna komunikačních parametrů">
+					<pCPDevID>
+						<Label27 caption="Aktuální ID (adresa) zařízení [Dec]:"/>
+					</pCPDevID>
+					<pCPDevProtocol>
+						<Label13 caption="Aktuální protokol:"/>
+						<cbCPDevProtocol>
+							<items>
+								<item value="Spinel"/>
+								<item value="Modbus"/>
+							</items>
+						</cbCPDevProtocol>
+					</pCPDevProtocol>
+					<pCPInst>
+						<lCPInstruction caption="Instrukce pro zápis (jen pro Modbus):"/>
+						<cbCPInst>
+							<items>
+								<item value="Multi write ($10)"/>
+								<item value="Single write ($6)"/>
+							</items>
+						</cbCPInst>
+					</pCPInst>
+					<pCPDisableUniversalAddress>
+						<lCPDisableUniversalAddress caption="Nevyhledávat zařízení přes univerzální adresu:"/>
+					</pCPDisableUniversalAddress>
+					<pCPProtocol>
+						<Label25 caption="Nový protokol:"/>
+						<cbCPProtocol>
+							<items>
+								<item value="Spinel"/>
+								<item value="Modbus"/>
+							</items>
+						</cbCPProtocol>
+					</pCPProtocol>
+					<pCPID>
+						<Label21 caption="Nové ID (adresa) zařízení [Dec]:"/>
+					</pCPID>
+					<pCPBaudrate>
+						<Label22 caption="Přenosová rychlost:"/>
+					</pCPBaudrate>
+					<pCPParity>
+						<Label23 caption="Parita:"/>
+						<cbCPParity>
+							<items>
+								<item value="Žádná"/>
+								<item value="Sudá"/>
+								<item value="Lichá"/>
+							</items>
+						</cbCPParity>
+					</pCPParity>
+					<pCPStopbits>
+						<Label24 caption="Počet stopbitů:"/>
+					</pCPStopbits>
+					<pCPPacketTimeout>
+						<Label26 caption="Rozlišení konce paketu [Byte]:"/>
+					</pCPPacketTimeout>
+					<pCPButtons>
+						<bCPSave caption="Nastavit"/>
+						<bCPLoad caption="Načíst ze zařízení"/>
+						<bCPInfo caption="Zjistit zařízení"/>
+					</pCPButtons>
+				</gbCommunicationParameters>
+				<gbCommunicationLog caption="Záznam komunikace"/>
+			</pCenter>
+			<pMessages>
+				<lUnknownDevice caption="Neznámé zařízení"/>
+				<lDisconnect caption="Spojení bylo zrušeno."/>
+				<lConnectionFailed caption="Spojení se nepodařilo navázat!"/>
+				<lConnectionWithUnknownDevice caption="Spojení bylo úspěšně navázáno s neznamým zařízením."/>
+				<lConnectionWithDevice caption="Spojení bylo úspěšně navázáno se zařízením "/>
+				<lLoadParam caption="Načítání parametrů ze zařízení"/>
+				<lLoadParamSucceed caption="Komunikační parametry byly úspěšně načteny."/>
+				<lLoadParamFailed caption="Komunikační parametry se nepodařilo načíst!"/>
+				<lSaveParam caption="Ukládání parametrů do zařízení"/>
+				<lSaveParamSucceed caption="Komunikační parametry byly úspěšně uloženy."/>
+				<lSaveParamFailed caption="Komunikační parametry se nepodařilo uložit!"/>
+				<lInfoSucceed caption="Připojené zařízení bylo úspěšně rozpoznáno."/>
+				<lInfoFailed caption="Nebylo nalezeno žádné zařízení!"/>
+				<lInfo caption="Dotaz na Info"/>
+			</pMessages>
+		</fMain>
+		<fConnectionDialog caption="Nastavení připojení">
+			<pCenter>
+				<gbSerialPort>
+					<lCOM caption="Číslo portu:"/>
+					<lUSBDeviceName caption="Zařízení:"/>
+					<lUSBSerialNumber caption="Sériové číslo:"/>
+					<Label27 caption="ID (adresa) zařízení [Dec]:"/>
+					<lTCPIP caption="IP adresa:"/>
+					<lTCPPort caption="Port:"/>
+					<rbTCP caption="TCP:"/>
+					<rbCOM caption="Sériový port:"/>
+					<rbUSB caption="USB:"/>
+					<bUSBRefresh caption="Obnovit"/>
+					<pSerialParams>
+						<lBaudRate caption="Bity za sekundu:"/>
+						<lDataBits caption="Datové bity:"/>
+						<lParity caption="Parita:"/>
+						<lStopBits caption="Počet stop-bitů:"/>
+						<cbParity>
+							<items>
+								<item value="Žádná"/>
+								<item value="Sudá"/>
+								<item value="Lichá"/>
+								<item value="Značka"/>
+								<item value="Mezera"/>
+							</items>
+						</cbParity>
+					</pSerialParams>
+				</gbSerialPort>
+				<pStatusbar/>
+				<pMessages>
+					<lSearching caption="Vyhledávám: "/>
+					<lDeviceFound caption="Nalezeno zařízení: "/>
+					<lSearchAborted caption="Vyhledávání zrušeno uživatelem."/>
+					<lDeviceNotFound caption="Zařízení nenalezeno!"/>
+					<lBadParams caption="Špatně nastavené parametry vyhledávání!&#xA;U každého parametru musí být vybrána alespoň jedna hodnota!"/>
+				</pMessages>
+			</pCenter>
+			<pButtons>
+				<bCancel caption="Zrušit"/>
+				<bOK caption="Ok"/>
+				<bSearchParams caption="&lt;"/>
+				<bSearch caption="Vyhledat"/>
+				<bAbort caption="Abort"/>
+			</pButtons>
+		</fConnectionDialog>
+		<fConnectionSearchDialog caption="Parametry vyhledávání">
+			<pButtons>
+				<bCancel caption="Zavřít"/>
+			</pButtons>
+			<pCenter>
+				<gbBaudrate caption="Bity za sekundu"/>
+				<gbParity caption="Parita">
+					<chbPNone caption="Žádná"/>
+					<chbPEven caption="Sudá"/>
+					<chbPOdd caption="Lichá"/>
+					<chbPSpace caption="Značka"/>
+					<chbPMark caption="Mezera"/>
+				</gbParity>
+				<gbDataBits caption="Datové bity"/>
+				<gbStopBits caption="Počet stop-bitů"/>
+			</pCenter>
+		</fConnectionSearchDialog>
+	</forms>
+</language>

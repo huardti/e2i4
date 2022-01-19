@@ -1,0 +1,9 @@
+07:31:11 **** Build of configuration Default for project test ****
+make all 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/Program Files (x86)/Atollic/TrueSTUDIO for STM32 9.2.0/ide/jre/bin/client;C:/Program Files (x86)/Atollic/TrueSTUDIO for STM32 9.2.0/ide/jre/bin;C:/Program Files (x86)/Atollic/TrueSTUDIO for STM32 9.2.0/ide/jre/lib/i386;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\PuTTY\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin\;C:\Program Files\IVI Foundation\VISA\Win64\Bin\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.2.0;]
+
+07:31:12 Build Finished (took 78ms)
+

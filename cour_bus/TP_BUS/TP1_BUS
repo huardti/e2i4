@@ -1,0 +1,15 @@
+TP1_Introduction_BUS_Interface
+
+Nicolas LYSEE/Titouan HUARD
+
+1) Signaux necessaires au fonctionnement du SPI entre le DAC et le Microcontroleur:
+	-CS (Chip Select)/MOSI/MISO/SCLK
+
+1_b) Schéma feuille titouan 
+1_c)Vref: VDD-0.04 	Min=0,04	(digital analog converter)
+1_d) rien a faire
+
+2_a)Le microcontroleur sera obligatoirement un maitre puisqu'il ecrit dans le DAC.
+D'apres la doc MPC il faut CPOl et CPHA 
+
+

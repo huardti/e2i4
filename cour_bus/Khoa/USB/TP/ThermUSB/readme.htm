@@ -1,0 +1,116 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title></title>
+</head>
+
+<body>
+
+<h1 align="center">Thermometer Board Reference Drivers</h1>
+
+<h4 align="center">Copyright (c) 1998, BlueWater Systems, Inc. </h4>
+
+<h4 align="center"><a href="http://www.bluewatersystems.com">www.bluewatersystems.com</a>
+</h4>
+
+<p>These reference drivers are designed to work with the Cypress
+Thermometer demo board on either Windows 98 or Windows 2000. The
+Thermometer demo board is available as a component of the <font
+color="#000080">Cypress Semiconductor's CY3640 USB Starter Kit</font>.
+More information regarding the USB Starter Kit, please see <a
+href="http://www.cypress.com">www.cypress.com</a>.</p>
+
+<p>The source code to the included driver and test applications,
+as well as executable driver and applications, is installed by
+this package's installation program.</p>
+
+<h2>To start the sample driver:</h2>
+
+<p>The files THERMUSB.INF and THERMUSB.SYS are placed by the
+installation program into the directory InstallDiskette (under
+the directory where this package is installed). During the
+hardware installation process, at each point when the operating
+system prompts for the location of the driver files, select this
+InstallDiskette directory.</p>
+
+<p>1. Plug in the USB thermometer device.</p>
+
+<p>2. If the operating system does not find any existing drivers
+for the thermometer board, it will prompt for the location of the
+installation files. Select the directory 'InstallDiskette' under
+the directory where you installed this package.</p>
+
+<p>3. If the operating system already has drivers installed for
+the thermometer board, you will need to use the Windows Device
+Manager to change the driver. From the Device Manager's
+'Properties' dialog for the thermometer device, update the
+existing driver, and select the directory 'InstallDiskette' as
+above when prompted for the installation disk location.</p>
+
+<h2>To run the test applications: </h2>
+
+<h3>THERMGUI: </h3>
+
+<p>Run ThermGUI.EXE - It will display a dialog box with the
+current temperature setting and allow you to adjust the
+brightness of the LED. The application will display the ambient
+temperature. Pressing the momentary switch will change the
+display to English or Metric. </p>
+
+<p>The ThermGUI portion of this sample (source code is provided)
+demonstrates how to register for a device change notification so
+that a Windows application can be aware that the device has been
+removed. </p>
+
+<h3>USERTEST: </h3>
+
+<p>Run the test application using the following command line
+arguments at a command prompt: </p>
+
+<p>ttest -d0 -i1 </p>
+
+<p>To run other tests, use the following command line arguments: </p>
+
+<p>ttest -d0 -iX </p>
+
+<p>X represents the test suite number to run: </p>
+
+<ul>
+    <li>0: LED Brightness test. </li>
+    <li>1: Temperature Readback Test. </li>
+    <li>2: Read RAM Test. </li>
+    <li>3: Write RAM Test. </li>
+    <li>4: Read Port Test. </li>
+    <li>5: Write Port Test. (This test requires new
+        Microcontroller firmware to test it correctly). </li>
+</ul>
+
+<h2>To rebuild the source code:</h2>
+
+<p>To rebuild the included source code requires BlueWater
+Systems' WinDK 2.6 or newer, Microsoft Visual C++ 5.0 or newer,
+and the Windows 98 DDK or Windows 2000 (build 1877 or newer) DDK.</p>
+
+<p>From a checked build environment (see the DDK documentation),
+change to the directory where you installed this package, and
+type 'build -ceZ' - this will compile and link this sample. </p>
+
+<p>To build the ThermGUI portion of the sample, open the
+Developer Studio project file THERMGUI.DSP and build the program
+using the Developer Studio. If you are using Visual C++ 5.0, you
+will need to configure Developer Studio such that the
+preprocessor searches the header files (in particular DBT.H) from
+the DDK before searching the header files that ship with the
+compiler itself. You will need to make the same change to the
+library path so that the library search path order is consistent
+with the new header file search order. These steps are necessary
+because the header files that ship with Visual C++ 5.0 do not
+include the definition of DEV_BROADCAST_HANDLE. If you are using
+Visual C++ 6.0, the header files that ship with the compiler
+include the definition of DEV_BROADCAST_HANDLE, so you should not
+have to make any changes to your include paths.</p>
+</body>
+</html>

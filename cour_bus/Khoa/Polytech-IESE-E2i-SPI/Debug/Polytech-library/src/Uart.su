@@ -1,0 +1,6 @@
+Uart.c:10:6:InitUart1	4	static
+Uart.c:22:6:InitUart2	4	static
+Uart.c:34:6:SendByte_Uart1	16	static
+Uart.c:44:9:GetByteUart1	4	static
+Uart.c:51:9:CheckUart1RxFlag	16	static
+Uart.c:69:6:SendByte_Uart2	16	static

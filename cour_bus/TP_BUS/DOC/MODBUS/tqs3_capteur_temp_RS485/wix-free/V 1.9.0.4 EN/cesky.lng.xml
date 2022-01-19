@@ -1,0 +1,1477 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<language name="česky" id="$405" default="0">
+	<forms>
+		<fMain caption="wix">
+			<miAdd2 caption="Přidat"/>
+			<miAddModul2 caption="Zařízení"/>
+			<miGraf2 caption="Graf"/>
+			<miHide2 caption="Skrýt"/>
+			<miShow caption="Zobrazit"/>
+			<miViewProperties2 caption="Možnosti zobrazení"/>
+			<miStayOnTop2 caption="Vždy na vrchu"/>
+			<miClickThrought caption="Proklikávat"/>
+			<miAutoHide2 caption="Automaticky skrývat"/>
+			<miSettings2 caption="Nastavení"/>
+			<miAbout caption="O programu"/>
+			<miExit2 caption="Ukončit"/>
+			<miAdd1 caption="Přidat"/>
+			<miAddModul1 caption="Zařízení"/>
+			<miAddGraph1 caption="Graf"/>
+			<miRename caption="Nastavení panelu"/>
+			<miRemove caption="Odstranit panel"/>
+			<miUp caption="Posunout nahoru"/>
+			<miDown caption="Posunout dolu"/>
+			<miMoveToOtherWindows caption="Přesunout na jiné okno"/>
+			<miGraphInSingleWin caption="Zobrazit graf v samostatném okně"/>
+			<miHide1 caption="Skrýt"/>
+			<miViewProperties1 caption="Možnosti zobrazení"/>
+			<miStayOnTop1 caption="Vždy na vrchu"/>
+			<miAutoHide1 caption="Automaticky skrývat"/>
+			<miSettings1 caption="Nastavení"/>
+			<miExit1 caption="Ukončit"/>
+		</fMain>
+		<frmXanMasterDialog caption="Nastavení jednotek XanMasteru">
+			<pButtons>
+				<bOK caption="OK"/>
+				<bClose caption="Zrušit"/>
+				<bRefresh caption="Vyhledat jednotky"/>
+			</pButtons>
+			<pCenter>
+				<Label1 caption="FGA 1. jendotky:"/>
+				<Label2 caption="Počet jednotek:"/>
+				<Label3 caption="FGA 2. jendotky:"/>
+				<Label4 caption="FGA 3. jendotky:"/>
+				<Label5 caption="FGA 4. jendotky:"/>
+				<Label6 caption="FGA 5. jendotky:"/>
+				<Label7 caption="FGA 6. jendotky:"/>
+				<Label8 caption="FGA 7. jendotky:"/>
+				<Label9 caption="FGA 8. jendotky:"/>
+				<Label10 caption="FGA 9. jendotky:"/>
+				<Label11 caption="FGA 10. jendotky:"/>
+			</pCenter>
+		</frmXanMasterDialog>
+		<WDEVEX_frmDeviceTypeDialog caption="Typ zařízení">
+			<pnlHint>
+				<mmoHint>
+					<items>
+						<item value="Tento dialog slouží k nastavení zařízení. Některá ethernetová zařízení (Quido, AD4, TH2E) musejí být nastavená v módu &quot;TCP Server&quot;."/>
+					</items>
+				</mmoHint>
+			</pnlHint>
+			<pnlButtons>
+				<btnClose caption="Zrušit"/>
+				<btnOK caption="OK"/>
+			</pnlButtons>
+			<pnlCenter>
+				<lblDeviceCaption caption="Popisek zařízení:"/>
+				<lblDeviceType caption="Typ zařízení:"/>
+				<lblProtocolType caption="Typ protokolu:"/>
+			</pnlCenter>
+			<pnlLanguage>
+				<lblLanErrorNoCaption caption="Neni zadaný popisek zařízení!"/>
+				<lblLanErrorNoDeviceType caption="Neni vybraný typ zařízení!"/>
+			</pnlLanguage>
+		</WDEVEX_frmDeviceTypeDialog>
+		<WDEVEX_frmConnectionDialog caption="Nastavení připojení">
+			<pnlCenter>
+				<pnlConnections>
+					<lblConnections caption="Vybrat existující připojení:"/>
+				</pnlConnections>
+				<pnlConnectionSettings>
+					<lblConnectinType caption="Typ připojení:"/>
+					<pnlCOM>
+						<lblCOMBaudrate caption="Komunikační rychlost:"/>
+						<lblCOMPort caption="Port:"/>
+						<lblCOMParity caption="Parita:"/>
+						<lblCOMDataBits caption="Datové bity:"/>
+						<lblCOMStopBits caption="Stop bity:"/>
+						<cbbCOMParity>
+							<items>
+								<item value="Žádná"/>
+								<item value="Sudá"/>
+								<item value="Lichá"/>
+								<item value="Znak"/>
+								<item value="Mezera"/>
+							</items>
+						</cbbCOMParity>
+						<btnCOMRefresh caption="Obnovit"/>
+					</pnlCOM>
+					<pnlTCP>
+						<lblTCPIP caption="IP adresa:"/>
+						<lblTCPPort caption="Port:"/>
+						<lblTCPConnectionTimeout caption="Timeout navazování spojení [s]:"/>
+						<lblTCPKeepAlive caption="Interval Keepalive dotazů [s]:"/>
+						<btnTCPAdvanced caption="Upřesnit"/>
+					</pnlTCP>
+					<pnlUSB>
+						<lblUSBDevice caption="USB zařízení:"/>
+						<lblUSBSerialNumber caption="Sériové číslo:"/>
+						<lblUSBBaudrate caption="Komunikační rychlost:"/>
+						<lblUSBParity caption="Parita:"/>
+						<lblUSBDataBits caption="Datové bity:"/>
+						<lblUSBStopBits caption="Stop bity:"/>
+						<btnUSBRefresh caption="Obnovit"/>
+						<cbbUSBParity>
+							<items>
+								<item value="Žádná"/>
+								<item value="Sudá"/>
+								<item value="Lichá"/>
+								<item value="Znak"/>
+								<item value="Mezera"/>
+							</items>
+						</cbbUSBParity>
+					</pnlUSB>
+					<pnlHTTP>
+					    <lblHTTPProtocol caption="Protokol:"/>
+						<lblHTTPDomain caption="IP adresa (nebo doména):"/>
+						<lblHTTPPort caption="Port:"/>
+						<lblHTTPURL caption="URL adresa:"/>
+						<lblHTTPDocument caption="Dokument:"/>
+					</pnlHTTP>
+				</pnlConnectionSettings>
+			</pnlCenter>
+			<pnlButtons>
+				<btnOK caption="OK"/>
+				<btnClose caption="Zrušit"/>
+				<btnDeviceManager caption=" Správce zařízení"/>
+			</pnlButtons>
+			<pnlHint>
+				<mmoHint>
+					<items>
+						<item value="Tento dialog slouží k nastavení připojení mezi zařízením a počítačem. Pokud máte na jedné lince více zařízení a dané připojení jste již definovali dříve, pak můžete připojení vybrat z rozbalovacího menu &quot;Vybrat existující připojení&quot;."/>
+					</items>
+				</mmoHint>
+			</pnlHint>
+			<pnlLanguage>
+				<lblLanCOM caption="Sériová linka"/>
+				<lblLanTCP caption="TCP"/>
+				<lblLanUSB caption="USB"/>
+				<lblLanHTTP caption="Web"/>
+				<lblLanCustomConnection caption="Vlastní připojení"/>
+				<lblLanSNMPUDP caption="UDP"/>
+			</pnlLanguage>
+		</WDEVEX_frmConnectionDialog>
+		<frmAuthorizationDialog caption="Autorizce">
+			<pnlCenter>
+				<lblPassword caption="Heslo:"/>
+				<lblHint caption="Pro přístup do následující části Wixu je zapotřebí zadat heslo."/>
+			</pnlCenter>
+			<pnlButtons>
+				<btnOk caption="OK"/>
+				<btnCancel caption="Zrušit"/>
+			</pnlButtons>
+			<pnlLanguage>
+				<lblLanError caption="Špatné heslo!"/>
+			</pnlLanguage>
+		</frmAuthorizationDialog>
+		<WCALCEX_frmCalculationOperatorDialog caption="Nastavení výpočtu">
+			<pnlCenter>
+				<lblCaption caption="Počet vstupů:"/>
+				<lblInputs caption="vstupy"/>
+				<lblCoeficients caption="koeficienty"/>
+			</pnlCenter>
+			<pnlButtons>
+				<bOK caption="Ok"/>
+				<btnClose caption="Zrušit"/>
+			</pnlButtons>
+			<pnlLanguage>
+				<lblLanInput caption="Vstup"/>
+			</pnlLanguage>
+		</WCALCEX_frmCalculationOperatorDialog>
+		<frmSaveRecordDialog caption="Nastavení záznamu">
+			<pnlCenter>
+				<pnlFunctions>
+					<lblFunctions caption="Seznam funkcí:"/>
+					<vstFunctions>
+						<Header>
+							<Column Text="Funkce"/>
+						</Header>
+					</vstFunctions>
+				</pnlFunctions>
+				<pnlCenter2>
+					<pnlData>
+						<lblData caption="Data:"/>
+					</pnlData>
+					<pnlExample>
+						<lblExample caption="Ukázka:"/>
+					</pnlExample>
+					<pnlHead>
+						<lblHead caption="Hlavička:"/>
+					</pnlHead>
+					<pnlParameters>
+						<lblSeparatedRecord caption="Ukládat záznam na další řádku:"/>
+						<lblRewrite caption="Ukládat pouze poslední naměřenou hodnotu:"/>
+					</pnlParameters>
+				</pnlCenter2>
+			</pnlCenter>
+			<pnlButtons>
+				<btnOk caption="Ok"/>
+				<btnCancel caption="Zrušit"/>
+			</pnlButtons>
+			<pnlHint>
+				<shpHint/>
+				<mmoHint>
+					<items>
+						<item value="Tento dialog slouží k nastavení dynamického textu (naměřené hodnoty, datum, čas atd.). Dynamický text se zadává prostřednictvím speciálních funkcí ve složených závorkách (např. {TAB}, {Datetime(dd.mm.yyyy)}, {Moje_Zarizeni.Muj_Vstup.Value}). Pokud se ve funkci vyskytuje chyba, je zobrazena červeně, jinak je označena modře. Při dvojkliku na funkci v &quot;Seznamu funkcí&quot; se funkce automaticky připíše do &quot;Definice&quot;."/>
+					</items>
+				</mmoHint>
+			</pnlHint>
+		</frmSaveRecordDialog>
+		<frmAddSetInputs2ColorsRanges caption="Nastavení pozadí">
+			<pnlCenter>
+				<lblCaption caption="Počet mezních bodů:"/>
+				<SB>
+					<pnl1>
+						<lbl2 caption="Barvy:"/>
+						<lbl1 caption="Mezní hodnota:"/>
+					</pnl1>
+					<pnl0>
+						<lbl0 caption="Barvy:"/>
+					</pnl0>
+				</SB>
+			</pnlCenter>
+			<pnlButtons>
+				<btnOK caption="Ok"/>
+				<btnClose caption="Zrušit"/>
+			</pnlButtons>
+			<pnlHint>
+				<lblHint caption="Tento dialog slouží k nastavení barev pozadí panelů. Rozsah hodnot lze rozdělit prostřednictvím &quot;mezních hodnot&quot; do menších intervalů. Každému intervalu jsou přiřazeny dvě barvy, kterými bude pozadí panelu blikat, pokud naměřená hodnota bude patřit do tohoto intervalu.&#xA;"/>
+			</pnlHint>
+			<pnlLanguage>
+				<lblLanBound caption="Mezní hodnota:"/>
+				<lblLanValue caption="Barvy:"/>
+			</pnlLanguage>
+		</frmAddSetInputs2ColorsRanges>
+		<fSettings caption="Nastavení">
+			<miInputAllow caption="Povolit"/>
+			<miInputBlock caption="Zakázat"/>
+			<miInputAuto caption="Automaticky"/>
+			<actSaveFileAdd caption="Přidat"/>
+			<actSaveFileEdit caption="Upravit"/>
+			<actSaveFileRemove caption="Odebrat"/>
+			<actSaveFileWizard caption="Průvodce ukládání"/>
+			<Panel2>
+				<bOk caption="OK"/>
+				<bClose caption="Zrušit"/>
+				<bPouzit caption="Použít"/>
+			</Panel2>
+			<Panel3>
+				<PageControl1>
+					<tsAppearance caption="Zobrazení">
+						<GroupBox1 caption="Barvy">
+							<Label2 caption="Aktivní:"/>
+							<Label3 caption="Chyba:"/>
+							<Label4 caption="Připojování:"/>
+							<Label6 caption="Text"/>
+							<Label7 caption="Pozadí"/>
+							<Label15 caption="Stav"/>
+							<bDefault caption="Původní"/>
+						</GroupBox1>
+						<GroupBox2 caption="Okno">
+							<Label8 caption="Nastavit pevnou šířku [px]:"/>
+							<Label10 caption="Průhlednost [%]:"/>
+							<Label5 caption="Zobrazovat názvy vstupů:"/>
+							<Label9 caption="Zobrazovat jednotky veličin:"/>
+							<Label1 caption="Automatická šířka:"/>
+							<Label13 caption="Vždy navrchu:"/>
+							<Label19 caption="Automaticky skrývat:"/>
+							<lblSizeRatio caption="Poměr zvětšení:"/>
+						</GroupBox2>
+					</tsAppearance>
+					<tsSaving caption="Uložení">
+						<bSaveFileAddGuide caption="Průvodce ukládání"/>
+						<vstSaveFile>
+							<Header>
+								<Column Text=""/>
+								<Column Text="Název"/>
+								<Column Text="Popis"/>
+								<Column Text="Interval"/>
+							</Header>
+						</vstSaveFile>
+						<bSaveFileEdit caption="Upravit"/>
+						<bSaveFileRemove caption="Odebrat"/>
+						<bSaveFileAdd caption="Přidat"/>
+					</tsSaving>
+					<tsActions caption="Akce">
+						<vstAction>
+							<Header>
+								<Column Text=""/>
+								<Column Text="Název"/>
+								<Column Text="Popis"/>
+							</Header>
+						</vstAction>
+						<bAddAction caption="Přidat"/>
+						<bEditAction caption="Upravit"/>
+						<bRemoveAction caption="Odebrat"/>
+						<btnActionMoveDown caption="Posunout dolu"/>
+						<btnActionMoveUp caption="Posunout nahoru"/>
+					</tsActions>
+					<tsWebServer caption="Web">
+						<grpWebServer caption="Webový server">
+							<lblWebServerPort caption="Port:"/>
+							<lblWebUserName caption="Uživatelské jméno:"/>
+							<lblWebPassword caption="Heslo:"/>
+							<lblWebSeverActive caption="Aktivní"/>
+							<lblWebHistory caption="Zapnout podporu historie:"/>
+							<lblWebAuthetification caption="Autorizace:"/>
+						</grpWebServer>
+					</tsWebServer>
+					<tsOthers caption="Ostatní">
+						<lblGraphFilePath caption="Adresář se soubory pro grafy (gpf):"/>
+						<GroupBox7 caption="Jazyk">
+						</GroupBox7>
+						<GroupBox3 caption="Měření">
+							<Label12 caption="Interval měření [s]:"/>
+						</GroupBox3>
+						<GroupBox5 caption="Speciální typy panelů">
+							<cbShowPanelSettings caption="Zobrazovat panel &quot;Nastavení&quot;:"/>
+							<chbShowPapouchPanel caption="Zobrazovat panel &quot;Papouch&quot;:"/>
+							<chbModbusSupport caption="Podpora protokolu Modbus RTU:"/>
+						</GroupBox5>
+						<grpSettingsPassword caption="Zabezpečení nastavení">
+							<lblSettingsPass1 caption="Heslo:"/>
+							<lblSettingsPass2 caption="Heslo (potvrzení):"/>
+							<lblSettingsPassHint caption="Hesla se neshodují!"/>
+							<chbSettingsPasswordEnabled caption="Vyžadovat heslo pro nastavení Wixu"/>
+						</grpSettingsPassword>
+						<chbDemoDialog caption="Informovat o překročení limitu free verze"/>
+					</tsOthers>
+					<tsLicense caption="Licence">
+						<Label23 caption="Verze:"/>
+						<pLicenseFalse>
+							<Label22 caption="Tento program běží jako plně funkční demoverze. Používání této verze neni časově omezené. Veškeré omezení spočívá v počtu připojených zařízení a vstupů. &#xA;&#xA;Maximální počet zařízení:	5&#xA;Maximální počet vstupů:	10&#xA;&#xA;Každé další zařízení a další vstup nad tento limit bude blokován!"/>
+						</pLicenseFalse>
+						<pLicenseTrue>
+							<Label21 caption="Registrováno:"/>
+							<Label24 caption="Tento program běží jako plná verze.&#xA;&#xA;Maximální počet zařízení:	neomezeno&#xA;Maximální počet vstupů: 	neomezeno&#xA;"/>
+						</pLicenseTrue>
+						<bLicenseInsert caption="Vložit licenci"/>
+						<bLicenseGet caption="Získat licenci"/>
+					</tsLicense>
+					<tsModulList caption="Seznam modulů">
+						<Label11 caption="Zaškrtněte vstupy, které chcete zobrazovat"/>
+						<bPridat caption="Přidat zařízení"/>
+						<bOdebrat caption="Odebrat"/>
+						<bUpravit caption="Upravit"/>
+						<bDown caption="Posunout dolu"/>
+						<bUp caption="Posunout nahoru"/>
+						<bAddGraph caption="Přidat graf"/>
+						<bAddVirtualInput caption="Přidat výpočet"/>
+					</tsModulList>
+				</PageControl1>
+			</Panel3>
+		</fSettings>
+		<WSREX_fConfigurator caption="Nastavení souboru">
+			<pCenter>
+				<tcData>
+					<lExample caption="Náhled:"/>
+					<Label5 caption="Definice:"/>
+					<lFunctions caption="Seznam funkcí:"/>
+					<vstFunctions>
+						<Header>
+							<Column Text="Funkce"/>
+						</Header>
+					</vstFunctions>
+				</tcData>
+				<gbInfo caption="Nastavení souboru">
+					<Label1 caption="Název:"/>
+					<Label2 caption="Interval:"/>
+					<Label3 caption="Název a umístění souboru:"/>
+					<Label7 caption="Synchronizovat s časem:"/>
+					<Label6 caption="Ukládat pouze poslední naměřenou hodnotu:"/>
+					<Label4 caption="Ukládat záznam na další řádek:"/>
+					<bFindLocation caption="Najít"/>
+					<cbInterval>
+						<items>
+							<item value="milisekundy"/>
+							<item value="sekundy"/>
+							<item value="minuty"/>
+							<item value="hodiny"/>
+							<item value="dny"/>
+						</items>
+					</cbInterval>
+				</gbInfo>
+			</pCenter>
+			<pButtons>
+				<bClose caption="Zrušit"/>
+				<bOk caption="Ok"/>
+				<bGuide caption="Průvodce"/>
+			</pButtons>
+			<pHint>
+				<lblHint caption="Tento dialog slouží k nastavení ukládání naměřených veličin do souboru. Dynamický text (naměřené hodnoty, datum, čas atd.) se zadává prostřednictvím speciálních funkcí ve složených závorkách (např. {TAB}, {Datetime(dd.mm.yyyy)}, {Moje_Zarizeni.Muj_Vstup.Value}). Pokud se ve funkci vyskytuje chyba, je zobrazena červeně, jinak je označena modře. Při dvojkliku na funkci v &quot;Seznamu funkcí&quot; se funkce automaticky připíše do &quot;Definice&quot;."/>
+			</pHint>
+		</WSREX_fConfigurator>
+		<WSREX_fConfiguratorGuide caption="Průvodce">
+			<pCenter>
+				<lblHeadGenerate caption="Generovat hlavičku:"/>
+				<lblSeparator caption="Oddělovač záznamu:"/>
+				<Label3 caption="Seznam vstupů:"/>
+				<lblExample caption="Náhled:"/>
+				<lblGenUnit caption="Generovat jednotky veličin:"/>
+				<lblFileType caption="Typ souboru:"/>
+				<lblNoInputSelected caption="Neni vybrán žádný vstup!"/>
+				<cbFileType>
+					<items>
+						<item value="Formát TXT (textový soubor)"/>
+						<item value="Formát CSV (čitelný pro MS Excel)"/>
+					</items>
+				</cbFileType>
+			</pCenter>
+			<pButtons>
+				<bCreate caption="Vytvořit"/>
+				<bClose caption="Zrušit"/>
+			</pButtons>
+			<pHint>
+				<lblHint caption="Tento průvodce slouží k nastavení formátu ukládání naměřených veličin. V seznamu zaškrtněte vstupy, které chcete ukládat do souboru."/>
+			</pHint>
+			<pLanguageTexts>
+				<lblDate caption="Datum"/>
+				<lblTime caption="Čas"/>
+				<lblStoringFilename caption=" Uložená data"/>
+				<lblStoringCaption caption="Data log"/>
+			</pLanguageTexts>
+		</WSREX_fConfiguratorGuide>
+		<fAddSetInputs caption="Nastavení vstupu">
+			<pCenter>
+				<pInputsSettings>
+					<pCaption>
+						<GroupBox1 caption="Vstup">
+							<Label1 caption="Název vstupu:"/>
+							<Label2 caption="Jednotky:"/>
+							<Label11 caption="Typ zobrazení:"/>
+							<lblDisplayBackType caption="Typ pozadí panelu:"/>
+							<bDisplayValuesSettings caption="Nastavit"/>
+							<cbDisplayType>
+								<items>
+									<item value="Normál"/>
+									<item value="Zástupný text"/>
+									<item value="Bargraf"/>
+								</items>
+							</cbDisplayType>
+							<btnDisplayBackType caption="Nastavit"/>
+							<cbbDisplayBackType>
+								<items>
+									<item value="Normál"/>
+									<item value="Speciální barva"/>
+									<item value="Blikající pozadí"/>
+								</items>
+							</cbbDisplayBackType>
+						</GroupBox1>
+					</pCaption>
+					<pWixConversion>
+						<GroupBox3 caption="Přepočet Wixu">
+							<Label13 caption="Y = "/>
+							<Label14 caption="* X +"/>
+							<Label15 caption="Počet desetinných míst:"/>
+							<Label16 caption="Přepočet:"/>
+							<Label18 caption="Klouzavý průměr:"/>
+							<Label19 caption="vzorků"/>
+						</GroupBox3>
+					</pWixConversion>
+					<pQuidoCounter>
+						<GroupBox4 caption="Nastavení čítačů">
+							<Label10 caption="Inkrementovat čítač při:"/>
+							<Label12 caption="Nastavit hodnotu čítače:"/>
+							<cbRaising caption="Vzestupné hraně"/>
+							<cbFalling caption="Sestupné hraně"/>
+							<bSetCounter caption="Nastavit"/>
+						</GroupBox4>
+					</pQuidoCounter>
+					<pnlCalculation>
+						<GroupBox5 caption="Nastavení výpočtu:">
+							<lblCalculationType caption="Typ výpočtu:"/>
+							<pnlCalculationSum>
+								<lblCalculationSumCoeficientCaption caption="koeficienty"/>
+								<btnCalculationSumSettings caption="Nastavení"/>
+							</pnlCalculationSum>
+							<pnlCalculationProduct>
+								<lblCalculationProductCoeficientCaption caption="exponenty"/>
+								<btnCalculationProductSettings caption="Nastavení"/>
+							</pnlCalculationProduct>
+							<pnlCalculationTimeDerivation>
+								<lblCalculationTimeDerivationSource caption="Vstup:"/>
+								<lblCalculationTimeDerivationInterval caption="Interval [s]:"/>
+							</pnlCalculationTimeDerivation>
+						</GroupBox5>
+					</pnlCalculation>
+					<pQuidoOutput>
+						<GroupBox2 caption="Nastavení výstupu">
+							<pQuidoOutputReset>
+								<Label4 caption="Rozepnutí relé"/>
+								<rbQuidoOutputResetDelayFull caption="Trvale"/>
+								<rbQuidoOutputResetDelayNotFull caption="Po dobu [s]:"/>
+							</pQuidoOutputReset>
+							<pQuidoOutputSet>
+								<Label3 caption="Sepnutí relé"/>
+								<rbQuidoOutputSetDelayFull caption="Trvale"/>
+								<rbQuidoOutputSetDelayNotFull caption="Po dobu [s]:"/>
+							</pQuidoOutputSet>
+						</GroupBox2>
+					</pQuidoOutput>
+                    <pnlDatabase>
+						<grpDatabase caption="Archív">
+							<lblDatabasePeriodSec caption="sec."/>
+							<chkSaveTODatabase caption="Ukládat hodnotu do archívu, s periodou:"/>
+							<edtDatabasePeriod/>
+						</grpDatabase>
+					</pnlDatabase>
+
+				</pInputsSettings>
+				<pInputsList>
+					<VirtualStringTree1>
+						<Header>
+							<Column Text="Název"/>
+							<Column Text="Vstup"/>
+						</Header>
+					</VirtualStringTree1>
+				</pInputsList>
+				<pnlLanguage>
+					<lblLanCalculationSum caption="Vážený součet"/>
+					<lblLanCalculationProduct caption="Vážený součin"/>
+					<lblLanCalculationTimeDerivation caption="Diference za časový interval"/>
+					<lblLanCalculationBoolVariable caption="Digitální hodnota"/>
+				</pnlLanguage>
+			</pCenter>
+			<pButtons>
+				<bOk caption="OK"/>
+				<bClose caption="Zrušit"/>
+			</pButtons>
+			<pHint>
+				<mmoHint>
+					<items>
+						<item value="Tento dialog slouží k nastavení vstupů na zařízení. Pokud měřené veličiny jsou v jiných jednotkách, než si přejete, můžete nastavit přepočet naměřených hodnot prostřednictvím přepočtu přímky (y=kx+q). Místo číselné hodnoty lze také zobrazovat zástupný text (mrzne, chladno, normál, teplo, vedro)."/>
+					</items>
+				</mmoHint>
+			</pHint>
+		</fAddSetInputs>
+		<WVPEX_fGraphDialog caption="Nastavení grafu">
+			<pCenter>
+				<lList caption="Seznam zařízení:"/>
+				<gbRange caption="Rozsah grafu">
+					<lMinValue caption="Minimální hodnota:"/>
+					<lMaxValue caption="Maximální hodnota:"/>
+					<lDateTimeRangeType caption="Časový rozsah:"/>
+					<cbDateTimeRangeType>
+						<items>
+							<item value="Aktuální hodnota"/>
+							<item value="Záznam z historie"/>
+						</items>
+					</cbDateTimeRangeType>
+					<pHistoryDateTime>
+						<lDateTimeFrom caption="Od:"/>
+						<lDateTimeTo caption="Do:"/>
+					</pHistoryDateTime>
+					<pActualDateTime>
+						<lInterval caption="Časové rozpětí:"/>
+						<cbIntervalType>
+							<items>
+								<item value="sekundy"/>
+								<item value="minuty"/>
+								<item value="hodiny"/>
+								<item value="dny"/>
+							</items>
+						</cbIntervalType>
+					</pActualDateTime>
+				</gbRange>
+				<gbColors caption="Barvy">
+					<lColorBack caption="Pozadí:"/>
+					<lColorText1 caption="Text:"/>
+					<lColorText2 caption="Zvýrazněný text:"/>
+					<lColorGrid1 caption="Mřížka:"/>
+					<lColorGrid2 caption="Zvýrazněná mřížka:"/>
+					<bDefault caption="Původní"/>
+				</gbColors>
+				<gbOthers caption="Ostatní">
+					<lCaption caption="Popisek:"/>
+					<lblHideHorizontalLines caption="Skrýt svislé čáry:"/>
+					<lblShowHatch caption="Vyšrafovat plochu pod křivkou:"/>
+				</gbOthers>
+			</pCenter>
+			<pButtons>
+				<bOK caption="OK"/>
+				<bClose caption="Zrušit"/>
+			</pButtons>
+			<pHint>
+				<lblHint caption="Tento dialog slouží k nastavení rozsahu, barev a zobrazení vstupů grafu. V seznamu zaškrtněte vstupy, které chcete zobrazovat v grafu."/>
+			</pHint>
+		</WVPEX_fGraphDialog>
+		<frmDeviceDialog caption="Nastavení zařízení">
+			<pnlCenter>
+				<lblCaption caption="Popisek zařízení:"/>
+				<lblDeviceType caption="Typ zařízení:"/>
+				<pnlSpinel>
+					<lblSpinelAddress caption="Adresa zařízení:"/>
+					<pnlQuido>
+						<lblQuidoType caption="Typ Quida:"/>
+						<lblQuidoTemp caption="S teploměrem:"/>
+					</pnlQuido>
+					<pnlTDS>
+						<lblTDSSettings caption="Zobrazované veličiny:"/>
+						<btnTDSSettings caption="Nastavení"/>
+					</pnlTDS>
+				</pnlSpinel>
+				<pnlModbus>
+					<lblModbusID caption="ID zařízení:"/>
+					<pnlModbusUniversalLanguage>
+						<lblModbusUniversalUI16 caption="Unsigned Int16 (2B)"/>
+						<lblModbusUniversalUI32 caption="Unsigned Int32 (4B)"/>
+						<lblModbusUniversalFloat caption="Float (4B)"/>
+						<lblModbusUniversalSI16 caption="Signed Int16 (2B)"/>
+						<lblModbusUniversalSI32 caption="Signed Int32 (4B)"/>
+					</pnlModbusUniversalLanguage>
+					<pnlModbusUniversal>
+						<lblModbusValueType caption="Typ hodnoty:"/>
+						<lblModbusAddress caption="Počáteční adresa:"/>
+						<lblModbusInstructionType caption="Typ registrů:"/>
+						<cbbModbusInstructionType>
+							<items>
+								<item value="Uchovávací registry"/>
+								<item value="Vstupní registry"/>
+								<item value="Diskrétní vstupy"/>
+								<item value="Cívky"/>
+							</items>
+						</cbbModbusInstructionType>
+					</pnlModbusUniversal>
+					<pnlModbusDVH5261>
+						<lblDVH5261IsLightVersion caption="Zjednodušená varianta:"/>
+					</pnlModbusDVH5261>
+				</pnlModbus>
+				<pnlTQS1>
+					<lblTQS1Address caption="Adresa zařízení:"/>
+				</pnlTQS1>
+				<pnlTH2E>
+					<lblTHELogSupport caption="S logováním hodnot:"/>
+				</pnlTH2E>
+				<pnlHTTP>
+					<lblHTTPAuthorization caption="Autorizace:"/>
+					<lblHTTPUser caption="Uživatel:"/>
+					<lblHTTPPassword caption="Heslo:"/>
+					<cbbHTTPUser>
+						<items>
+							<item value="user"/>
+							<item value="admin"/>
+						</items>
+					</cbbHTTPUser>
+					<pnlQuidoXML>
+						<lblQuidoXMLType caption="Typ Quida:"/>
+						<lblQuidoXMLTemp caption="S teploměrem:"/>
+					</pnlQuidoXML>
+					<pnlTMEMulti>
+						<lblTMEMultiInputCount caption="Počet nastavených vstupů"/>
+					</pnlTMEMulti>
+					<pnlXanMaster>
+						<btnXanMasterSetUnit caption="Nastavit jednotky"/>
+					</pnlXanMaster>
+				</pnlHTTP>
+				<pnlSNMP>
+					<lblSNMPCommunity caption="Komunita:"/>
+					<lblSNMPOIDs caption="Seznam OID:"/>
+					<lblSNMPVersion caption="Verze:"/>
+					<lblSNMPAuthorization caption="Autorizace:"/>
+					<lblSNMPUser caption="Uživatel:"/>
+					<lblSNMPPassword caption="Heslo:"/>
+					<lblSNMPSecurity caption="Zabezpečení:"/>
+					<lblSNMPSecurityKey caption="Klíč:"/>
+					<cbbSNMPCommunity>
+						<items>
+							<item value="public"/>
+						</items>
+					</cbbSNMPCommunity>
+					<cbbSNMPVersion>
+						<items>
+							<item value="v1"/>
+							<item value="v2c"/>
+							<item value="v3"/>
+						</items>
+					</cbbSNMPVersion>
+					<cbbSNMPAuthorization>
+						<items>
+							<item value="Žádná"/>
+							<item value="MD5"/>
+							<item value="SHA1"/>
+						</items>
+					</cbbSNMPAuthorization>
+					<cbbSNMPSecurity>
+						<items>
+							<item value="Žádné"/>
+							<item value="DES"/>
+							<item value="3DES"/>
+							<item value="AES"/>
+						</items>
+					</cbbSNMPSecurity>
+				</pnlSNMP>
+			</pnlCenter>
+			<pnlButtons>
+				<btnClose caption="Zrušit"/>
+				<btnOK caption="OK"/>
+			</pnlButtons>
+			<pnlHint>
+				<mmoHint>
+					<items>
+						<item value="Tento dialog slouží k nastavení zařízení. Některá ethernetová zařízení (Quido, AD4, TH2E) musejí být nastavená v módu &quot;TCP Server&quot;."/>
+					</items>
+				</mmoHint>
+			</pnlHint>
+		</frmDeviceDialog>
+		<fRemoveMessageBox caption="Wix">
+			<bClose caption="Zrušit"/>
+			<bOK caption="OK"/>
+		</fRemoveMessageBox>
+		<frmSMTPDialog caption="Nastavení SMTP Serveru">
+			<pnlCenter>
+				<grpSMTPServer caption="SMTP server">
+					<lblSMTPHost caption="Adresa SMTP Serveru"/>
+					<lblUserName caption="Přihlašovací jméno:"/>
+					<lblPassword caption="Přihlašovací heslo:"/>
+					<lblAuthentication caption="Autorizace:"/>
+					<SMTPPort caption="Port SMTP Serveru:"/>
+				</grpSMTPServer>
+			</pnlCenter>
+			<pnlButtons>
+				<btnOK caption="OK"/>
+				<btnClose caption="Zrušit"/>
+			</pnlButtons>
+			<pnlLanguage>
+				<lblLanSSLWarning caption="Šifrovací protokol SSL neni podporován. Autorizace na některých SMTP serverech nemusí fungovat. Pro podporu SSL je potřeba nainstalovat Microsoft Visual C++ Redistributable Package."/>
+			</pnlLanguage>
+		</frmSMTPDialog>
+		<fConvertorDialog caption="Nastavení textu">
+			<pCenter>
+				<pRight>
+					<Label3 caption="Funkce:"/>
+					<vstFce>
+						<Header>
+							<Column Text="Funkce"/>
+						</Header>
+					</vstFce>
+				</pRight>
+				<pCenter2>
+					<pTop>
+						<Label1 caption="Definice:"/>
+					</pTop>
+					<pBottom>
+						<Label2 caption="Ukázka:"/>
+					</pBottom>
+				</pCenter2>
+			</pCenter>
+			<pButtons>
+				<bOk caption="Ok"/>
+				<bCancel caption="Zrušit"/>
+			</pButtons>
+			<pHint>
+				<mmoHint>
+					<items>
+						<item value="Tento dialog slouží k nastavení dynamického textu (naměřené hodnoty, datum, čas atd.). Dynamický text se zadává prostřednictvím speciálních funkcí ve složených závorkách (např. {TAB}, {Datetime(dd.mm.yyyy)}, {Moje_Zarizeni.Muj_Vstup.Value}). Pokud se ve funkci vyskytuje chyba, je zobrazena červeně, jinak je označena modře. Při dvojkliku na funkci v &quot;Seznamu funkcí&quot; se funkce automaticky připíše do &quot;Definice&quot;."/>
+					</items>
+				</mmoHint>
+			</pHint>
+		</fConvertorDialog>
+		<fAddSetInputsValuesRanges caption="Nastavení zástupných textů">
+			<pCenter>
+				<lCaption caption="Počet mezních bodů:"/>
+				<SB>
+					<p0>
+						<l0 caption="Zástupný text:"/>
+					</p0>
+				</SB>
+			</pCenter>
+			<pButtons>
+				<bOK caption="Ok"/>
+				<bClose caption="Zrušit"/>
+			</pButtons>
+			<pHint>
+				<lblHint caption="Tento dialog slouží k nastavení textů, které se budou zobrazovat namísto naměřených hodnot. Rozsah hodnot lze rozdělit prostřednictvím &quot;mezních hodnot&quot; do menších intervalů. Každému intervalu je přiřazen zástupný text, který bude zobrazen, pokud naměřená hodnota patří do tohoto intervalu.&#xA;"/>
+			</pHint>
+		</fAddSetInputsValuesRanges>
+		<fAddSetInputsBarGraph caption="Nastavení bargrafu">
+			<pnlHint>
+				<lblHint caption="Tento dialog slouží k nastavení barev bargrafu, který se bude zobrazovat namísto naměřených hodnot. Rozsah hodnot lze rozdělit prostřednictvím &quot;mezních hodnot&quot; do menších intervalů. Každému intervalu je přiřazena zástupná barva, která bude zobrazena, pokud naměřená hodnota patří do tohoto intervalu."/>
+			</pnlHint>
+			<pnlCenter>
+				<lblCaption caption="Počet mezních bodů:"/>
+				<SB>
+					<p0>
+						<l0 caption="Mezní hodnota:"/>
+					</p0>
+					<p1>
+						<l1 caption="Zástupná barva:"/>
+						<l2 caption="Mezní hodnota:"/>
+					</p1>
+				</SB>
+			</pnlCenter>
+			<pButtons>
+				<bOK caption="Ok"/>
+				<btnClose caption="Zrušit"/>
+			</pButtons>
+		</fAddSetInputsBarGraph>
+		<fCiLog caption="Komunikační log">
+			<pnlButtons>
+				<sbPause caption="Pozastavit"/>
+				<btnClear caption="Smazat"/>
+				<edtDisabledInst/>
+			</pnlButtons>
+		</fCiLog>
+		<fDevTDS caption="Nastavení zobrazujících hodnot">
+			<pMain>
+				<Label1 caption="LED:"/>
+				<Label2 caption="Vstup:"/>
+				<Label3 caption="Doba zobrazení [s]:"/>
+				<pnlInput1>
+					<CheckBox1 caption="1. hodnota:"/>
+				</pnlInput1>
+				<pnlInput2>
+					<CheckBox4 caption="2. hodnota:"/>
+				</pnlInput2>
+				<pnlInput3>
+					<CheckBox7 caption="3. hodnota:"/>
+				</pnlInput3>
+				<pnlInput4>
+					<CheckBox10 caption="4. hodnota:"/>
+				</pnlInput4>
+			</pMain>
+			<pButtons>
+				<bOK caption="OK"/>
+				<bClose caption="Zrušit"/>
+			</pButtons>
+		</fDevTDS>
+		<FDemoDialog caption="Wix">
+			<pCenter>
+				<Label2 caption="Tento program běží jako plně funkční demoverze. Používání této verze neni časově omezené. Veškeré omezení spočívá v počtu připojených zařízení a vstupů. &#xA;&#xA;Maximální počet zařízení:	5&#xA;Maximální počet vstupů:	10&#xA;&#xA;Každé další zařízení a další vstup nad tento limit bude blokován!"/>
+			</pCenter>
+			<pButtons>
+				<bOK caption="OK"/>
+				<bFullVersion caption="Koupit plnou verzi"/>
+			</pButtons>
+		</FDemoDialog>
+		<WCEAEX_fConditionDialog caption="Nastavení podmínky">
+			<pCenter>
+				<lCaption caption="Popisek:"/>
+				<pnlLanguage>
+					<lblLanRangeCheck caption="Překročení hodnoty"/>
+					<lblLanInputError caption="Chyba vstupu"/>
+					<lblLanAlwaysTrue caption="Vždy pravda"/>
+					<lblLanTimeCheck caption="Časová podmínka"/>
+					<lblLanTimeCheckTime caption="Čas"/>
+					<lblLanTimeCheckDayOfWeek caption="Dny v týdnu"/>
+					<lblLanTimeCheckDayOfMonth caption="Dny v měsíci"/>
+					<lblLanTimeCheckMonth caption="Měsíce"/>
+				</pnlLanguage>
+				<gbCondition caption="Podmínka:">
+					<pRangeCheck>
+						<lRangeCheckInput caption="Vstup:"/>
+						<lRangeCheckType caption="Naměřená hodnota vstupu:"/>
+						<lRangeCheckValueMax caption="Horní mez:"/>
+						<lRangeCheckValueMin caption="Dolní mez:"/>
+						<lRangeCheckValue caption="Hodnota:"/>
+						<lRangeCheckHysteresis caption="Hysteréze:"/>
+						<cbRangeCheckType>
+							<items>
+								<item value="je větší než"/>
+								<item value="je menší než"/>
+								<item value="je v rozsahu"/>
+								<item value="je mimo rozsah"/>
+							</items>
+						</cbRangeCheckType>
+						<pRangeCheckHint>
+							<lRangeCheckHint caption="V případě, že naměřená hodnota osciluje kolem zvolené meze, může se výsledná hodnota podmínky často měnit. Tento jevu lze zamezit použitím hysteréze. Podmínka se stane nepravdivou až v připadě, kdy naměřená hodnota se od meze vzdálí více než je nastavená hysteréze."/>
+						</pRangeCheckHint>
+					</pRangeCheck>
+					<pInputError>
+						<lInputErrorInput caption="Vstup:"/>
+						<lInputErrorType caption="Podmínka  vstupu:"/>
+						<cbInputErrorType>
+							<items>
+								<item value="Chyba vstupu"/>
+								<item value="Vstup vpořádku"/>
+							</items>
+						</cbInputErrorType>
+					</pInputError>
+					<pEventTimer>
+						<lTimerInterval caption="Interval časovače:"/>
+						<lTimerSyncronization caption="Synchronizovat čas s:"/>
+						<cbTimerInterval>
+							<items>
+								<item value="milisekundy"/>
+								<item value="sekundy"/>
+								<item value="minuty"/>
+								<item value="hodiny"/>
+								<item value="dny"/>
+							</items>
+						</cbTimerInterval>
+					</pEventTimer>
+					<pAlwaysTrue>
+						<lblAlwaysTrueHint caption="Podmínku &quot;Vždy pravda&quot; je vhodné použít spolu s periodickým spouštěním akcí. Touto kombinací lze získat časovač. U jednorázového spouštění akcí se akce vyvolá pouze při spuštění programu."/>
+					</pAlwaysTrue>
+					<pnlTimeCheck>
+						<lblTimeCheckValueType caption="Typ hodnoty:"/>
+						<pnlTimeCheckTime>
+							<lblTimeCheckTimeMin caption="Dolní mez:"/>
+							<lblTimeCheckTimeMax caption="Horní mez:"/>
+							<lblTimeCheckTimeType caption="Platnost podmínky:"/>
+							<cbbTimeCheckTimeType>
+								<items>
+									<item value="V nastaveném rozsahu"/>
+									<item value="Mimo nastavený rozsah"/>
+								</items>
+							</cbbTimeCheckTimeType>
+						</pnlTimeCheckTime>
+						<pnlTimeCheckDayOfWeek>
+							<lblTimeCheckDayOfWeekType caption="Platnost podmínky:"/>
+							<chbTimeCheckDayOfWeek1 caption="Pondělí"/>
+							<chbTimeCheckDayOfWeek2 caption="Úterý"/>
+							<chbTimeCheckDayOfWeek3 caption="Středa"/>
+							<chbTimeCheckDayOfWeek4 caption="Čtvrtek"/>
+							<chbTimeCheckDayOfWeek5 caption="Pátek"/>
+							<chbTimeCheckDayOfWeek6 caption="Sobota"/>
+							<chbTimeCheckDayOfWeek7 caption="Neděle"/>
+							<cbbTimeCheckDayOfWeekType>
+								<items>
+									<item value="Pro zaškrtnuté dny"/>
+									<item value="Pro nezašktrtnuté dny"/>
+								</items>
+							</cbbTimeCheckDayOfWeekType>
+						</pnlTimeCheckDayOfWeek>
+						<pnlTimeCheckDayOfMonth>
+							<lblTimeCheckDayOfMonthType caption="Platnost podmínky:"/>
+							<chbTimeCheckDayOfMonthLast caption="Poslední"/>
+							<cbbTimeCheckDayOfMonthType>
+								<items>
+									<item value="Pro zaškrtnuté dny"/>
+									<item value="Pro nezašktrtnuté dny"/>
+								</items>
+							</cbbTimeCheckDayOfMonthType>
+						</pnlTimeCheckDayOfMonth>
+						<pnlTimeCheckMonth>
+							<lblTimeCheckMonthType caption="Platnost podmínky:"/>
+							<chbTimeCheckMonth1 caption="Leden"/>
+							<chbTimeCheckMonth2 caption="Únor"/>
+							<chbTimeCheckMonth3 caption="Březen"/>
+							<chbTimeCheckMonth4 caption="Duben"/>
+							<chbTimeCheckMonth5 caption="Květen"/>
+							<chbTimeCheckMonth6 caption="Červen"/>
+							<chbTimeCheckMonth7 caption="Červenec"/>
+							<chbTimeCheckMonth8 caption="Srpen"/>
+							<chbTimeCheckMonth9 caption="Září"/>
+							<chbTimeCheckMonth10 caption="Říjen"/>
+							<chbTimeCheckMonth11 caption="Listopad"/>
+							<chbTimeCheckMonth12 caption="Prosinec"/>
+							<cbbTimeCheckMonthType>
+								<items>
+									<item value="Pro zaškrtnuté měsíce"/>
+									<item value="Pro nezašktrtnuté měsíce"/>
+								</items>
+							</cbbTimeCheckMonthType>
+						</pnlTimeCheckMonth>
+					</pnlTimeCheck>
+				</gbCondition>
+			</pCenter>
+			<pButtons>
+				<bOK caption="OK"/>
+				<bCancel caption="Zrušit"/>
+			</pButtons>
+			<pHint>
+				<shpHint/>
+				<mmoHint>
+					<items>
+						<item value="Tento dialog slouží k nastavení podmínky."/>
+					</items>
+				</mmoHint>
+			</pHint>
+		</WCEAEX_fConditionDialog>
+		<WCEAEX_fActionDialog caption="Nastavení akce">
+			<pHint>
+				<shpHint/>
+				<mmoHint>
+					<items>
+						<item value="Tento dialog slouží k nastavení akce. Do některých textových polí (text zprávy emailu, text zprávy SMS atd.) lze zadat dynamický text (naměřené hodnoty, datum, čas atd.). Snadné nastavení dynamického textu do těchto polí lze provést kliknutím na tlačítko &quot;Editovat text&quot;."/>
+					</items>
+				</mmoHint>
+			</pHint>
+			<pCenter>
+				<lCaption caption="Popisek:"/>
+				<gbActions caption="Akce:">
+					<pEmail>
+						<lEmailFrom caption="Adresa odesilatele:"/>
+						<lEmailTo caption="Adresa příjemce:"/>
+						<lEmailSubject caption="Předmět:"/>
+						<lEmailHost caption="SMTP server:"/>
+						<lEmailText caption="Text:"/>
+						<bEmailSMTP caption="Nastavit"/>
+						<bEmailSetText caption="Editovat text"/>
+						<pEmailTextDefault>
+							<lEmailTextDefault caption="Datum:{TAB}{Datetime(dd.mm.yyyy)}&#xA;Čas:{TAB}{Datetime(hh:nn:ss)}&#xA;Událost:{TAB}...&#xA;"/>
+						</pEmailTextDefault>
+					</pEmail>
+					<pSMS>
+						<lSMSNumber caption="Telefonní číslo:"/>
+						<lSMSComPort caption="Číslo sériového portu zařízení:"/>
+						<lSMSText caption="Text:"/>
+						<lSMSCharCounter caption="Počet znaků (odhad):"/>
+						<lSMSTextHint caption="Počet znaků může být navýšen při použití dynamického textu!"/>
+						<lblSMSBaudrate caption="Komunikační rychlost:"/>
+						<lblSMSModemtype caption="Typ modemu:"/>
+						<bSMSSetText caption="Editovat text"/>
+						<pSMSTextDefault>
+							<lSMSTextDefault caption="Datum: {Datetime(dd.mm.yyyy)}&#xA;Cas: {Datetime(hh:nn:ss)}&#xA;Udalost: ...&#xA;"/>
+						</pSMSTextDefault>
+						<pSMSHint>
+							<lSMSHint caption="Pro používání této akce je nutné mít zakoupený a připojený TC35i GSM modem."/>
+						</pSMSHint>
+						<pnlSMSModemType>
+							<lblSMSModemTypeTC35i caption="TC35i"/>
+							<lblSMSModemTypeTC65i caption="TC65i"/>
+							<lblSMSModemTypeOthers caption="Ostatní"/>
+							<lblSMSModemTypeEGS5T caption="EGS5-T"/>
+							<lblSMSModemTypeBGS5232 caption="BGS5-232"/>
+							<lblSMSModemTypeBGSTUB caption="BGS3-TUB"/>
+						</pnlSMSModemType>
+					</pSMS>
+					<pSetDigitalOutput>
+						<Label18 caption="Výstup:"/>
+						<Label1 caption="Akce relé"/>
+						<Label2 caption="Doba trvání akce relé:"/>
+						<cbSetDigitalOutputValue>
+							<items>
+								<item value="Sepnout"/>
+								<item value="Rozepnout"/>
+							</items>
+						</cbSetDigitalOutputValue>
+						<rbSetDigitalOutputDelayNotFull caption="Po dobu [sec.]"/>
+						<rbSetDigitalOutputDelayFull caption="Pořád"/>
+					</pSetDigitalOutput>
+					<pSetQuido>
+						<lSetQuidoDevice caption="Quido:"/>
+						<lSetQuidoOutputNum caption="Výstup quida:"/>
+						<lSetQuidoState caption="Akce relé"/>
+						<lSetQuidoDurabilityType caption="Doba trvání akce relé:"/>
+						<cbSetQuidoState>
+							<items>
+								<item value="Sepnout"/>
+								<item value="Rozepnout"/>
+							</items>
+						</cbSetQuidoState>
+						<rbSetQuidoStateDurabilityFull caption="Pořád"/>
+						<rbSetQuidoStateDurabilityNotFull caption="Po dobu [sec.]"/>
+					</pSetQuido>
+					<pSetAnalogOutput>
+						<Label4 caption="Výstup:"/>
+						<Label5 caption="Výstupní hodnota:"/>
+					</pSetAnalogOutput>
+					<pClearQuidoCounter>
+						<lClearQuidoCounterDevice caption="Čítač Quida:"/>
+						<lClearQuidoCounterNum caption="Čítač quida:"/>
+					</pClearQuidoCounter>
+					<pnlSetDisplay>
+						<lblSetDiaplay caption="Displej:"/>
+						<SetDiaplayValue caption="Zobrazovaná veličina:"/>
+					</pnlSetDisplay>
+					<pExportWeb>
+						<lExportURLText caption="URL Text:"/>
+						<bExportWebSetText caption="Editovat text"/>
+						<Panel2>
+							<lExportURLTextDefault caption="http://MojeDomena/?Datum={Datetime(dd.mm.yyyy)}&amp;Čas={Datetime(hh:nn:ss)}&amp;Událost=..."/>
+						</Panel2>
+					</pExportWeb>
+					<pExportCmd>
+						<lExportCmdBathName caption="Umístění a název souboru:"/>
+						<lExportCmdText caption="Parametry dávkového souboru"/>
+						<bExportCmdEdit caption="Editovat text"/>
+						<Panel3>
+							<lExportCmdTextDefault caption="/Datum={Datetime(dd-mm-yyyy)} /Cas={Datetime(hh-nn-ss)} /Udalost=..."/>
+						</Panel3>
+					</pExportCmd>
+					<pnlPlayWav>
+						<lblPlayWavFileName caption="Umístění a název souboru:"/>
+						<btnPlayWavFileName caption="Najít"/>
+						<rbPlayWavPlay caption="Přehrát zvukový soubor"/>
+						<rbPlayWavStop caption="Zrušit přehrávání"/>
+						<chbPlayWavLoop caption="Přehrávat opakovaně"/>
+					</pnlPlayWav>
+					<pnlSaveToFile>
+						<lblSaveToFileFileName caption="Umístění a název souboru:"/>
+						<lblSaveToFileExample caption="Ukázka záznamu:"/>
+						<btnSaveToFileFileName caption="Najít"/>
+						<btnSaveToFileGuide caption="Průvodce"/>
+						<btnSaveFileEdit caption="Editovat záznam"/>
+						<pnlSaveToFileDefault>
+							<lblSaveToFileHeadDefault caption="Datum{TAB}{TAB}Čas{TAB}{TAB}..."/>
+							<lblSaveToFileDataDefault caption="{Datetime(dd.mm.yyyy)}{TAB}{Datetime(hh:nn:ss)}{TAB}..."/>
+							<lblSaveToFileFileNameDefault caption=".\{Datetime(dd.mm.yyyy)} Archiv.txt"/>
+						</pnlSaveToFileDefault>
+					</pnlSaveToFile>
+				</gbActions>
+			</pCenter>
+			<pButtons>
+				<bOK caption="OK"/>
+				<bCancel caption="Zrušit"/>
+				<bTryAction caption="Zkušební akce"/>
+			</pButtons>
+			<pActionList>
+				<lActionTypeEmailCaption caption="Poslat email"/>
+				<lActionTypeSMSCaption caption="Poslat SMS"/>
+				<lActionTypeQuidoReleCaption caption="Nastavit výstup quida"/>
+				<lActionTypeQuidoCountersCaption caption="Vynulovat čítače quida"/>
+				<lActionTypeExportWebCaption caption="Exportovat data na web"/>
+				<lActionTypeExportCmdCaption caption="Spustit dávkový soubor"/>
+				<lActionTypeSetDigitalOutput caption="Nastavit digitální výstup (relé)"/>
+				<lActionTypeSetAnalogOutput caption="Nastavit analogový výstup"/>
+				<lblActionTypePlayWavCaption caption="Přehrát zvukový soubor"/>
+				<lblActionTypeSaveToFile caption="Uložit záznam do souboru"/>
+				<lActionTypeSetDisplayCaption caption="Nastavit displej"/>
+			</pActionList>
+		</WCEAEX_fActionDialog>
+		<WCEAEX_fConditionActionDialog caption="Nastavení akcí">
+			<pHint>
+				<lblHint caption="Tento dialog slouží k nastavení akcí, které se mají vykonat při nastání zvolených podmínek. Akce se můžou vykonat jednorázově při splnění podmínky, nebo periodicky po dobu platnosti podmínky."/>
+			</pHint>
+			<pButtons>
+				<bOk caption="OK"/>
+				<bCancel caption="Zrušit"/>
+			</pButtons>
+			<pCenter>
+				<lCaption caption="Popisek:"/>
+				<lEventType caption="Seznam akcí">
+					<Label2 caption="Spouštět akce:"/>
+					<bActionAdd caption="Přidat"/>
+					<bActionEdit caption="Upravit"/>
+					<bActionRemove caption="Odebrat"/>
+					<cbEventType>
+						<items>
+							<item value="Jednorázově při splnění podmínky"/>
+							<item value="Periodicky po dobu platnosti podmínky"/>
+						</items>
+					</cbEventType>
+					<pEventTimer>
+						<lTimerInterval caption="Perioda:"/>
+						<lTimerSyncronization caption="Synchronizovat čas s:"/>
+						<lTimerSynchronizationEnabled caption="Spouštění akcí synchronizovat k:"/>
+						<cbTimerInterval>
+							<items>
+								<item value="milisekundy"/>
+								<item value="sekundy"/>
+								<item value="minuty"/>
+								<item value="hodiny"/>
+								<item value="dny"/>
+							</items>
+						</cbTimerInterval>
+						<cbTimerSynchronizationEnabled>
+							<items>
+								<item value="Začátku platnosti podmínky"/>
+								<item value="Specifickému datu"/>
+							</items>
+						</cbTimerSynchronizationEnabled>
+					</pEventTimer>
+				</lEventType>
+				<gbConditions caption="Seznam podmínek">
+					<Label1 caption="Pro vyvolání akcí musí platit:"/>
+					<lblConditionDelay caption="Minimální doba platnosti:"/>
+					<bConditionAdd caption="Přidat"/>
+					<bConditionEdit caption="Upravit"/>
+					<bConditionRemove caption="Odebrat"/>
+					<cbConditionListType>
+						<items>
+							<item value="Alespoň jedna podmínka (OR)"/>
+							<item value="Všechny podmínky (AND)"/>
+						</items>
+					</cbConditionListType>
+					<cbbConditionDelay>
+						<items>
+							<item value="milisekundy"/>
+							<item value="sekundy"/>
+							<item value="minuty"/>
+							<item value="hodiny"/>
+							<item value="dny"/>
+						</items>
+					</cbbConditionDelay>
+				</gbConditions>
+			</pCenter>
+		</WCEAEX_fConditionActionDialog>
+	</forms>
+	<const>
+	
+		<VirtualInputs text="Výpočty"/>
+
+		<msgboxtext1-odstraneni text="Opravdu chcete odstranit panel: "/>
+		<msgboxtext2-odstraneni text="?"/>
+		<msgboxtext3-odstraneni text="Odstranit i se zařízením: "/>
+		<msgboxtext4-odstraneni text="Odstranit i s výpočtem"/>
+
+		<msgboxtext-pridani1 text="Neni zadaný název čidla!" />
+		<msgboxtext-pridani2 text="Název čidla musí být jedinečný!" />
+		<msgboxtext-pridani3 text="Název čidla může obsahovat pouze písmena, čísla a zanky: -, _ !" />
+		<msgboxtext-pridani4 text="Názvy vstupů a názvy čidel musejí být jedinečný!" />
+		<msgboxtext-pridani5 text="Název vstupu může obsahovat pouze písmena, čísla a zanky: -, _ !" />
+
+		<msgboxcapt-varovanigrafu text="Upozornění"/>
+		<msgboxtext-varovanigrafu text="Jednotky vybraných čidel se neshodují!"/>
+		<msgboxtext2-varovanigrafu text="Jednotky vybraných čidel se neshodují s jednotkami grafu!"/>
+		<msgboxtext3-varovanigrafu text="Chcete pokračovat?"/>
+
+		<csCOM text="Seriový port"/>
+		<csVCOM text="Virtualní port"/>
+		<csTCP text="TCP client"/>
+		<csUSB text="USB"/>
+
+		<Allow text="Povolit"/>
+		<sensor text="Čidlo"/>
+		<graph text="Graf"/>
+		<name text="Název"/>
+		<interval text="Interval"/>
+		<head text="Hlavička"/>
+		<data text="Data"/>
+		<faddVstup text="Vstup"/>
+		<Date text="Datum"/>
+		<Time text="Čas"/>
+		<Event text="Událost"/>
+		<Storing text="Uložení"/>
+		<Settings text="Nastavení"/>
+		<VisualElements text="Vizuální prvky"/>
+		<Show text="Zobrazit"/>
+		<Hide text="Skrýt"/>
+		<Window text="Okno"/>
+		<NewWindow text="Nové okno"/>
+		<MyDomain text="MojeDomena"/>
+
+		<miSetSensor text="Nastavení vstupu" />
+		<miSetGraph text="Nastavení grafu" />
+
+		<msgConnectionExists text="Toto připojení už existue!"/>
+		<msgSaveDataConfuguration-UniqueName text="Název musí být jedinečný!"/>
+		<msgSaveDataConfuguration-NotEnteredName text="Neni uveden název uložení!"/>
+		<msgfActions-SendEmail-Ok text="Email byl úspěšně odeslán."/>
+		<msgfActions-SendEmail-Bad text="V odesílání emailu nastala následující chyba: "/>
+		<msgfActions-SendSMS-Ok text="SMS zpráva byla úspěšně odeslána."/>
+		<msgfActions-SendSMS-Bad text="V odesílání SMS zrávy nastala chyba!"/>
+		<msgfActions-ExportWeb-Ok text="Data byla úspěšně nahrána na web."/>
+		<msgfActions-ExportWeb-Bad text="V nahrávání dat nastala chyba!"/>
+		<msgfActions-ExportBatch-Ok text="Dávkový soubor byl úspěšně spuštěn."/>
+		<msgfActions-ExportBatch-Bad text="Během spuštění dávkového souboru nastala chyba!"/>
+		<msgfActions-NoQuido text="Neni připojeno žádné quido!"/>
+		<fActionsLabel-Value text="Hodnota:"/>
+		<fActionsLabel-ValueMin text="Dolní mez:"/>
+
+		<uWxUnitsConfiguration_acAdd    text="Přidat"/>
+		<uWxUnitsConfiguration_acRemove text="Odebrat"/>
+		<uWxUnitsConfiguration_acUp     text="Posunot nahoru"/>
+		<uWxUnitsConfiguration_acDown   text="Posunout dolu"/>
+		<uWxUnitsConfiguration_MsgBox1_Text  text="Názvy jednotek musejí být neprázdné!"/>
+		<uWxUnitsConfiguration_MsgBox2_Text  text='Jednotka "'/>
+		<uWxUnitsConfiguration_MsgBox2_Text2 text='" je zadaná vícekrát!'/>
+
+		<WxDPExHigh text="nad 100"/>
+		<WxDPExNormal text="v rozsahu 0 - 100"/>
+		<WxDPExLow text="pod 0"/>
+
+		<InputStringValues-msgWrongBoundValues text="Mezní hodnoty jsou špatně zadané!"/>
+		<InputStringValuesBoundValue text="Mezní hodnota:"/>
+		<InputStringValuesTextValue text="Zástupný text:"/>
+		<InputStringValuesColorValue text="Zástupná barva:"/>
+
+		<fWxSaveDataConfiguration_TimeShift_Hint text="HINT"/>
+
+		<GraphSettings  text="Nastavení grafu"/>
+		<GraphContinual text="Automatický posun na aktuální hodnoty"/>
+
+		<smsCharCount text="Počet znaků (odhad): "/>
+
+		<DeviceDialogSpinelAddresMessage1 text="Adresa zařízení lze zadat třemi způsoby:"/>
+		<DeviceDialogSpinelAddresMessage2 text=" 1. ASCII znakem"/>
+		<DeviceDialogSpinelAddresMessage3 text=" 2. Znakem &quot;#&quot; + číslo"/>
+		<DeviceDialogSpinelAddresMessage4 text=" 3. Znaky &quot;#$&quot; + hexadecimální číslo"/>
+		<DeviceDialogSpinelAddresMessage5 text="Příklad:"/>
+
+		<SettingsWebServerMessage1 text="Naměřené hodnoty lze získat na stránce: http://Server:Port/Data.xml"/>
+
+		<SpecialColorMessage1 text="Speciální barvu panelu je vhodné nastavit při používání grafů. Pokud graf zobrazuje několik vstupů, je žádoucí si příslušné vstupy obarvit stejnou barvou, jako jsou zobrazovány v grafu."/>
+
+		<msgWrongLicenseFile text="Licenční soubor je neplatný!"/>
+		<msgCorrectLicenseFile text="Licenční soubor byl úspěšně nahrán."/>
+		<msgWixAlreadyRunning text="Aplikace Wix je již spuštěna!"/>
+		<msgDoYouWantToContinue text="Přejete si pokračovat?"/>
+		<msgLicenseExpiration text="Platnost licenčního souboru vypršela!"/>
+		<msgLicenseVersionMin texy="Licenční soubor je nekompatibilní s verzí Wixu!"/>
+		
+		<Language-Shortcut text="cz"/>
+
+		<DeviceGroup_Thermometers text="Teploměry"           />
+		<DeviceGroup_ADConvertors text="A/D převodníky"      />
+		<DeviceGroup_IOModules    text="I/O moduly"          />
+		<DeviceGroup_Anemometers  text="Anemometry"          />
+		<DeviceGroup_Tenzometers  text="Tenzometry"          />
+		<DeviceGroup_Others       text="Ostatní"             />
+		<DeviceGroup_UsersDevices text="Uživatelská zařízení"/>
+		
+		<InCap_Temperature    text="Teplota"   />
+		<InCap_Humidity       text="Vlhkost"   />
+		<InCap_DewPoint       text="Rosný bod" />
+		<InCap_Direction      text="Směr"      />
+		<InCap_Speed          text="Rychlost"  />
+		<InCap_Weight         text="Hmotnost"  />
+		
+		<InCap_Input          text="Vstup"            />
+		<InCap_Output         text="Výstup"           />
+		<InCap_Counter        text="Čítač"            />
+		<InCap_Tara           text="Tára"            />
+		
+		<InCap_Digital_input  text="Digitální vstup"  />
+		<InCap_Digital_output text="Digitální výstup" />
+		<InCap_Analog_input   text="Analogový vstup"  />
+		<InCap_Analog_output  text="Analogový výstup" />
+		<InCap_Counter_raw    text="Čítač (raw)"      />
+		
+		<InCap_Display        text="Displej"     />
+		<InCap_GreenLED       text="Zelená LED"  />
+		<InCap_RedLED         text="Červená LED" />
+		
+		<InCap_Value          text="Vstup"       />
+		<InCap_Error          text="Číslo chyby" />
+		
+		<InCap_Nominal_Voltage        text="Jmenovité napětí"        />
+		<InCap_Line_Voltage           text="Síťové napětí"           />
+		<InCap_Voltage                text="Napětí"                  />
+		<InCap_Current                text="Proud"                   />
+		<InCap_Wattage                text="Činný výkon"             />
+		<InCap_Volt_Ampere_Reactive   text="Jalový výkon"            />
+		<InCap_Volt_Ampere            text="Zdánlivý výkon"          />
+		<InCap_Power_Factor           text="Účiník"                  />
+		<InCap_Frequency              text="Frekvence"               />
+		<InCap_KWh_Imported           text="Spotřeba činné energie"  />
+		<InCap_KVarh_Imported         text="Spotřeba jalové energie" />
+		
+		<InCap_GridFrequency          text="Frekvence sítě"                    />
+		<InCap_TotalActivePower       text="Celkový činný výkon"               />
+		<InCap_TotalReactivePower     text="Celkový jalový výkon"              />
+		<InCap_TotalApparentPower     text="Celkový zdánlivý výkon"            />
+		<InCap_PowerFactor            text="Účiník"                            />
+		<InCap_Tariff                 text="Tarif"                             />
+		<InCap_TotalActiveEnergy      text="Celková činná energie"             />
+		<InCap_TotalActiveEnergyT     text="Celková činná energie - tarif"     />
+		<InCap_ForwardActiveEnergy    text="Odebraná činná energie"            /> 
+		<InCap_ForwardActiveEnergyT   text="Odebraná činná energie - tarif"    />
+		<InCap_ReverseActiveEnergy    text="Dodaná činná energie"              />
+		<InCap_ReverseActiveEnergyT   text="Dodaná činná energie - tarif"      />
+		<InCap_TotalReactiveEnergy    text="Celková zdánlivá energie"          />
+		<InCap_TotalReactiveEnergyT   text="Celková zdánlivá energie - tarif"  />
+		<InCap_ForwardReactiveEnergy  text="Odebraná zdánlivá energie"         />
+		<InCap_ForwardReactiveEnergyT text="Odebraná zdánlivá energie - tarif" />
+		<InCap_ReverseReactiveEnergy  text="Dodaná zdánlivá energie"           />
+		<InCap_ReverseReactiveEnergyT text="Dodaná zdánlivá energie - tarif"   />
+		
+		<InCap_EM_Tariff      text="Tarif"            />
+		
+		<InCap_EM_Cumulative  text="Celková"          />
+		<InCap_EM_Partial     text="Částečná"         />
+		<InCap_EM_Monthly     text="Aktuální měsíční" />
+		<InCap_EM_MonthlyLast text="Předchozí měsíční"/>
+		<InCap_EM_Total       text="Celková"/>
+		
+		<InCap_EM_ImportedActivePower   text="činná energie P+"/>
+		<InCap_EM_ExportedActivePower   text="činná energie P-"/>
+		<InCap_EM_ReactivePower         text="jalová energie Q"/>
+		<InCap_EM_ImportedApparentPower text="zdánlivá energie S+"/>
+		<InCap_EM_ExportedApparentPower text="zdánlivá energie S-"/>
+		
+		<InCap_EM_Voltage             text="napětí" />
+		<InCap_EM_Current             text="proud"  />
+		<InCap_EM_PowerFactor         text="účiník" />
+		<InCap_EM_MainsPowerFrequency text="síťový napájecí kmitočet"  />
+		<InCap_EM_TgPhi               text="tangens fí"  />
+		<InCap_EM_VoltageAbsence      text="Absence napětí" />
+		<InCap_EM_PhaseError          text="Fázová chyba" />
+		
+		<InCap_EM_Instantaneous  text="Okamžitá" />
+		<InCap_EM_InstantaneousV text="Okamžité" />
+		<InCap_EM_InstantaneousC text="Okamžitý" />
+		<InCap_EM_InstantaneousP text="Okamžitý" />
+		<InCap_EM_InstantaneousF text="Okamžitý" />
+		<InCap_EM_InstantaneousT text="Okamžitý" />
+		
+		<InCap_EM_Average  text="Průměrná" />
+		<InCap_EM_AverageV text="Průměrné" />
+		<InCap_EM_AverageC text="Průměrný" />
+		<InCap_EM_AverageP text="Průměrný" />
+		<InCap_EM_AverageF text="Průměrný" />
+		<InCap_EM_AverageT text="Průměrný" />
+
+		<TX20Direction_N   text="S" />
+		<TX20Direction_NNE text="SSV" />
+		<TX20Direction_NE  text="SV" />
+		<TX20Direction_ENE text="VSV" />
+		<TX20Direction_E   text="V" />
+		<TX20Direction_ESE text="VJV" />
+		<TX20Direction_SE  text="JV" />
+		<TX20Direction_SSE text="JJV" />
+		<TX20Direction_S   text="J" />
+		<TX20Direction_SSW text="JJZ" />
+		<TX20Direction_SW  text="JZ" />
+		<TX20Direction_WSW text="ZJZ" />
+		<TX20Direction_W   text="Z" />
+		<TX20Direction_WNW text="ZSZ" />
+		<TX20Direction_NW  text="SZ" />
+		<TX20Direction_NNW text="SSZ" />
+		<TX20Direction_N   text="S" />
+
+
+
+		<XM_DevNumber   text="Číslo"/>
+		<XM_DevType     text="Typ"/>
+		<XM_DcInId      text="DC IN id"/>
+		<XM_DcInVolt    text="DC IN Napětí"/>
+		<XM_DcInCur     text="DC IN Proud"/>
+		<XM_DcInPow     text="DC IN Výkon"/>
+		<XM_DcOutId     text="DC OUT id"/>
+		<XM_DcOutVolt   text="DC OUT Napětí"/>
+		<XM_DcOutCur    text="DC OUT Proud"/>
+		<XM_DcOutPow    text="DC OUT Výkon"/>
+		<XM_DcIOId      text="DC IN/OUT id"/>
+		<XM_DcIOVolt    text="DC IN/OUT Napětí"/>
+		<XM_DcIOCur     text="DC IN/OUT Proud"/>
+		<XM_DcIOPow     text="DC IN/OUT Výkon"/>
+		<XM_AcInId      text="AC IN id"/>
+		<XM_AcInLin     text="AC IN Line"/>
+		<XM_AcInVolt    text="AC IN Napětí"/>
+		<XM_AcInCur     text="AC IN Proud"/>
+		<XM_AcInAPow    text="AC IN Zdánlivý výkon"/>
+		<XM_AcInRPow    text="AC IN Reálný výkon"/>
+		<XM_AcOutId     text="AC OUT id"/>
+		<XM_AcOutLin    text="AC OUT Line"/>
+		<XM_AcOutVolt   text="AC OUT Napětí"/>
+		<XM_AcOutCur    text="AC OUT Proud"/>
+		<XM_AcOutAPow   text="AC OUT Zdánlivý výkon"/>
+		<XM_AcOutRPow   text="AC OUT Reálný výkon"/>
+		<XM_AcIOId      text="AC IN/OUT id"/>
+		<XM_AcIOLin     text="AC IN/OUT Line"/>
+		<XM_AcIOVolt    text="AC IN/OUT Napětí"/>
+		<XM_AcIOCur     text="AC IN/OUT Proud"/>
+		<XM_AcIOAPow    text="AC IN/OUT Zdánlivý výkon"/>
+		<XM_AcIORPow    text="AC IN/OUT Reálný výkon"/>
+		<XM_BatId       text="Id baterie"/>
+		<XM_BatTemp     text="Teplota baterie"/>
+		<XM_BatType     text="Typ baterie"/>
+		<XM_BatVolt     text="Nom. napětí baterie"/>
+		<XM_DcSrcId     text="DC id zdroje"/>
+		<XM_CntrlCurr   text="Řídící proud"/>
+		<XM_CntrlPerc   text="Řídící proud"/>
+		<XM_ChrgAlg     text="Nabíjecí algoritmus"/>
+		<XM_ChrgOpState text="Stav nabíjení"/>
+		<XM_ChrgMode    text="Režim nabíjení"/>
+		<XM_CapRet      text="Navrácená kapacita"/>
+		<XM_Energy      text="Energie"/>
+		<XM_SrcId       text="AC id zdroje"/>
+		<XM_InvOpState  text="Stav střídače"/>
+		<XM_InvEnbl     text="Zapnutý střídač"/>
+		<XM_InvMode     text="Režim střídače"/>
+		<XM_InvSelEnbl  text="Zapnutý Sell střídače"/>
+		<XM_InvPeakEnbl text="Zapnutý Peak střídače"/>
+		<XM_InvGridEnbl text="Zapnutý Grid střídače"/>
+		<XM_FaulTyp     text="Typ chyby"/>
+		<XM_FaulId      text="Id chyby"/>
+		<XM_FaulTime    text="Čas chyby"/>
+		<PowerOn        text="Zapnuto"/>
+		<Current        text="Proud"/>
+		<PowerFactor    text="Účiník"/>
+		<Frequency      text="Frekvence"/>
+		<Voltage        text="Napětí"/>
+
+	</const>
+</language>

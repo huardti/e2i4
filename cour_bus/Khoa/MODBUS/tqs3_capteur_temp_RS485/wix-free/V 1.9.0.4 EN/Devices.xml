@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<Root>
+	<CommunicationLine Enabled="False" CommunicationType="HTTP" ConnectionString="provider=HTTP;protocol=https;domain=www.papouch.com;port=443;document=tme.asp" Caption="Web (www.papouch.com:443/tme.asp)" Guid="{44FCD3D7-0D32-4A83-802E-06F089726F1E}">
+		<Protocol ProtocolType="XML" Caption="" Enabled="True" Guid="{EC126A42-D22A-4952-B78D-CD3BC0D51B84}">
+			<Device Caption="TME - Papouch.com" Enabled="False" Guid="{4F3BB2C5-FADF-49DA-8170-BC933C5B9EAB}" DeviceType="TME" ProtocolType="XML">
+				<Component TypeName="Input" Caption="Papouch outside" Enabled="False" Guid="{25D706EC-9527-4347-B63F-D89CCEF9D229}" Name="Temperature" MedianFilterEnabled="False"/>
+				<Core name="TWxDevTMEHttpGet" enabled="True" GUID="{DF549FE5-2F0F-4CD7-B378-2C87FE2086EB}" IP="192.168.1.254" Port="80" Page="tme.xml" URL="https://www.papouch.com:443/tme.asp" Authorization="False" User="" Password=""/>
+			</Device>
+		</Protocol>
+	</CommunicationLine>
+</Root>

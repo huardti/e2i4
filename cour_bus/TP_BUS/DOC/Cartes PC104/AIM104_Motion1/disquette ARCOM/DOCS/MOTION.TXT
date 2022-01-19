@@ -1,0 +1,179 @@
+/****************************************************************************/
+/*                                                                          */
+/* Module Name:    motion.txt                                               */
+/*                 Copyright (c) 1998 Arcom Control Systems Ltd.            */
+/*                                                                          */
+/* ======================================================================== */
+/*                                                                          */
+/* Summary:       Describes functions included in the MOTION.H file.        */
+/*                                                                          */
+/* ======================================================================== */
+/*                                                                          */
+/* Modification history                                                     */
+/*                                                                          */
+/* Date     Version  Description                              Author        */
+/* ------------------------------------------------------------------------ */
+/* 23/04/98 1.0      First release                           Richard Beaman */
+/* 13/07/98 1.1      Updated for V1I2 release                Richard Beaman */
+/****************************************************************************/
+
+
+To make use of the motion controller functions you will need to include the file
+'motion.h' in all of the modules which use any of the functions listed below.
+
+
+The first function you need to call in all programs which use the AIM104-
+MOTION-1 board is MOTION_boardinit(unsigned char baseaddr) which you will pass 
+the base address of the board.  This function returns a 'handle' to which you 
+then use in all other function calls.
+
+
+MOTION_boardinit() is very similar to the COMMON_boardinit() function included
+in the AIM104 Software Library.  MOTION_boardinit() will return a unique handle
+value not used by any board initialised with COMMON_boardinit().  Note that 
+COMMON_boardinit() should not be used to initialise the AIM104-MOTION-1 board.
+
+
+Please read the manual, Appendix 2, regarding the HCTL-1100 registers for details
+of the units used when programming the registers.  Some registers a one byte in 
+size, some two and some are three bytes.  E.g. MOTION_set_max_velocity uses is one
+byte, with the units of quadrature counts/sample period.  Whereas, the function
+MOTION_set_proportional_velocity uses two bytes, with the units of 1/16 of a 
+quadrature count/sample period.
+
+
+The following is a summary of the functions, their parameters and their usage.  
+Refer to the example programs for help on how to use the functions.
+
+
+MOTION.H FUNCTIONS:
+
+int MOTION_boardinit(unsigned short baseaddr)
+	- Initialises AIM104-MOTION-1 board
+
+int MOTION_boardclose(int handle)
+	- De-initialises AIM104-MOTION-1 board
+
+MOTION_wait_until_ready(int handle)
+	- Waits until motion controller is ready for the next read/write access,
+	  before returning
+
+MOTION_set_board_config_reg(int handle, char config_value)
+	- Writes a byte value to the boards configuration register
+
+char MOTION_read_board_config_reg(int handle)
+	- Returns the byte value of the boards configuration register
+
+MOTION_pulse_SYNC(int handle)
+	- Forces a SYNC pulse to be generated, resetting the boards Sample Timer
+
+MOTION_set_controller_status_reg(int handle, char status)
+	- Writes a byte value to the motion controller's status register
+
+MOTION_program_sample_timer(int handle, char period)
+	- Writes the timing period to the Sample Timer register (in units of 8us)
+
+MOTION_set_filter_parameters(int handle,char filter_zero,
+				char filter_pole,char filter_gain)
+	- Sets the motion controller's digital filter parameters
+
+MOTION_controller_reset(int handle)
+	- Causes a software reset of the motion controller IC
+
+MOTION_clear_interrupts(int handle)
+	- Clears the interrupt line and the interrupt flags of both the board's
+	  status register and the motion controller's status register
+
+MOTION_enter_idle_mode(int handle)
+	- Forces the board into the init/idle mode
+
+MOTION_enter_align_mode(int handle)
+	- Forces the board into the align mode
+
+MOTION_enter_position_mode(int handle)
+	- Forces the board into the position mode
+
+MOTION_execute_trapezoidal_move(int handle)
+	- Starts a trapezoidal move, as defined by MOTION_set_final_position,
+	  MOTION_set_acceleration and MOTION_set_max_velocity
+
+MOTION_execute_proportional_velocity(int handle)
+	- Starts a motor in proportional velocity mode, the velocity is set by
+	  MOTION_set_proportional_velocity
+
+MOTION_end_proportional_velocity(int handle)
+	- Stops the proportional velocity move, leaving the board in position
+	  mode
+
+MOTION_execute_integral_velocity(int handle)
+	- Starts a motor in integral velocity mode, as defined by 
+	  MOTION_set_integral_velocity and MOTION_set_acceleration
+
+MOTION_end_integral_velocity(int handle)
+	- Ends integral velocity profile, leaving the board in position mode
+
+char MOTION_wait_until_move_complete(int handle)
+	- Waits until a trapezoidal proile move has completed, returning a zero
+	  on a successful completion
+
+MOTION_set_command_position(int handle,unsigned long command_position)
+	- Sets the command position for position mode (and is required in
+	  trapezoidal profile mode aswell)
+
+MOTION_set_final_position(int handle,unsigned long final_position)
+	- Sets the desired final position in a trapezoidal move
+
+MOTION_preset_actual_position(int handle,unsigned long actual_position)
+	- Presets the current position by setting the encoder position counter
+
+MOTION_set_acceleration(int handle, int accel)
+	- Sets the acceleration for the integral velocity and trapezoidal profile
+	  modes
+
+MOTION_set_max_velocity(int handle, char velocity)
+	- Sets the maximum allowed velocity in the trapezoidal profile mode
+
+MOTION_set_proportional_velocity(int handle, int velocity)
+	- Sets the target velocity for the proportional velocity mode
+
+MOTION_set_integral_velocity(int handle, char velocity)
+	- Sets the velocity for the integral velocity mode
+
+MOTION_program_commutator(int handle,char velocity_timer,char ring,
+			char X,char Y,char offset,char max_phase_advance)
+	- Programs the HCTL-1100 motion controller's commutator parameters
+
+char MOTION_read_board_status_reg(int handle)
+	- Returns the value of the board's status register
+
+char MOTION_read_controller_status_reg(int handle)
+	- Returns the value of the motion controller's status register
+
+char MOTION_read_flag_register(int handle)
+	- Returns the flag settings of the motion controller
+
+unsigned long int MOTION_read_command_position(int handle)
+	- Returns the command position register value
+
+unsigned long int MOTION_read_final_position(int handle)
+	- Returns the value last programmed into the final position register
+
+unsigned long int MOTION_read_actual_position(int handle)
+	- Returns the actual position register contents
+
+unsigned char MOTION_read_sample_timer(int handle)
+	- Returns the current value of the sample timer counter
+
+int MOTION_read_actual_velocity(int handle)
+	- Returns the actual velocity as calculated by the motion controller
+	  when in the proportional velocity mode
+
+
+char MOTION_open_loop_half_stepper(int handle,int total_steps,int step_period)
+	- Function to control a stepper motor in open loop mode (no encoder
+	  feedback) - using this function ties up the host processor while the
+	  move is in operation
+
+
+
+

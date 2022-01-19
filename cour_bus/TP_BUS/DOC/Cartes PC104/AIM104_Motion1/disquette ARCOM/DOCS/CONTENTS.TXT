@@ -1,0 +1,72 @@
+/****************************************************************************/
+/*                                                                          */
+/* Module Name:    contents.txt                                             */
+/*                 Copyright (c) 1998 Arcom Control Systems Ltd.            */
+/*                                                                          */
+/* ======================================================================== */
+/*                                                                          */
+/* Summary:       Contents of Arcom AIM104-MOTION-1 board utilities disk    */
+/*                                                                          */
+/* ======================================================================== */
+/*                                                                          */
+/* Modification history                                                     */
+/*                                                                          */
+/* Date     Version  Description                              Author        */
+/* ------------------------------------------------------------------------ */
+/* 20/04/98 1.0      First release                           Richard Beaman */
+/* 13/07/98 1.1      Updated for V1I2 release                Richard Beaman */
+/****************************************************************************/
+
+This disk contains the following files:
+
+
+    TITLE	DESCRIPTION
+
+DOCS DIRECTORY
+ contents.txt	This file.
+ motion.txt	Describes the functions included in the 'MOTION.H' file.
+
+
+REGISTER DIRECTORY
+ register.exe	DOS program to calculate many of required AIM104-MOTION-1 
+		register contents.  Type 'register' at a DOS prompt to run the
+		program, and then follow the on-screen instructions.
+ 
+
+INCLUDE DIRECTORY
+ motion.h	Defines a large number of functions for use with the 
+		AIM104-MOTION-1 board.
+ globals.h	Declares all constants and directives used in Arcom Library 
+		routines and motion.h file.  (This file is a copy of that
+		included in the AIM104 Software library disk, provided with
+		some Arcom AIM104 boards).
+ arcom.h	Arcom PC104 function prototypes.  (This file is a copy of that
+		included in the AIM104 Software library disk, provided with
+		some Arcom AIM104 boards).
+
+
+EXAMPLES DIRECTORY
+ stepper1.c	Position Control routine for stepper motor in 1/2 step mode.
+ stepper2.c	Trapezoidal Profile control routine for stepper motor in 
+		1/2 step mode.
+ stepper3.c	Proportional Velocity control routine for stepper motor in 
+		1/2 step mode.
+ stepper4.c	Integral Velocity control routine for stepper motor in 
+		1/2 step mode.
+ stepper5.c	Position Control routine for stepper motor in full step mode.
+ stepper6.c	Open-loop control of stepper motor in 1/2 step mode.
+ dcservo1.c	Position Control routine for DC servo motor.
+ dcservo2.c	Trapezoidal Profile control routine for DC servo motor. 
+ dcservo3.c	Proportional Velocity control routine for DC servo motor.
+ dcservo4.c	Integral Velocity control routine for DC servo motor.
+ dcservo5.c	Example routine for DC servo motor using interrupts.
+ position.c	Test program displaying real-time encoder count on screen.
+
+
+The 'AIM104 Library' disk (not included with the AIM104-MOTION-1 board, but 
+included with some other Arcom AIM104 boards) contains the Arcom PC104 
+Libraries, standard include files, example 'C' code for other Arcom PC104
+boards and a word manual detailing the use of that disk.
+
+
+

@@ -1,0 +1,475 @@
+                      KLibdrv.DLL version 4.01
+                      ========================
+
+                Copyright (C) 1997-2000 Victor Ishikeev
+             e-mail: ivi@ufanet.ru, tools@entechtaiwan.com
+                 http://www.entechtaiwan.com/tools.htm
+
+                     Licensed for KOLTER ELECTRONIC
+                         http://www.kolter.de
+
+
+CONTENTS
+========
+
+1. GENERAL TVicHW32 FUNCTIONS
+2. DIRECT MEMORY ACCESS WITH TVicHW32
+3. DIRECT PORT I/O WITH TVicHW32
+4. HARDWARE INTERRUPT HANDLING WITH TVicHW32
+5. SPECIFIC WORK WITH THE LPT PORT
+6. HDD SERIAL NUMBER
+7. PCI BUS CONFIGURATION INFO
+8. KEYBOARD ACCESS
+9. DMA STUFF
+10. CONTACT INFORMATION
+
+
+1. GENERAL TVicHW32 FUNCTIONS
+=============================
+
+KLibdrv is named follow as TVicHW32 and has the following general functions:
+
+    HANDLE OpenTVicHW32(HANDLE HW32, char * DriverName, char * EntryPoint);
+    ----------------------------------------------------------
+    Loads the tvichw32.vxd virtual device driver under Windows 95/98 or 
+    tvichw32.sys kernel mode device driver under Windows NT/2000, providing 
+    direct access to the hardware. If the driver was successfully opened, the
+    GetActiveHW() returns True; if the function fails, the GetActiveHW() 
+    returns False.
+    Note! Before first call to OpenTVicHW32() HW32 should be NULL!
+
+    New! TVicHW32 now can be used by two applications at same time.
+    For the first application use
+
+    HW32 = OpenTVicHW32(HW32, "TVICHW32","TVicDevice0");
+
+    For second:
+
+    HW32 = OpenTVicHW32(HW32, "TVICHW32","TVicDevice1");
+    
+
+    HANDLE CloseTVicHW32(HANDLE HW32);
+    ----------------------------------
+    Closes the kernel-mode driver and releases memory allocated to it.
+    If a hardware interruptions was "unmasked", the "mask" is restored. If the
+    driver was successfully closed, the GetActiveHW() always returns False.
+
+    BOOL GetActiveHW(HANDLE HW32);
+    ------------------------------
+    This boolean function specifies whether the mode driver is open.
+    Returns True if the driver is already open, or False if it is not.
+
+
+2. DIRECT MEMORY ACCESS WITH TVicHW32
+=====================================
+
+The following function permits direct memory acccess:
+
+    ULONG MapPhysToLinear(HANDLE HW32, ULONG PhAddr, ULONG Size);
+    -------------------------------------------------------------
+    Maps a specific physical address to a pointer in linear memory, 
+    where PhAddr is the base address and Size is the actual number of
+    bytes to which access is required (returns type ULONG, should be
+    converted to pointer before using).
+   
+    NEW! Now you can get up 16 of valid pointers to various physical 
+    ===  addresses.
+
+    void UnmapMemory(HANDLE HW32, ULONG PhAddr, ULONG Size);
+    --------------------------------------------------------
+    Unmaps a specific physical address previously mapped with 
+    MapPhysToLinear.
+
+
+    The following example returns a pointer to the system ROM BIOS area:
+
+    char *pBios;
+    HANDLE HW32 = NULL;
+
+
+    HW32 = OpenTVicHW32( HW32, "TVICHW32","TVicDevice0");
+
+    if (GetActiveHW(HW32)) {
+
+       pBios = (char*)MapPhysToLinear (HW32,0xF8000,256); //255 bytes beginning at $F8000
+
+       //...working with pBIOS...
+       ....
+       
+       // Unmap the memory
+       
+       UnmapMemory(HW32, 0xF8000,256);
+
+       // Close driver
+
+       HW32 = CloseTVicHW32(HW32);
+
+     }
+
+     else ...  //  failed
+
+    UCHAR  GetMem(HANDLE HW32, ULONG MappedAddress, ULONG Offset);
+    --------------------------------------------------------------
+    This function allows read one byte  from the array type Byte
+    based at given linear  address.  "Offset" value should begin from the "0" value.
+    In general, "MappedAddress" can be any valid linear pointer to the memory. But 
+    if this pointer was received from the MapPhysToLinear() function then 
+    you can access physical memory also.
+
+    void  SetMem(HANDLE HW32, ULONG MappedAddress, ULONG Offset);
+    -------------------------------------------------------------
+    This function allows write one byte  to the array type Byte
+    based at given linear  address.  
+    See GetMem() function for the additional info.
+
+    USHORT GetMemW(HANDLE HW32, ULONG MappedAddress, ULONG Offset);
+    --------------------------------------------------------------
+    This function allows read two bytes  from the array type USHORT
+    based at given linear  address.  
+    See GetMem() function for the additional info.
+
+    void  SetMemW(HANDLE HW32, ULONG MappedAddress, ULONG Offset);
+    -------------------------------------------------------------
+    This function allows write two bytes  to the array type USHORT
+    based at given linear  address.  
+    See GetMem() function for the additional information.
+
+    ULONG GetMemL(HANDLE HW32, ULONG MappedAddress, ULONG Offset);
+    --------------------------------------------------------------
+    This function allows read four bytes  from the array type ULONG
+    based at given linear  address.  
+    See GetMem() function for the additional information.
+
+    void  SetMemL(HANDLE HW32, ULONG MappedAddress, ULONG Offset);
+    -------------------------------------------------------------
+    This function allows write four bytes  to the array type ULONG
+    based at given linear  address.  
+    See GetMem() function for the additional information.
+
+
+3. DIRECT PORT I/O WITH TVicHW32
+================================
+
+The following functions permit direct I/O port access:
+------------------------------------------------------
+
+    UCHAR  GetPortByte (HANDLE HW32, ULONG wPortAddress);              // read one byte 
+    USHORT GetPortWord (HANDLE HW32, ULONG wPortAddress);              // read one word
+    ULONG  GetPortLong (HANDLE HW32, ULONG wPortAddress);              // read four bytes
+    void   SetPortByte (HANDLE HW32, ULONG wPortAddress, UCHAR  bData);  // write one byte
+    void   SetPortWord (HANDLE HW32, ULONG wPortAddress, USHORT wData);  // write one word
+    void   SetPortLong (HANDLE HW32, ULONG wPortAddress, ULONG  lData);  // write four bytes
+
+    void  SetHardAccess(HANDLE HW32, BOOL HardAccess);
+    --------------------------------------------------------------
+    The SetHardAccess() function determines whether the kernel-mode driver
+    should use "hard" or "soft" access to the I/O ports. If set to True
+    "hard" access is employed; if set to False "soft" access is employed.
+
+    "Soft" access provides higher performance access to ports, but may fail
+    if the port(s) addressed are already in use by another kernel-mode
+    driver. While slower, "Hard" access provides more reliable access to
+    ports which have already been opened by another kernel-mode driver. 
+
+    BOOL  GetHardAccess(HANDLE HW32);
+    --------------------------
+    Returns True is "hard" access is used.
+
+The following functions allows you to read or write an array of values
+from/to one port address:
+----------------------------------------------------------------------
+
+    void ReadPortFIFO( HANDLE HW32, PFIFO_RECORD  pPortRec);
+    --------------------------------------------------------
+    Allows to read an array of BYTE values from one port. See
+    FIFO_RECORD declaration in tvichw32.h file.
+
+    void ReadPortWFIFO( HANDLE HW32, PFIFO_RECORDW  pPortRec);
+    ----------------------------------------------------------
+    Allows to read an array of WORD values from one port. See
+    FIFO_RECORDW declaration in tvichw32.h file.
+
+    void ReadPortLFIFO( HANDLE HW32, PFIFO_RECORDL  pPortRec);
+    ----------------------------------------------------------
+    Allows to read an array of ULONG values from one port. See
+    FIFO_RECORDL declaration in tvichw32.h file.
+
+    void WritePortFIFO( HANDLE HW32, PFIFO_RECORD  pPortRec);
+    ---------------------------------------------------------
+    Allows to write an array of BYTE values to one port. See
+    FIFO_RECORD declaration in tvichw32.h file.
+
+    void WritePortWFIFO( HANDLE HW32, PFIFO_RECORDW  pPortRec);
+    -----------------------------------------------------------
+    Allows to write an array of WORD values to one port. See
+    FIFO_RECORDW declaration in tvichw32.h file.
+
+    void WritePortLFIFO( HANDLE HW32, PFIFO_RECORDL  pPortRec);
+    -----------------------------------------------------------
+    Allows to write an array of ULONG values to one port. See
+    FIFO_RECORDL declaration in tvichw32.h file.
+
+
+4. HARDWARE INTERRUPT HANDLING WITH TVicHW32
+============================================
+
+In a Win32 environment, hardware interrupts are normally prohibited
+by Windows; the TVicHW32 kernel-mode driver allows you to use the
+interrupt for direct handling by your application. 
+
+New! Now you can handle more that one interrupt at a time!
+
+The following functions permit access to hardware interrupts.
+
+    void  UnmaskIRQ( HANDLE HW32, 
+                     USHORT IRQNumber,
+                     TOnHWInterrupt     HWHandler);
+    -----------------------------------------------
+
+    1. Assign the interrupt specified by the IRQNumber value (1..15) to
+    the HWHandler() handler. Note that IRQ0 (the system timer) is *not* 
+    supported.
+    2. Physically unmasks the hardware interrupt specified by the IRQNumber
+    value, so that an HWHandler function will be called  when a hardware 
+    interrupt occurs. 
+
+    typedef void (__stdcall *TOnHWInterrupt)( USHORT IrqNumber);
+
+    void  MaskIRQ( HANDLE HW32, USHORT IRQNumber); 
+    ----------------------------------------------
+    Physically masks the hardware interrupt installed and unmasked by 
+    UnmaskIRQ().
+
+    BOOL  IsIRQMasked(HANDLE HW32, USHORT IRQNumber);
+    -------------------------------------------------
+    Function which specifies whether the hardware interrupt 
+    has been physically masked (True).
+
+    ULONG GetIRQCounter(HANDLE HW32, USHORT IRQNumber ); 
+    ----------------------------------------------------
+    Returns value shows how many interruptions was handled for this
+    IRQNumber.
+
+5. SPECIFIC WORK WITH THE LPT PORT
+
+Now TVicHW32 provides extended functions for work with the printer (LPT) port.   
+See test examples for more info.
+
+==== BASE ====
+
+
+    UCHAR GetLPTNumPorts(HANDLE HW32); 
+    ----------------------------------
+    Shows how many LPT ports are installed on your PC.
+
+    UCHAR GetLPTNumber(HANDLE HW32); 
+    --------------------------------
+    Shows current LPT number ( = 1 by default).
+
+    void SetLPTNumber(HANDLE HW32, UCHAR nNewValue); 
+    ------------------------------------------------
+    Allows select a current LPT port.
+
+    ULONG GetLPTBasePort(HANDLE HW32);
+    ----------------------------------
+    Windows 95/98 only! Returns a base address of the current LPT port.
+
+    USHORT VICFN AcquireLPT    ( HANDLE HW32, USHORT LPTNumber);
+    ------------------------------------------------------------
+    Windows 95/98 only! Allows to prevent other applications (include printing 
+    system)  to use selected LPT port.
+    Returned values:
+      LPT_ACQUIRE_SUCCESS 
+      LPT_ACQUIRE_REFUSED  (already aquired by other application)
+      LPT_ACQUIRE_BAD_PORT  (bad LPT number or Windows NT detected)
+      LPT_ACQUIRE_NOT_OPENED  (tvichw32 driver was not opened);
+
+    void   VICFN ReleaseLPT    ( HANDLE HW32, USHORT LPTNumber);
+    ------------------------------------------------------------
+    Windows 95/98 only!Release LPT if acquired by our application.
+
+    USHORT VICFN IsLPTAcquired ( HANDLE HW32, USHORT LPTNumber);
+    ------------------------------------------------------------
+    Windows 95/98 only! Check if selected LPT already in use by us or by other application.
+    Returned values:
+      LPT_NOT_ACQUIRED
+      LPT_ACQUIRE_SUCCESS (already acquired by our application)
+      LPT_ACQUIRE_REFUSED (already aquired by other application)
+      LPT_ACQUIRE_BAD_PORT  (bad LPT number or Windows NT detected)
+      LPT_ACQUIRE_NOT_OPENED  (tvichw32 driver was not opened)  
+
+
+==== PINS ====
+
+    BOOL GetPin(HANDLE HW32, UCHAR nPin);
+    -------------------------------------
+    Allows read an electrical level from the select pin of current 
+    LPT port. Returns TRUE if current level is HIGH.
+
+    void SetPin(HANDLE HW32, UCHAR nPin, BOOL nNewValue);
+    -----------------------------------------------------
+    Allows write an electrical level to the selected pin.
+    If nNewValue = TRUE - HIGH level.
+
+    Note: Not all pins are accessible for this operation. Run test example
+          for more info.
+
+==== STATUS ====
+
+    BOOL GetLPTAckwl(HANDLE HW32);
+    ------------------------------
+    Returns ACKWL state from the printer
+
+    BOOL GetLPTBusy(HANDLE HW32);
+    -----------------------------
+    Returns BUSY state from the printer
+
+    BOOL GetLPTPaperEnd(HANDLE HW32);
+    ---------------------------------
+    Returns PAPER END state from the printer
+    
+    BOOL GetLPTSlct(HANDLE HW32);
+    -----------------------------
+    Returns SLCT state from the printer
+
+    BOOL GetLPTError(HANDLE HW32);
+    ------------------------------
+    Returns ERROR state from the printer
+
+=== COMMANDS ===
+
+    void LPTStrobe(HANDLE HW32);
+    ----------------------------
+    Sends STROBE signal to the printer
+
+    void LPTAutofd(HANDLE HW32, BOOL Flag);
+    ---------------------------------------
+    Sets current AUTOFD  state on printer
+
+    void LPTInit(HANDLE HW32);
+    --------------------------
+    Resets printer by sending INIT signal
+
+    void LPTSlctIn(HANDLE HW32);
+    ----------------------------
+    Sends SLCTIN signal to the printer
+
+    BOOL LPTPrintChar(HANDLE HW32, UCHAR ch);
+    -----------------------------------------
+    Sends one symbol to the printer. Returns TRUE if
+    successed. Otherwise you need repeat this operation
+
+    void ForceLPTIrq(HANDLE HW32, BOOL IrqEnable);
+    ----------------------------------------------
+    Forces a LPT device to generate an interruptions when ACK 
+    line (Pin 10) has a HIGH external electrical level.
+
+    void SetLPTReadMode(HANDLE HW32);
+    ---------------------------------
+    Switches current LPT port to "Read" mode. Note, your LPT
+    port should be "bidirectional" and configured as PS/2 compatibe.
+
+    void SetLPTWriteMode(HANDLE HW32);
+    ---------------------------------
+    Switches current LPT port to "Write" mode (it is default mode
+    for the standard LPT). Note, your LPT  port should be configured 
+    as PS/2 compatibe.
+
+
+6. HDD SERIAL NUMBER (New!)
+===========================
+
+TVicHW32 4.0 allows access to IDE HDDs hardware manufacturer information 
+(HD serial number, geometry, etc.) 
+
+    void GetHDDInfo( HANDLE HW32, USHORT IdeNumber, USHORT Master, pHDDInfo Info);
+    ------------------------------------------------------------------------------
+
+"IdeNumber" value  should be 1 or 2. 
+"Master" value should be 1 for "Master disk" or "0" for the "Slave disk" on 
+selected Ide interface.
+See also HDDInfo structure in TVicHW32.H file
+
+7. PCI BUS CONFIGURATION INFO (New!)
+====================================
+
+   USHORT GetLastPciBus( HANDLE HW32 );
+   ------------------------------------
+   Returns the last PCI bus number on your PC.
+
+   USHORT GetHardwareMechanism( HANDLE HW32);
+   -----------------------------------------
+   Returns a hardware PCI mechanism used on your PC.
+
+   USHORT GetPciDeviceInfo( HANDLE HW32,       // TVicHW32 handle
+                            USHORT BusNum,     // PCI bus number
+                            USHORT DeviceNum,  // PCI slot device number
+                            USHORT FuncNum,    // PCI slot function number
+                            PPCI_COMMON_CONFIG pPciCfg);
+   -----------------------------------------------------------------------
+   Returns a PCI device info for given bus number, device number and function
+   number. See PCI test example for more detail.
+   
+   
+8. KEYBOARD ACCESS
+==================
+
+   void PutScanCode(HANDLE HW32, UCHAR scan_code);
+   -----------------------------------------------
+   Allows to send one keyboard scan code directly to the keyboard controller.
+   Note: Do not forget to send a "Key Up code" after sending the "Key Down code"!
+   KeyUpCode = KeyDownCode | 0x80;
+
+   void HookKeyboard( HANDLE HW32, TKbHookHandler HWHandler);
+   ----------------------------------------------------------
+   This functions allows to install a  "system wide" keyboard hook procedure 
+   and to catch all keystrokes. See keyboard test example for more info.
+   Note: only one hook can be installed with TVicHW32.
+
+   void UnhookKeyboard( HANDLE HW32);
+   ----------------------------------
+   Uninstalls a keyboard hook proceure installed by HookKeyboard().
+
+9. DMA STUFF
+============
+
+   BOOL  GetSysDmaBuffer( HANDLE HW32, DMA_BUFFER_REQUEST  * BufReq);
+   ------------------------------------------------------------------
+   Allows to allocate buffer for system (slave) DMA operation inside of
+   first 16 MegaBytes area.
+   Returns TRUE if success. Do not forget free DMA buffer later!
+   Keep and do not change BufReq structure for the FreeDmaBuffer()!
+
+   typedef struct _DMA_BUFFER_REQUEST {
+	ULONG LengthOfBuffer;  // Length of the buffer in bytes
+	ULONG AlignMask;  // Alignmed boundary:   0x00 - 4K
+                                                0x01 - 8K
+                                                0x03 - 16K
+                                                0x07 - 32K
+                                                0x0F - 64K
+                                                0x1F - 128K
+	ULONG PhysDmaAddress; // returned physical address of DMA buffer
+	PVOID LinDmaAddress;  // returned linear address of the buffer
+	ULONG PMemHandle;     // driver's internal value - keep it!
+	ULONG KernelDmaAddress; // driver's internal value - keep it!
+  } DMA_BUFFER_REQUEST, * PDMA_BUFFER_REQUEST;
+
+
+  BOOL GetBusmasterDmaBuffer( HANDLE HW32, PDMA_BUFFER_REQUEST BufReq);
+  ------------------------------------------------------------------
+  The same for Busmaster DMA (usually for the PCI devices).
+
+  void FreeDmaBuffer( HANDLE HW32, PDMA_BUFFER_REQUEST BufReq);
+  -------------------------------------------------------------
+  Free allocated DMA buffer
+
+10. CONTACT INFORMATION
+======================
+
+    Comments, questions and suggestions regarding TVicHW32 can be directed 
+by e-mail to ivi@ufanet.ru or tools@entechtaiwan.com. 
+
+With best wishes,
+
+Victor Ishikeev
+Jan 2000

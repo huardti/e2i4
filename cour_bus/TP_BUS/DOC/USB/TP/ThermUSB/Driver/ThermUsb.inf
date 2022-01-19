@@ -1,0 +1,71 @@
+; INF file for ThermUsb.sys
+; Copyright (c) 1998, BlueWater Systems, Inc.
+
+[Version]
+Signature="$Windows NT$"
+Class=USB
+ClassGUID={36FC9E60-C465-11CF-8056-444553540000}
+Provider=%ThermUsb.Provider%
+      
+[Manufacturer]
+%ThermUsb.Manufacturer%=ThermUsb
+
+[ClassInstall32]
+AddReg=ThermUsb.AddClassReg
+
+[ThermUsb]
+%ThermUsb.DeviceDesc%=ThermUsb.Install, USB\VID_04B4&PID_0002
+
+[SourceDisksNames]
+1=%ThermUsb.DriverDiskName%,"",,
+
+[SourceDisksFiles]
+ThermUsb.sys=1
+
+[PreCopySection]
+HKR,,NoSetupUI,,1
+      
+[DestinationDirs]
+ThermUsb.CopyFiles = 10,system32\drivers ; WINDOWS\SYSTEM32\DRIVERS
+      
+[ThermUsb.Install]
+CopyFiles=ThermUsb.CopyFiles
+AddReg=ThermUsb.AddReg
+      
+[ThermUsb.AddClassReg]
+HKR,,,,%ThermUsb.ClassName%
+
+[ThermUsb.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,ThermUsb.sys
+      
+[ThermUsb.CopyFiles]
+ThermUsb.sys
+
+; WinNT area
+[ThermUsb.Install.NT]
+CopyFiles= ThermUsb.CopyFiles
+AddReg = ThermUsb.AddReg
+
+[ThermUsb.AddReg.NT]
+
+
+[ThermUsb.Install.NT.Services]
+AddService = ThermUsb,0x00000002,ThermUsb_Service_Inst,ThermUsb_EventLog_Inst
+
+[ThermUsb_Service_Inst]
+ServiceType     = 1 ;%SERVICE_KERNEL_DRIVER%
+StartType       = 3 ;%SERVICE_AUTO_START%
+ErrorControl    = 1 ;%SERVICE_ERROR_NORMAL%
+ServiceBinary   = %12%\ThermUsb.sys
+DisplayName     = %ThermUsb.DeviceDesc%
+
+
+;---------------------------------------------------------------;
+      
+[Strings]
+ThermUsb.Provider="BlueWater Systems, Inc."
+ThermUsb.Manufacturer="Cypress Semiconductor"
+ThermUsb.DeviceDesc="ThermUsb Device"
+ThermUsb.ClassName="ThermUsb Device"
+ThermUsb.DriverDiskName="ThermUsb Installation Diskette" 

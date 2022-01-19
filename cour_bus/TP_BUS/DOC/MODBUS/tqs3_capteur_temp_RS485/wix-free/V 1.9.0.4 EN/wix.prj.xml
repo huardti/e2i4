@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<?xml-stylesheet href="project.xsl" type="text/xsl"?>
+<!DOCTYPE project [
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT copyright (#PCDATA)>
+  <!ELEMENT licence (#PCDATA)>
+  <!ELEMENT update (date, version, point+)>
+  <!ELEMENT feature (point+)>
+  <!ELEMENT date  (#PCDATA)>
+  <!ELEMENT version (#PCDATA)>
+  <!ELEMENT point (#PCDATA)>
+]>
+
+<project>
+  <name>Wix</name>
+  <description>SW pro měření a vizualizaci naměřených dat</description>
+  <copyright>Papouch s.r.o.</copyright>
+
+  <update>
+    <date>29.5.2019</date>
+    <version>1.9.0.4</version>
+    <point>Watmetr METRA MPG96 - přidány zobrazované hodnoty</point>
+
+  </update>
+
+  <update>
+    <date>19.3.2019</date>
+    <version>1.9.0.3</version>
+    <point>Přidán Watmetr METRA MPG96</point>
+
+  </update>
+
+  <update>
+    <date>9.1.2019</date>
+    <version>1.9.0.2</version>
+    <point>Opraveno zobrazení a nastavení zapnutí kontaktu na určitou dobu.</point>
+    <point>Přidáno zařízení Netio power cable.</point>
+
+  </update>
+
+  <update>
+    <date>6.12.2018</date>
+    <version>1.9.0.1</version>
+    <point>Opraveno čtení vstupu u zařízení Modbux RTU/TCP (četla se jedna hodnoéta navíc).</point>
+
+  </update>
+
+  <update>
+    <date>1.12.2018</date>
+    <version>1.9.0.0</version>
+    <point>Opraven posun akce nahoru dolů.</point>
+    <point>Rozšířené nastavení přepočtu.</point>    
+    <point>Modbus zařízení mohou nastavovat výstupy.</point>    
+    <point>Přidány moduly ADAM 6217,6060,6051,6050,6024,6022,6018,6017,4022,4015,4015T,4150, (komunikace modbus).</point>
+    <point>Možno  připojit plugin pro export dat (v současnosti do databáze).</point>
+    <point>Přidán wix.ini pro konfiguraci Wixu.</point>
+    <point></point>
+  </update>
+
+
+  <update>
+    <date>31.8.2018</date>
+    <version>1.8.9.3</version>
+    <point>Přidáno Quido 4/32 OC a TQS4</point>
+    <point>AD4 - Zobrazení bipolárních hodnot</point>
+    <point>Přidáno XML pro PAPAGO 2TH,2TC,2PT</point>
+    <point>Opraven export dlouhých xml a csv dat, přes webový server (až 1 000 000 řádků csv a 10 000 řádků xml).</point>
+  </update>
+
+  <update>
+    <date>17.7.2018</date>
+    <version>1.8.9.2</version>
+    <point>Úpravy pro používání doplňku Quido Časovač</point>
+  </update>
+
+  <update>
+    <date>17.7.2018</date>
+    <version>1.8.9.1</version>
+    <point>Překlad směrů větru (TC20) do angličtiny</point>
+  </update>
+
+  <update>
+    <date>28.6.2018</date>
+    <version>1.8.9.0</version>
+    <point>Podpora zařízení modbus TCP/IP</point>
+    <point>Modbus je schomen číst binární hodnoty (cívky, diskrétní vstupy)</point>
+    <point>Přidány moduly ADAM 6050,6217,4150,4015T a WISE 4012E (komunikace modbus)</point>    
+  </update>
+
+  <update>
+    <date>13.9.2017</date>
+    <version>1.8.8.5</version>
+    <point>Opravena kontrola data a času ve webovém rozhraní</point>
+  </update>
+
+  <update>
+    <date>22.2.2017</date>
+    <version>1.8.8.4</version>
+    <point>Přidán elektroměr PRO1-Mod.</point>
+  </update>
+  
+  <update>
+    <date>15.2.2017</date>
+    <version>1.8.8.3</version>
+    <point>Přidán modul Quido RS 10/16 OC.</point>
+  </update>
+  
+  <update>
+    <date>23.12.2016</date>
+    <version>1.8.8.2</version>
+    <point>Přidána možnost vlastního uspořádání akcí.</point>
+  </update>
+  
+  <update>
+    <date>10.11.2016</date>
+    <version>1.8.8.1</version>
+    <point>Přidán protokol HTTPS.</point>
+  </update>
+  
+  <update>
+    <date>19.10.2016</date>
+    <version>1.8.8.0</version>
+    <point>Přidán modul TDS-101 ETH.</point>
+    <point>Akce "Poslat SMS" rozšířena o modemy EGS5-T, BGS5-232 a BGS3-TUB.</point>
+  </update>
+
+  <update>
+    <date>25.8.2016</date>
+    <version>1.8.7.2</version>
+    <point>Některé chyby opraveny.</point>
+  </update>
+
+  <update>
+    <date>20.7.2016</date>
+    <version>1.8.7.1</version>
+    <point>Přidán modul Papago TH 2DI DO.</point>
+  </update>
+
+  <update>
+    <date>14.4.2016</date>
+    <version>1.8.7.0</version>
+    <point>Přidán displej TDS-57.</point>
+    <point>Přidána možnost přesouvat panýlky tažením myši (přes CTRL).</point>
+  </update>
+  
+  <update>
+    <date>8.4.2016</date>
+    <version>1.8.6.8</version>
+    <point>Některé chyby opraveny.</point>
+  </update>
+  
+  <update>
+    <date>16.3.2016</date>
+    <version>1.8.6.7</version>
+    <point>Některé chyby opraveny.</point>
+  </update>
+  
+  <update>
+    <date>8.3.2016</date>
+    <version>1.8.6.6</version>
+    <point>Některé chyby opraveny.</point>
+  </update>
+
+  <update>
+    <date>2.3.2016</date>
+    <version>1.8.6.5</version>
+    <point>Přidán protokol Drak4.</point>
+  </update>
+
+  <update>
+    <date>26.2.2016</date>
+    <version>1.8.6.4</version>
+    <point>Vytvořená light varianta u elektroměru DVH5261.</point>
+    <point>Přidána jazyková podpora u názvů vstupů.</point>
+  </update>
+  
+  <update>
+    <date>26.1.2016</date>
+    <version>1.8.6.3</version>
+    <point>Některé chyby opraveny.</point>
+  </update>
+  
+  <update>
+    <date>14.1.2016</date>
+    <version>1.8.6.2</version>
+    <point>Přidán elektroměr DVH5261-M.</point>
+    <point>Ve webovém rozhraní se u grafu zobrazuje i popisek.</point>
+  </update>
+
+  <update>
+    <date>5.1.2016</date>
+    <version>1.8.6.1</version>
+    <point>Některé chyby opraveny.</point>
+  </update>
+  
+  <update>
+    <date>30.11.2015</date>
+    <version>1.8.6.0</version>
+    <point>Nově je možné sledovat grafy přes webové rozhraní.</point>
+    <point>Přibyla možnost nastavení cesty k souborům pro grafy.</point>
+    <point>V dialogu pro nastavení připojení je možno zvolit počet stopbitů.</point>
+  </update>
+
+  <update>
+    <date>12.10.2015</date>
+    <version>1.8.5.5</version>
+    <point>Přidán modul Papago 5DI 1DO.</point>    
+    <point>Opravena chyba vyčítání veličin z THT2 přes modbus.</point>
+  </update>
+  
+  <update>
+    <date>1.9.2015</date>
+    <version>1.8.5.4</version>
+    <point>Opravena chyba vícenásobného přístupu k Wixu přes webové rozhraní.</point>
+  </update>
+  
+  <update>
+    <date>11.6.2015</date>
+    <version>1.8.5.3</version>    
+    <point>Některé chyby opraveny.</point>
+  </update>
+  
+  <update>
+    <date>27.3.2015</date>
+    <version>1.8.5.2</version>
+    <point>Některé chyby opraveny.</point>
+  </update>
+  
+  <update>
+    <date>13.3.2015</date>
+    <version>1.8.5.1</version>
+    <point>Opravena chyba vyčítání záporných hodnot z modulu Papago.</point>
+  </update>
+  
+  <update>
+    <date>6.2.2015</date>
+    <version>1.8.5.0</version>
+    <point>Přidán poměr zvětšení panelů Wixu.</point>
+  </update>
+  
+  <update>
+    <date>30.1.2015</date>
+    <version>1.8.4.0</version>
+    <point>Přidán modul Papago.</point>
+  </update>
+  
+  <update>
+    <date>11.12.2014</date>
+    <version>1.8.3.2</version>
+    <point>Některé chyby opraveny.</point>
+  </update>
+  
+  <update>
+    <date>30.10.2014</date>
+    <version>1.8.3.1</version>
+    <point>V dialogu "Nastavení akcí" přibyla možnost nesynchronizovat spuštění akcí ke specifickému datu.</point>
+    <point>Opravena chyba uložení výpisu historie z webového rozhraní.</point>
+  </update>
+
+  <update>
+    <date>15.8.2014</date>
+    <version>1.8.3.0</version>
+    <point>Přidáno nastavení barvy panelu v závislosti na hodnotě.</point>
+    <point>V grafu přibyla funkce vyšrafování oblasti pod křivkou.</point>
+  </update>
+  
+  <update>
+    <date>20.6.2014</date>
+    <version>1.8.2.5</version>
+    <point>Aktualizován způsob komunikace s novou verzí modulu TME Multi.</point>
+  </update>
+  
+  <update>
+    <date>12.6.2014</date>
+    <version>1.8.2.4</version>
+    <point>Přidán modul TDS-57.</point>
+  </update>
+  
+  <update>
+    <date>13.5.2014</date>
+    <version>1.8.2.3</version>
+    <point>U akcí nově přibylo nastavení minimální doby platnosti podmínky pro vyvolání akce.</point>
+  </update>
+  
+  <update>
+    <date>7.5.2014</date>
+    <version>1.8.2.2</version>
+    <point>Přidán výpočet "Digitální hodnota", který lze ovládat jak ručně, tak pomocí akce.</point>
+    <point>Přidána možnost vypnutí dialogu informujicí překročení limitu free verze.</point>
+  </update>
+  
+  <update>
+   <date>23.4.2014</date>
+   <version>1.8.2.1</version>
+   <point>Přidána akce uložit záznam do souboru.</point>
+  </update>
+  
+  <update>
+   <date>18.4.2014</date>
+   <version>1.8.2.0</version>
+   <point>Přidání způsbu komunikace přes SNMP.</point>
+   <point>U Quida komunikující přes XML přibyla funkce nulování čítačů.</point>
+   <point>Panýlky neaktivních vstupů jsou nově zašedlé.</point>
+  </update>
+
+  <update>
+   <date>5.3.2014</date>
+   <version>1.8.1.3</version>
+   <point>Přidáno zařízení IncRS.</point>
+   <point>Přidána utilita zobrazující alarmovou zprávu nastavitelného vzhledu (přes HTML). Lze použít skrz akci "spustit dávkový soubor".</point>
+   <point>Opravena chyba rovnosti podmínky "větší než".</point>
+   <point>Opravena chyba vyčítání historie (pouze hodnoty) přes webové rozhraní.</point>
+  </update>
+  
+  <update>
+   <date>6.1.2014</date>
+   <version>1.8.1.2</version>
+   <point>Přidána akce přehrání zvukového souboru.</point>
+  </update>
+  
+  <update>
+   <date>11.11.2013</date>
+   <version>1.8.1.1</version>
+   <point>Opravena chyba ovládání akcemi relé protokolem XML.</point>
+   <point>V nastavení akcí přibyla možnost sychronizovat volání periodických akcí s přesností sekund.</point>
+  </update>
+
+  <update>
+   <date>24.10.2013</date>
+   <version>1.8.1.0</version>
+   <point>Přidány dva výpočty "Vážený součet" a "Vážený součin".</point>
+   <point>Opravena chyba ovládání digitálních vstupů Quida komunikující protokolem XML.</point>
+   <point>Opravena chyba ovládání digitálních vstupů Wixu přes webové rozhraní.</point>
+  </update>
+  
+  <update>
+   <date>2.10.2013</date>
+   <version>1.8.0.1</version>
+   <point>Oravena chyba v akci nastavení analogového výstupu.</point>
+   <point>Oravena chyba ve zkušební akci v dialogu nastavení akcí.</point>
+  </update>
+  
+  <update>
+   <date>13.9.2013</date>
+   <version>1.8.0.0</version>
+   <point>Přepracování komunikačního jádra Wixu.</point>
+   <point>Přibyla možnost zaheslování nastavení (pouze v plné verzi).</point>
+   <point>U nastavení SMTP serveru přibyla možnost nastavit SMTP port.</point>
+   <point>Přidán modul TENZ485.</point>
+   <point>Přidána možnost komunikovat se zařízením THT2 přes protokol Modbus RTU.</point>
+  </update>
+  
+  <update>
+   <date>6.5.2013</date>
+   <version>1.7.6.4</version>
+   <point>Přidána podpora podmínek pracující s časem.</point>
+   <point>Odladěno pro systém Windows 2000.</point>   
+  </update>
+  
+  <update>
+   <date>16.10.2012</date>
+   <version>1.7.6.3</version>
+   <point>Přidána podpora TCP spojení pro zařízení komunikující přes modbus RTU.</point>
+  </update>
+  
+  <update>
+   <date>2.10.2012</date>
+   <version>1.7.6.2</version>
+   <point>Opravena chyba nevalidního vstupu při překročení hodnoty mimo rozsah.</point>
+  </update>
+  
+  <update>
+   <date>14.9.2012</date>
+   <version>1.7.6.0</version>
+   <point>Přibyla možnost ovládat digitální výstupy (relé) přes webové rozhraní.</point>
+  </update>
+  
+  <update>
+   <date>3.9.2012</date>
+   <version>1.7.5.6</version>
+   <point>Přidáno zařízení VT 200.</point>
+  </update>
+
+  <update>
+   <date>29.8.2012</date>
+   <version>1.7.5.5</version>
+   <point>U webového serveru byla přidána autorizace.</point>
+  </update>
+  
+  <update>
+   <date>7.8.2012</date>
+   <version>1.7.5.4</version>
+   <point>Opravena chyba měření THT2 přes TME Multi.</point>
+  </update>
+  
+  <update>
+   <date>19.7.2012</date>
+   <version>1.7.5.3</version>
+   <point>Přidán regulátor teploty E5CN-Q2MT.</point>
+  </update>
+  
+  <update>
+   <date>27.6.2012</date>
+   <version>1.7.5.2</version>
+   <point>Opravena chyba v přidávání zařízení TX20-XML.</point>
+  </update>
+  
+  <update>
+   <date>24.5.2012</date>
+   <version>1.7.5.1</version>
+   <point>Přidána podpora pro časově omezené licence.</point>
+   <point>Dialog přidat zařízení rozdělen na dva dialogy.</point>
+   <point>V průvodci ukládání přibyl formát souboru (txt/csv). Pokud je zvolen formát csv, kolem hodnot se vygenerují uvozovky.</point>
+   <point>V zařízení Modbus RTU přibyl typ hodnoty Signed Int.</point>
+   <point>Dialogy nastavení zástupného textu a nastavení bargrafu jsou nyní sizeable.</point>
+  </update>
+  
+  <update>
+   <date>7.3.2012</date>
+   <version>1.7.5.0</version>
+   <point>Přidán modul eMonica.</point>
+   <point>U ručního ovládání výstupu Quida (tlačítka na panelu) lze nastavit sepnutí/rozepnutí relé po určitou dobu.</point>
+   <point>Lze nově ovládat relé modulů Drak4 a Quido-XML prostřednictvím akcí nastavení výstupu.</point>  
+   <point>Přibyla funkce zálohující konfigurační soubory při přechodu na novější verzi Wixu.</point>  
+  </update>
+  
+  <update>
+   <date>26.1.2012</date>
+   <version>1.7.4.0</version>
+   <point>Přibyla možnost čtení naměřených veličin z Quida přes XML.</point>
+   <point>Přibyla možnost skrýt svislé čáry v grafu (začátek a konec měření).</point>
+  </update>
+  
+  <update>
+   <date>8.12.2011</date>
+   <version>1.7.3.1</version>
+   <point>Opravena chyba v nastavení podmínky překročení rozsahu.</point>
+  </update>
+  
+  <update>
+   <date>1.12.2011</date>
+   <version>1.7.3.0</version>
+   <point>Přidána podpora zástupných textů do Webu.</point>
+   <point>Přibyla možnost volby aktivních vstupů u free verze.</point>
+   <point>Počet aktivních vstupů u free verze nově není omezen, pokud je připojeno pouze jedno zařízení.</point>
+  </update>
+  
+  <update>
+   <date>10.11.2011</date>
+   <version>1.7.2.0</version>
+   <point>Byly přidány "výpočtové vstupy" umožňující nastavit vstup jako přírůstek hodnoty (jiného vstupu) za určitý časový okamžik.</point>
+  </update>
+  
+  <update>
+   <date>10.10.2011</date>
+   <version>1.7.1.0</version>
+   <point>U vysokých dialogů přibyla možnost skrýt hint v záhlaví okna.</point>
+   <point>Odstranění chyby přetékání čítačů u Quida.</point>
+   <point>Přibyla možnost nastavení čítače na konkrétní hodnotu.</point>
+   <point>V okně grafu pod režimem TouchPad přibyla tlačítka pro zoom.</point>
+  </update>
+  
+  <update>
+   <date>1.8.2011</date>
+   <version>1.7.0.9</version>
+   <point>V dialogu nastavení připojení je nyní tlačítko pro spuštění správce zařízení.</point>
+  </update>
+  
+  <update>
+   <date>23.6.2011</date>
+   <version>1.7.0.8</version>
+   <point>Přibyla možnost nastavení autorizace u dotazování naměřených veličin přes webové rozhraní.</point>
+  </update>
+
+  <update>
+   <date>30.5.2011</date>
+   <version>1.7.0.7</version>
+   <point>Upravení nastavení webové stránky u čidla TME-XML.</point>
+  </update>
+  
+  <update>
+   <date>26.5.2011</date>
+   <version>1.7.0.6</version>
+   <point>Přidán modul TENZ485T.</point>
+  </update>
+  
+  <update>
+   <date>31.3.2011</date>
+   <version>1.7.0.5</version>
+   <point>Přidána možnost rozšíření DEMO verze na FULL verzi prostřednictvím vložení licenčního souboru do Wixu.</point>
+  </update>
+  
+  <update>
+   <date>17.2.2011</date>
+   <version>1.7.0.4</version>
+   <point>Přidán modul TENZ485.</point>
+   <point>U grafů s velkým časovým rozpětím byl prodloužen interval překreslování.</point>  
+  </update>
+  
+  <update>
+   <date>14.2.2011</date>
+   <version>1.7.0.3</version>
+   <point>Opravena chyba zamrznutí GUI při přihlášení přes vzdálenou plochu.</point>   
+  </update>
+  
+  <update>
+   <date>20.1.2011</date>
+   <version>1.7.0.2</version>
+   <point>Opravena chyba ukládání "err" do souboru v době, kdy hodnoty byly úspěšně naměřeny.</point>
+   <point>Maximální pevná šířka okna byla z 1000 pixelů navýšena na 10000 pixelů.</point>
+   <point>Soubory s grafy lze nyní číst a kopírovat za běhu Wixu.</point>
+  </update>
+  
+  <update>
+   <date>17.1.2011</date>
+   <version>1.7.0.1</version>
+   <point>V okně "O programu" přibyla informace, zda se jedná o free verzi.</point>
+   <point>V plné verzi Wixu je už možné skrýt reklamní panel a zároveň používat protokol modbus.</point>
+   <point>Ve free verzi Wixu je reklamní panel zobrazen trvale.</point>
+  </update>
+
+  <update>
+   <date>3.1.2011</date>
+   <version>1.7.0.0</version>
+   <point>Rozdělení programu na free verzi a plnou verzi.</point>
+   <point>Rozšíření dialogu pro nastavení akcí a podmínek.</point>
+   <point>Podmínky lze spojovat operátory AND a OR.</point>
+   <point>K jedné podmínce lze nastavit více akcí, které se mají vykonat při splnění dané podmínky.</point>
+  </update>
+  
+  <update>
+   <date>11.10.2010</date>
+   <version>1.6.6.0</version>
+   <point>Přidán modul DT4120.</point>
+   <point>V dialogu "Nastavení připojení" přibyla možnost zvolení parity.</point>   
+  </update>
+  
+  <update>
+   <date>30.8.2010</date>
+   <version>1.6.5.0</version>
+   <point>Přidán do Wixu webový server.</point>
+  </update>
+ 
+  <update>
+   <date>12.8.2010</date>
+   <version>1.6.4.0 update</version>
+   <point>Přidán modul TDS s možností zobrazení čtyř vstupů.</point>
+   <point>Přidán modul TME Multi.</point>
+  </update>
+  
+  <update>
+   <date>7.7.2010</date>
+   <version>1.6.3.2 update</version>
+   <point>Přidána možnost ukládat naměřené veličiny v hexadecimálním formátu.</point>
+  </update>
+
+  <update>
+   <date>1.6.2010</date>
+   <version>1.6.3.1</version>
+   <point>Přidáno zařízení Drak4.</point>
+   <point>Odstranění chyby rozsahu počáteční adresy u Modbus zařízení.</point>
+  </update>
+
+  <update>
+   <date>22.3.2010</date>
+   <version>1.6.3.0</version>
+   <point>Se zařízením TH2E a AD4 lze nyní komunikovat i přes XML (zažízení musí být nastavené ve webovém režimu).</point>
+  </update>
+
+  <update>
+   <date>15.3.2010</date>
+   <version>1.6.2.3</version>
+   <point>Odstranění chyby rozsahu počáteční adresy u Modbus zařízení.</point>
+  </update>
+
+  <update>
+   <date>11.3.2010</date>
+   <version>1.6.2.2</version>
+   <point>Odstranění chyby nastavení čítače Quida.</point>
+  </update>
+
+  <update>
+   <date>1.3.2010</date>
+   <version>1.6.2.1</version>
+   <point>Přibyla akce typu spustit dávkový soubor.</point>
+   <point>Přibyla akce typu nahrát data na web (HTTP GET).</point>
+   <point>Panely výstupu Quida nově obsahují tlačítka pro ovládání výstupů.</point>
+  </update>
+
+  <update>
+   <date>14.1.2010</date>
+   <version>1.6.1.0</version>
+   <point>Přibyla možnost zobrazovat hodnotu jako barevný sloupec (bargraf).</point>
+   <point>Přibyly nápovědy v záhlaví každého okna.</point>
+   <point>Panel "Nastavení" změněn na panel s tlačítky (nastavení, přidat modul, přidat graf, o aplikaci, minimalizovat a ukončit).</point>
+   <point>Při najetí myši na panel se zobrazí tool panel s tlačítky nastavení a odstranit.</point>
+  </update>
+
+  <update>
+   <date>1.10.2009</date>
+   <version>1.6.0.0</version>
+   <point>Přidaná možnost rozmístění panýlků do více oken.</point>
+   <point>V okně zobrazující graf přibyla funkce posouvat graf tahem myši.</point>
+   <point>Přidaná podpora modulu TH2E s logováním.</point>
+  </update>
+
+  <update>
+   <date>2.9.2009</date>
+   <version>1.5.0.2</version>
+   <point>Opravena chyba se zamrznutím programu po spuštění.</point>
+  </update>
+
+  <update>
+   <date>13.8.2009</date>
+   <version>1.5.0.1</version>
+   <point>Opravena chyba se zapamatováním nastavení zástupného textu při ukončení programu.</point>
+  </update>
+
+  <update>
+   <date>23.7.2009</date>
+   <version>1.5.0.0</version>
+   <point>Přidaná podpora protokolu Modbus RTU</point>
+   <point>Přidán reklamní panel "Papouch"</point>
+  </update>
+
+  <update>
+   <date>8.7.2009</date>
+   <version>1.4.4.0</version>
+   <point>U grafů přidaná možnost zobrazení veličin z historie.</point>
+   <point>Přidaná možnost zvolit zástupný text pro rozsah hodnot.</point>
+  </update>
+
+  <update>
+   <date>29.5.2009</date>
+   <version>1.4.3.3</version>
+   <point>Přidaná možnost vypnout autorizaci u SMTP Serveru.</point>
+   <point>Přeuspořádání položek v popupmenu.</point>
+  </update>
+
+  <update>
+   <date>20.3.2009</date>
+   <version>1.4.3.0</version>
+   <point>V akcích přidána možnost poslat emailem a sms teplotu čidla.</point>
+   <point>V akcích přidána možnost sepnutí Quida na určitou dobu.</point>
+  </update>
+
+  <update>
+   <date>27.2.2009</date>
+   <version>1.4.2.0</version>
+   <point>Přidán modul THE.</point>
+  </update>
+
+  <update>
+   <date>26.2.2009</date>
+   <version>1.4.1.0</version>
+   <point>Přidán modul THT.</point>
+  </update>
+
+  <update>
+   <date>13.2.2009</date>
+   <version>1.4.0.9</version>
+   <point>Přidán modul Anemometr.</point>
+  </update>
+
+  <update>
+   <date>5.1.2009</date>
+   <version>1.4.0.8</version>
+   <point>Opravená chyba v TCP komunikaci.</point>
+  </update>
+
+  <update>
+   <date>24.11.2008</date>
+   <version>1.4.0.7</version>
+   <point>Opravená chyba v obnovování TCP spojení.</point>
+  </update>
+
+  <update>
+   <date>10.11.2008</date>
+   <version>1.4.0.6</version>
+   <point>Opravena chyba při posílání SMS zpráv.</point>
+   <point>Při generování barev grafu odfiltrovány tmavé barvy.</point>
+  </update>
+
+  <update>
+   <date>10.10.2008</date>
+   <version>1.4.0.4</version>
+   <point>Přidaná možnost vynulování čítačů u modulu Quido</point>
+   <point>Opravena chyba v ukládání dat.</point>
+  </update>
+
+  <update>
+   <date>5.9.2008</date>
+   <version>1.4.0.3</version>
+   <point>Opravena chyba měření u teplměru na Quidu.</point>
+   <point>U automatického skrývání byla přidána prodleva mezi najetím myši na tray iconu a zobrazením okna.</point>
+  </update>
+
+  <update>
+   <date>20.8.2008</date>
+   <version>1.4.0.2</version>
+   <point>Přidaná zpětná kompatibilita k modulům TQS3 s firmwarem v.3.1.</point>
+  </update>
+
+  <update>
+   <date>6.8.2008</date>
+   <version>1.4.0.1</version>
+   <point>Odstranění chyby při přidání senzoru z popupmenu.</point>
+  </update>
+
+  <update>
+   <date>30.7.2008</date>
+   <version>1.4.0.0</version>
+   <point>Přidána možnost zaslání emailu nebo SMS při překročení hodnoty.</point>
+  </update>
+
+  <update>
+   <date>31.3.2008</date>
+   <version>1.3.4.2</version>
+   <point>Možnost zobrazení grafů v samostatném okně.</point>
+   <point>Přidáno tlačítko nastavení.</point>
+  </update>
+
+  <update>
+   <date>3.3.2008</date>
+   <version>1.3.4.0</version>
+   <point>Nastavení přepočtů pro každé čidlo zvlášť.</point>
+  </update>
+
+  <update>
+   <date>11.2.2008</date>
+   <version>1.3.3.1</version>
+   <point>Opravená chyba v obnovování TCP spojení.</point>
+  </update>
+
+  <update>
+   <date>5.2.2008</date>
+   <version>1.3.3.0</version>
+   <point>Wix nově umí i starší teploměry TQS1</point>
+   <point>Možnost synchronizace ukládání dat v určitý čas</point>
+   <point>Opravena chyba v konverzi ze °C do F</point>
+  </update>
+
+  <update>
+   <date>23.11.2007</date>
+   <version>1.3.2.2</version>
+   <point>Do Wixu je integrován vlhkoměr THY</point>
+  </update>
+
+  <update>
+   <date>2.11.2007</date>
+   <version>1.3.2.1</version>
+   <point>U jednotek přibyla možnost nastavení počtu desetinných míst</point>
+  </update>
+
+  <update>
+   <date>10.10.2007</date>
+   <version>1.3.2.0</version>
+   <point>Podpora I/O modulů Quido (pouze vstupy)</point>
+  </update>
+
+  <update>
+   <date>25.9.2007</date>
+   <version>1.3.1.0</version>
+   <point>Náhledové grafy</point>
+  </update>
+
+  <update>
+    <date>18.7.2007</date>
+    <version>1.3.0.0</version>
+    <point>Přidány měřící převodníky AD4RS, AD4ETH (TCP/IP), AD4USB</point>
+    <point>Možnost nastavení jednotek a jejich přepočtů</point>
+    <point>Možnost volby způsobu získání naměřené hodnoty z TME</point>
+  </update>
+
+  <update>
+    <date>9.7.2007</date>
+    <version>1.2.4.0</version>
+    <point>Podpora připojení TMU přes Virtual port</point>
+  </update>
+
+
+  <update>
+    <date>3.5.2007</date>
+    <version>1.2.3.0</version>
+    <point>Vylepšeno nastavení ukládání</point>
+  </update>
+
+  <update>
+    <date>19.04.2007</date>
+    <version>1.2.2.1</version>
+    <point>Možnost zadat adresu TME jako URL a ne jen jako IP adresu</point>
+    <point>Omezení názvu čidla na unikátní a neprázdný</point>
+  </update>
+
+  <update>
+    <date>3.4.2007</date>
+    <version>1.2.2.0</version>
+    <point>Přidaná funkce proklikávání okna (okno je sice zobrazeno, ale je neaktivní na kliknutí - je tedy možné ovládat myší okno pod ním)</point>
+    <point>Odstranění typu dotazu "Normal" u TME</point>
+  </update>
+
+  <update>
+    <date>13.3.2007</date>
+    <version>1.2.1.0</version>
+    <point>Podpora teploměrů TQS3</point>
+    <point>Rozdělení čidel podle typu</point>
+    <point>Možnost nastavení intervalu měření a zápisu</point>
+    <point>Přidání typu dotazu "XML-File" u TME</point>
+  </update>
+
+  <update>
+    <date>12.2.2007</date>
+    <version>1.0.2.1</version>
+    <point>Zpřehlednění formuláře "obecného nastavení"</point>
+    <point>Upravení počáteční pozice okna</point>
+  </update>
+
+  <update>
+    <date>7.2.2007</date>
+    <version>1.0.2.0</version>
+    <point>Úprava rozvržení formuláře "obecného nastavení"</point>
+    <point>V obecném nastavení přidán list čidel</point>
+    <point>Přidána volba "Přidat" v menu dostupném po kliknutí pravým tlačítkem na ikonu Wixu v trayi</point>
+  </update>
+
+  <update>
+    <date>6.2.2007</date>
+    <version>1.0.1.0</version>
+    <point>Přidaná funkce automatického rozpoznávání zda aplikace neni mimo monitor (například při změně monitoru nebo snížení rozlišení)</point>
+  </update>
+
+</project>

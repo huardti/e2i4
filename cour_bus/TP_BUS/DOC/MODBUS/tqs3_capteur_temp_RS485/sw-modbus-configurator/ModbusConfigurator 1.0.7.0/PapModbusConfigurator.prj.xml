@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<?xml-stylesheet href="project.xsl" type="text/xsl"?>
+<!DOCTYPE project [
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT copyright (#PCDATA)>
+  <!ELEMENT licence (#PCDATA)>
+  <!ELEMENT update (date, version, point+)>
+  <!ELEMENT feature (point+)>
+  <!ELEMENT date  (#PCDATA)>
+  <!ELEMENT version (#PCDATA)>
+  <!ELEMENT point (#PCDATA)>
+]>
+
+<project>
+  <name>Modbus Configurator</name>
+  <description>Software, který je určený k přepínání typu komunikačního protokolu našich zařízení, hlavně mezi Spinelem a MODBUSem RTU. Kromě přepínání protokolů program umí také vyhledávat a nastavovat komunikační parametry zařízení.</description>
+  <copyright>Papouch s.r.o.</copyright>
+
+  <update>
+    <date>4.2.2019</date>
+    <version>1.0.7.0</version>
+    <point>Oprava komunikace, změna pořadí jnavazování spojení při vyhledávání modulu.</point>	
+  </update>
+
+  <update>
+    <date>8.3.2016</date>
+    <version>1.0.4.1</version>
+    <point>Přidána tajná skrytá funkce :)</point>	
+  </update>
+  
+  <update>
+    <date>23.2.2012</date>
+    <version>1.0.4.0</version>
+    <point>U spojení s malými přenosovými rychlostmi byla prodloužena doba čekání na odpověď dotazu.</point>	
+    <point>Přibyla možnost zakázat zjišťování zařízení přes univerzální adresu.</point>	
+    <point>Opravena chyba u navazování TCP spojení.</point>	
+  </update>
+
+  <update>
+    <date>13.10.2011</date>
+    <version>1.0.3.1</version>
+    <point>Some bug fixed.</point>	
+  </update>
+  
+  <update>
+    <date>20.1.2011</date>
+    <version>1.0.3.0</version>
+    <point>Do programu přibyla jazyková podpora (čeština, angličtina).</point>
+  </update>
+  
+  <update>
+    <date>9.12.2010</date>
+    <version>1.0.2.0</version>
+    <point>V dialogu "Nastavení připojení" přibyla možnost připojení přes TCP.</point>
+    <point>Přibyla funkce vyhledání zařízení.</point>
+  </update>
+
+  <update>
+    <date>2.12.2010</date>
+    <version>1.0.1.0</version>
+    <point>V dialogu "Nastavení připojení" přibylo pole pro určení adresy zařízení.</point>
+	<point>Nastavení komunikačních parametrů je nově možné pouze v režimu "Expert mode".</point>
+	<point>Pokud je během ukládání parametrů zařízení přepnuto do jiného protokolu, pak	se parametry znova uloží přes nový protokol.</point>
+  </update>
+
+</project>

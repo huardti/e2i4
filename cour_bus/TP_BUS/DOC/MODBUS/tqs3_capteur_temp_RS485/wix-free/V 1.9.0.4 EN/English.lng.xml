@@ -1,0 +1,1467 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<language name="English" id="$c09" default="1">
+	<forms>
+		<fMain caption="wix">
+			<miAdd2 caption="Add"/>
+			<miAddModul2 caption="Device"/>
+			<miGraf2 caption="Graph"/>
+			<miHide2 caption="Hide"/>
+			<miShow caption="Show"/>
+			<miViewProperties2 caption="View Properties"/>
+			<miStayOnTop2 caption="Always on Top"/>
+			<miClickThrought caption="Click-Through"/>
+			<miAutoHide2 caption="Hide Automatically"/>
+			<miSettings2 caption="Settings"/>
+			<miAbout caption="About"/>
+			<miExit2 caption="Exit"/>
+			<miAdd1 caption="Add"/>
+			<miAddModul1 caption="Device"/>
+			<miAddGraph1 caption="Graph"/>
+			<miRename caption="Panel Settings"/>
+			<miRemove caption="Remove Panel"/>
+			<miUp caption="Move Up"/>
+			<miDown caption="Move Down"/>
+			<miMoveToOtherWindows caption="Move to Other Window"/>
+			<miGraphInSingleWin caption="Display Graph in Single Window"/>
+			<miHide1 caption="Hide"/>
+			<miViewProperties1 caption="View Properties"/>
+			<miStayOnTop1 caption="Allways on Top"/>
+			<miAutoHide1 caption="Hide Automatically"/>
+			<miSettings1 caption="Settings"/>
+			<miExit1 caption="Exit"/>
+		</fMain>
+		<frmXanMasterDialog caption="Nastavení jednotek XanMasteru">
+			<pButtons>
+				<bOK caption="OK"/>
+				<bClose caption="Cancel"/>
+				<bRefresh caption="Search Units"/>
+			</pButtons>
+			<pCenter>
+				<Label1 caption="Unit FGA 1:"/>
+				<Label2 caption="Units count:"/>
+				<Label3 caption="Unit FGA 2:"/>
+				<Label4 caption="Unit FGA 3:"/>
+				<Label5 caption="Unit FGA 4:"/>
+				<Label6 caption="Unit FGA 5:"/>
+				<Label7 caption="Unit FGA 6:"/>
+				<Label8 caption="Unit FGA 7:"/>
+				<Label9 caption="Unit FGA 8:"/>
+				<Label10 caption="Unit FGA 9:"/>
+				<Label11 caption="Unit FGA 10:"/>
+			</pCenter>
+		</frmXanMasterDialog>
+		<WDEVEX_frmDeviceTypeDialog caption="Device Type">
+			<pnlButtons>
+				<btnClose caption="Cancel"/>
+				<btnOK caption="OK"/>
+			</pnlButtons>
+			<pnlCenter>
+				<lblDeviceCaption caption="Device caption:"/>
+				<lblDeviceType caption="Device type:"/>
+				<lblProtocolType caption="Protocol type:"/>
+			</pnlCenter>
+			<pnlLanguage>
+				<lblLanErrorNoCaption caption="Device caption is not set!"/>
+				<lblLanErrorNoDeviceType caption="Device type is not selected!"/>
+			</pnlLanguage>
+		</WDEVEX_frmDeviceTypeDialog>
+		<WDEVEX_frmConnectionDialog caption="Connection settings">
+			<pnlCenter>
+				<pnlConnections>
+					<lblConnections caption="Choose existing conection::"/>
+				</pnlConnections>
+				<pnlConnectionSettings>
+					<lblConnectinType caption="Connection Type:"/>
+					<pnlCOM>
+						<lblCOMBaudrate caption="Baudrate:"/>
+						<lblCOMPort caption="Port:"/>
+						<lblCOMParity caption="Parity:"/>
+						<lblCOMDataBits caption="Data bits:"/>
+						<lblCOMStopBits caption="Stop bits:"/>
+						<cbbCOMParity>
+							<items>
+								<item value="None"/>
+								<item value="Even"/>
+								<item value="Odd"/>
+								<item value="Mark"/>
+								<item value="Space"/>
+							</items>
+						</cbbCOMParity>
+						<btnCOMRefresh caption="Refresh"/>
+					</pnlCOM>
+					<pnlTCP>
+						<lblTCPIP caption="IP address:"/>
+						<lblTCPPort caption="Port:"/>
+						<lblTCPConnectionTimeout caption="Connection Timeout [s]:"/>
+						<lblTCPKeepAlive caption="Keepalive Time [s]:"/>
+						<btnTCPAdvanced caption="Advanced"/>
+					</pnlTCP>
+					<pnlUSB>
+						<lblUSBDevice caption="USB device:"/>
+						<lblUSBSerialNumber caption="Serial number:"/>
+						<lblUSBBaudrate caption="Baudrate:"/>
+						<lblUSBParity caption="Parity:"/>
+						<lblUSBDataBits caption="Data bits:"/>
+						<lblUSBStopBits caption="Stop bits:"/>
+						<btnUSBRefresh caption="Refresh"/>
+						<cbbUSBParity>
+							<items>
+								<item value="None"/>
+								<item value="Even"/>
+								<item value="Odd"/>
+								<item value="Mark"/>
+								<item value="Space"/>
+							</items>
+						</cbbUSBParity>
+					</pnlUSB>
+					<pnlHTTP>
+						<lblHTTPProtocol caption="Protocol:"/>
+						<lblHTTPDomain caption="IP address (or domain):"/>
+						<lblHTTPPort caption="Port:"/>
+						<lblHTTPURL caption="URL address:"/>
+						<lblHTTPDocument caption="Document:"/>
+					</pnlHTTP>
+				</pnlConnectionSettings>
+			</pnlCenter>
+			<pnlButtons>
+				<btnOK caption="OK"/>
+				<btnClose caption="Cancel"/>
+				<btnDeviceManager caption=" Device Manager"/>
+			</pnlButtons>
+			<pnlHint>
+				<mmoHint>
+					<items>
+						<item value="This dialog allows you to set connection between the device and computer. If there are more devices on the line and you have already defined it, choose the connection from the &quot;Choose existing device&quot; combo box."/>
+					</items>
+				</mmoHint>
+			</pnlHint>
+			<pnlLanguage>
+				<lblLanCOM caption="Serial port"/>
+				<lblLanTCP caption="TCP client"/>
+				<lblLanUSB caption="USB"/>
+				<lblLanHTTP caption="Web"/>
+				<lblLanCustomConnection caption="Custom Connection"/>
+				<lblLanSNMPUDP caption="UDP"/>
+			</pnlLanguage>
+		</WDEVEX_frmConnectionDialog>
+		<frmAuthorizationDialog caption="Authorization">
+			<pnlCenter>
+				<lblPassword caption="Password:"/>
+				<lblHint caption="To access the following section of Wix is necessary to set the password."/>
+			</pnlCenter>
+			<pnlButtons>
+				<btnOk caption="OK"/>
+				<btnCancel caption="Cancel"/>
+			</pnlButtons>
+			<pnlLanguage>
+				<lblLanError caption="Wrong password!"/>
+			</pnlLanguage>
+		</frmAuthorizationDialog>
+		<WCALCEX_frmCalculationOperatorDialog caption="Calculation Settings">
+			<pnlCenter>
+				<lblCaption caption="Inputs count:"/>
+				<lblInputs caption="inputs"/>
+				<lblCoeficients caption="coeficients"/>
+			</pnlCenter>
+			<pnlButtons>
+				<bOK caption="Ok"/>
+				<btnClose caption="Cancel"/>
+			</pnlButtons>
+			<pnlLanguage>
+				<lblLanInput caption="Input"/>
+			</pnlLanguage>
+		</WCALCEX_frmCalculationOperatorDialog>
+		<frmSaveRecordDialog caption="Record Configuration">
+			<pnlCenter>
+				<pnlFunctions>
+					<lblFunctions caption="Function List:"/>
+					<vstFunctions>
+						<Header>
+							<Column Text="Functions"/>
+						</Header>
+					</vstFunctions>
+				</pnlFunctions>
+				<pnlCenter2>
+					<pnlData>
+						<lblData caption="Data:"/>
+					</pnlData>
+					<pnlExample>
+						<lblExample caption="Example:"/>
+					</pnlExample>
+					<pnlHead>
+						<lblHead caption="Head:"/>
+					</pnlHead>
+					<pnlParameters>
+						<lblSeparatedRecord caption="Save data record to new line:"/>
+						<lblRewrite caption="Rewrite file by the latest measured value:"/>
+					</pnlParameters>
+				</pnlCenter2>
+			</pnlCenter>
+			<pnlButtons>
+				<btnOk caption="Ok"/>
+				<btnCancel caption="Cancel"/>
+			</pnlButtons>
+			<pnlHint>
+				<shpHint/>
+				<mmoHint>
+					<items>
+						<item value="This dialog allows you to set storing of the measured-out values to file. Dynamic text (measured-out values, date, time etc.) can be entered by special functions in vinculum. (For example: {TAB}, {Datetime(dd.mm.yyyy)}, {My_Device.My_Input.Value}). If there is an error in the function, it is in red font. Otherwise it is written in blue. Double click on the function in the &quot;Functions list&quot; will add it to the &quot;Definition&quot;."/>
+					</items>
+				</mmoHint>
+			</pnlHint>
+		</frmSaveRecordDialog>
+		<frmAddSetInputs2ColorsRanges caption="Background Settings">
+			<pnlCenter>
+				<lblCaption caption="Threshold values count:"/>
+				<SB>
+					<pnl1>
+						<lbl2 caption="Colours:"/>
+						<lbl1 caption="Threshold value:"/>
+					</pnl1>
+					<pnl0>
+						<lbl0 caption="Colours:"/>
+					</pnl0>
+				</SB>
+			</pnlCenter>
+			<pnlButtons>
+				<btnOK caption="Ok"/>
+				<btnClose caption="Cancel"/>
+			</pnlButtons>
+			<pnlHint>
+				<lblHint caption="This dialog allows yout to set colors of panel background. Range can be divided by setting &quot;threshold values&quot;. Each interval has two colors, that will be blinking..&#xA;"/>
+			</pnlHint>
+			<pnlLanguage>
+				<lblLanBound caption="Threshold value:"/>
+				<lblLanValue caption="Colours:"/>
+			</pnlLanguage>
+		</frmAddSetInputs2ColorsRanges>
+		<fSettings caption="Settings">			
+			<miInputAllow caption="Allow"/>
+			<miInputBlock caption="Disable"/>
+			<miInputAuto caption="Automatic"/>     
+			<actSaveFileAdd caption="Add"/>
+			<actSaveFileEdit caption="Edit"/>
+			<actSaveFileRemove caption="Remove"/>	  
+			<actSaveFileWizard caption="Wizzard"/>			
+			<Panel2>
+				<bOk caption="OK"/>
+				<bClose caption="Cancel"/>
+				<bPouzit caption="Apply"/>
+			</Panel2>
+			<Panel3>
+				<PageControl1>
+					<tsAppearance caption="Appearance">
+						<GroupBox1 caption="Colours">
+							<Label2 caption="Active:"/>
+							<Label3 caption="Error:"/>
+							<Label4 caption="Connecting:"/>
+							<Label6 caption="Text"/>
+							<Label7 caption="Backg."/>
+							<Label15 caption="State"/>
+							<bDefault caption="Default"/>
+						</GroupBox1>
+						<GroupBox2 caption="Window">
+							<Label8 caption="Set fixed width [px]:"/>
+							<Label10 caption="Transparency [%]:"/>
+							<Label5 caption="Display inputs names:"/>
+							<Label9 caption="Display variables units:"/>
+							<Label1 caption="Set width automatically:"/>
+							<Label13 caption="Always on top:"/>
+							<Label19 caption="Hide automatically:"/>
+                            <lblSizeRatio caption="Size ratio:"/>
+						</GroupBox2>
+					</tsAppearance>
+					<tsSaving caption="Saving">
+						<bSaveFileAddGuide caption="Wizard - store values"/>
+						<vstSaveFile>
+							<Header>
+								<Column Text=""/>
+								<Column Text="Caption"/>
+								<Column Text="Description"/>
+								<Column Text="Interval"/>
+							</Header>
+						</vstSaveFile>
+						<bSaveFileEdit caption="Edit"/>
+						<bSaveFileRemove caption="Remove"/>
+						<bSaveFileAdd caption="Add"/>
+					</tsSaving>
+					<tsActions caption="Actions">
+						<vstAction>
+							<Header>
+								<Column Text=""/>
+								<Column Text="Caption"/>
+								<Column Text="Description"/>
+							</Header>
+						</vstAction>
+						<bAddAction caption="Add"/>
+						<bEditAction caption="Edit"/>
+						<bRemoveAction caption="Remove"/>
+						<btnActionMoveDown caption="Move Up"/>
+						<btnActionMoveUp caption="Move Down"/>
+					</tsActions>
+					<tsWebServer caption="Web">
+						<grpWebServer caption="Web server:">
+							<lblWebServerPort caption="Port:"/>
+							<lblWebUserName caption="Username:"/>
+							<lblWebPassword caption="Password:"/>
+							<lblWebSeverActive caption="Active"/>
+							<lblWebHistory caption="Enable history support:"/>
+							<lblWebAuthetification caption="Authorization:"/>
+						</grpWebServer>
+					</tsWebServer>
+					<tsOthers caption="Misc.">
+						<lblGraphFilePath caption="Directory for graph files (gpf):"/>
+						<GroupBox7 caption="Language">
+						</GroupBox7>
+						<GroupBox3 caption="Measure">
+							<Label12 caption="Measure interval (s):"/>
+						</GroupBox3>
+						<GroupBox5 caption="Special Panel Types">
+							<cbShowPanelSettings caption="Display panel &quot;Settings&quot;:"/>
+							<chbShowPapouchPanel caption="Display panel &quot;Papouch&quot;:"/>
+							<chbModbusSupport caption="Modbus RTU protocol support:"/>
+						</GroupBox5>
+						<grpSettingsPassword caption="Security settings">
+							<lblSettingsPass1 caption="Password:"/>
+							<lblSettingsPass2 caption="Password (confirmation):"/>
+							<lblSettingsPassHint caption="Passwords are different!"/>
+							<chbSettingsPasswordEnabled caption="Require a password to the Wix settings"/>
+						</grpSettingsPassword>
+						<chbDemoDialog caption="Inform the exceeding of limits in the free version"/>
+					</tsOthers>
+					<tsLicense caption="License">
+						<Label23 caption="Version:"/>
+						<pLicenseFalse>
+							<Label22 caption="This program runs as a fully functional DEMO version. Usage is not limited by time. The only restriction is in the number of devices and inputs. &#xA;&#xA;Maximum number of devices:	5&#xA;Maximum number of inputs:	10&#xA;&#xA;Any device or input above these limits will be disabled!"/>
+						</pLicenseFalse>
+						<pLicenseTrue>
+							<Label21 caption="Registered by:"/>
+							<Label24 caption="This program runs as a FULL version. &#xA;&#xA;Maximum number of devices:	unlimited&#xA;Maximum number of inputs: 	unlimited&#xA;"/>
+						</pLicenseTrue>
+						<bLicenseGet caption="Get license"/>
+						<bLicenseInsert caption="Insert license"/>
+					</tsLicense>
+					<tsModulList caption="Modul List">
+						<Label11 caption="Check inputs to be visible."/>
+						<bPridat caption="Add Device"/>
+						<bOdebrat caption="Remove"/>
+						<bUpravit caption="Modify"/>
+						<bDown caption="Move Down"/>
+						<bUp caption="Move Up"/>
+						<bAddGraph caption="Add Graph"/>
+						<bAddVirtualInput caption="Add Calculus"/>
+					</tsModulList>
+				</PageControl1>
+			</Panel3>
+		</fSettings>
+		<WSREX_fConfigurator caption="File Settings">
+			<pCenter>
+				<tcData>
+					<lExample caption="Preview:"/>
+					<Label5 caption="Definition:"/>
+					<lFunctions caption="Function:"/>
+					<vstFunctions>
+						<Header>
+							<Column Text="Function"/>
+						</Header>
+					</vstFunctions>
+				</tcData>
+				<gbInfo caption="File Settings">
+					<Label1 caption="Name:"/>
+					<Label2 caption="Interval:"/>
+					<Label3 caption="File:"/>
+					<Label7 caption="Synchronise with time:"/>
+					<Label6 caption="Rewrite file by the latest measured value:"/>
+					<Label4 caption="Save data record to new line:"/>
+					<bFindLocation caption="Find"/>
+					<cbInterval>
+						<items>
+							<item value="Miliseconds"/>
+							<item value="Seconds"/>
+							<item value="Minutes"/>
+							<item value="Hours"/>
+							<item value="Days"/>
+						</items>
+					</cbInterval>
+				</gbInfo>
+			</pCenter>
+			<pButtons>
+				<bClose caption="Cancel"/>
+				<bOk caption="Ok"/>
+				<bGuide caption="Wizard"/>
+			</pButtons>
+			<pHint>
+				<lblHint caption="This dialog allows you to set storing of the measured-out values to file. Dynamic text (measured-out values, date, time etc.) can be entered by special functions in vinculum. (For example: {TAB}, {Datetime(dd.mm.yyyy)}, {My_Device.My_Input.Value}). If there is an error in the function, it is in red font. Otherwise it is written in blue. Double click on the function in the &quot;Functions list&quot; will add it to the &quot;Definition&quot;."/>
+			</pHint>
+		</WSREX_fConfigurator>
+		<WSREX_fConfiguratorGuide caption="Wizard">
+			<pCenter>
+				<lblHeadGenerate caption="Generate header:"/>
+				<lblSeparator caption="Record separator:"/>
+				<Label3 caption="Inputs list:"/>
+				<lblExample caption="Preview:"/>
+				<lblGenUnit caption="Generate units:"/>
+				<lblFileType caption="File type:"/>
+				<lblNoInputSelected caption="No input is selected!"/>
+				<cbFileType>
+					<items>
+						<item value="Format TXT (text file)"/>
+						<item value="Format CSV (readable by MS Excel)"/>
+					</items>
+				</cbFileType>
+			</pCenter>
+			<pButtons>
+				<bCreate caption="Create"/>
+				<bClose caption="Cancel"/>
+			</pButtons>
+			<pHint>
+				<lblHint caption="This wizard helps you to set the storing format of measured-out values. Check inputs you want to store in files."/>
+			</pHint>
+			<pLanguageTexts>
+				<lblDate caption="Date"/>
+				<lblTime caption="Time"/>
+				<lblStoringFilename caption=" Stored data"/>
+				<lblStoringCaption caption="Data log"/>
+			</pLanguageTexts>
+		</WSREX_fConfiguratorGuide>
+		<fAddSetInputs caption="Input Settings">
+			<pCenter>
+				<pInputsSettings>
+					<pCaption>
+						<GroupBox1 caption="Input">
+							<Label1 caption="Input caption:"/>
+							<Label2 caption="Units:"/>
+							<Label11 caption="Display type:"/>
+							<lblDisplayBackType caption="Background Type:"/>
+							<bDisplayValuesSettings caption="Settings"/>
+							<cbDisplayType>
+								<items>
+									<item value="Normal"/>
+									<item value="Representative text"/>
+									<item value="Bargraph"/>
+								</items>
+							</cbDisplayType>
+							<btnDisplayBackType caption="Settings"/>
+							<cbbDisplayBackType>
+								<items>
+									<item value="Normal"/>
+									<item value="Special color"/>
+									<item value="Blinking background"/>
+								</items>
+							</cbbDisplayBackType>
+						</GroupBox1>
+					</pCaption>
+					<pWixConversion>
+						<GroupBox3 caption="Wix convertion">
+							<Label13 caption="Y = "/>
+							<Label14 caption="* X +"/>
+							<Label15 caption="Decimal count:"/>
+							<Label16 caption="Convertion:"/>
+							<Label18 caption="Moving averange:"/>
+							<Label19 caption="samples"/>
+						</GroupBox3>
+					</pWixConversion>
+					<pQuidoCounter>
+						<GroupBox4 caption="Counters settings">
+							<Label10 caption="Increment the counter on:"/>
+							<Label12 caption="Set counter value:"/>
+							<cbRaising caption="Raising edge"/>
+							<cbFalling caption="Falling edge"/>							
+							<bSetCounter caption="Set"/>
+						</GroupBox4>
+					</pQuidoCounter>
+					<pnlCalculation>
+						<GroupBox5 caption="Calculation settings:">
+							<lblCalculationType caption="Calculation type:"/>
+							<pnlCalculationSum>
+								<lblCalculationSumCoeficientCaption caption="coeficients"/>
+								<btnCalculationSumSettings caption="Settings"/>
+							</pnlCalculationSum>
+							<pnlCalculationProduct>
+								<lblCalculationProductCoeficientCaption caption="exponents"/>
+								<btnCalculationProductSettings caption="Settings"/>
+							</pnlCalculationProduct>
+							<pnlCalculationTimeDerivation>
+								<lblCalculationTimeDerivationSource caption="Input:"/>
+								<lblCalculationTimeDerivationInterval caption="Interval [s]:"/>
+							</pnlCalculationTimeDerivation>
+						</GroupBox5>
+					</pnlCalculation>
+					<pQuidoOutput>
+						<GroupBox2 caption="Output settings">
+							<pQuidoOutputReset>
+								<Label4 caption="Turn off"/>
+								<rbQuidoOutputResetDelayFull caption="Permanently"/>
+								<rbQuidoOutputResetDelayNotFull caption="For a period [s]:"/>
+							</pQuidoOutputReset>
+							<pQuidoOutputSet>
+								<Label3 caption="Turn on"/>
+								<rbQuidoOutputSetDelayFull caption="Permanently"/>
+								<rbQuidoOutputSetDelayNotFull caption="For a period [s]:"/>
+							</pQuidoOutputSet>
+						</GroupBox2>
+					</pQuidoOutput>
+                    <pnlDatabase>
+						<grpDatabase caption="Archive">
+							<lblDatabasePeriodSec caption="sec."/>
+							<chkSaveTODatabase caption="Store value to the archive, with period:"/>
+							<edtDatabasePeriod/>
+						</grpDatabase>
+					</pnlDatabase>
+				</pInputsSettings>
+				<pInputsList>
+					<VirtualStringTree1>
+						<Header>
+							<Column Text="Caption"/>
+							<Column Text="Input"/>
+						</Header>
+					</VirtualStringTree1>
+				</pInputsList>
+				<pnlLanguage>
+					<lblLanCalculationSum caption="Weighted sum"/>
+					<lblLanCalculationProduct caption="Weighted product"/>
+					<lblLanCalculationTimeDerivation caption="Difference in the time interval"/>
+					<lblLanCalculationBoolVariable caption="Digital value"/>
+				</pnlLanguage>
+			</pCenter>
+			<pButtons>
+				<bOk caption="OK"/>
+				<bClose caption="Cancel"/>
+			</pButtons>
+			<pHint>
+				<mmoHint>
+					<items>
+						<item value="This dialog allows you to set inputs on the device. If the measured quantities are not in desired units, you can set a conversion formula as a line formula (y=kx+q). Alternative text can be displayed instead of numeric value (freezing, chilly, cool, warm and hot)."/>
+					</items>
+				</mmoHint>
+			</pHint>
+		</fAddSetInputs>
+		<WVPEX_fGraphDialog caption="Graph Settings">
+			<pCenter>
+				<lList caption="Device list"/>
+				<gbRange caption="Graph range">
+					<lMinValue caption="Minimal value:"/>
+					<lMaxValue caption="Maximal value:"/>
+					<lDateTimeRangeType caption="Displayed:"/>
+					<cbDateTimeRangeType>
+						<items>
+							<item value="Actual values"/>
+							<item value="History records"/>
+						</items>
+					</cbDateTimeRangeType>
+					<pHistoryDateTime>
+						<lDateTimeFrom caption="From:"/>
+						<lDateTimeTo caption="To:"/>
+					</pHistoryDateTime>
+					<pActualDateTime>
+						<lInterval caption="Displayed Interval:"/>
+						<cbIntervalType>
+							<items>
+								<item value="Seconds"/>
+								<item value="Minutes"/>
+								<item value="Hours"/>
+								<item value="Days"/>
+							</items>
+						</cbIntervalType>
+					</pActualDateTime>
+				</gbRange>
+				<gbColors caption="Colour settings">
+					<lColorBack caption="Background:"/>
+					<lColorText1 caption="Text:"/>
+					<lColorText2 caption="Highlighted text:"/>
+					<lColorGrid1 caption="Grid:"/>
+					<lColorGrid2 caption="Highlighted grid:"/>
+					<bDefault caption="Default"/>
+				</gbColors>
+				<gbOthers caption="Miscellanous">
+					<lCaption caption="Graph Label:"/>
+					<lblHideHorizontalLines caption="Hide vertical lines:"/>
+					<lblShowHatch caption="Hatch area under the curve:"/>
+				</gbOthers>
+			</pCenter>
+			<pButtons>
+				<bOK caption="OK"/>
+				<bClose caption="Cancel"/>
+			</pButtons>
+			<pHint>
+				<lblHint caption="This dialog allows you to set the values ranges, colors, and graph view. Check the inputs you want to have displayed as graph."/>
+			</pHint>
+		</WVPEX_fGraphDialog>
+		<frmDeviceDialog caption="Device Settings">
+			<pnlCenter>
+				<lblCaption caption="Device caption:"/>
+				<lblDeviceType caption="Device type:"/>
+				<pnlSpinel>
+					<lblSpinelAddress caption="Device address:"/>
+					<pnlQuido>
+						<lblQuidoType caption="Quido type:"/>
+						<lblQuidoTemp caption="With thermometer:"/>
+					</pnlQuido>
+					<pnlTDS>
+						<lblTDSSettings caption="Displayed Values:"/>
+						<btnTDSSettings caption="Settings"/>
+					</pnlTDS>
+				</pnlSpinel>
+				<pnlModbus>
+					<lblModbusID caption="Device ID:"/>
+					<pnlModbusUniversalLanguage>
+						<lblModbusUniversalUI16 caption="Unsigned Int16 (2B)"/>
+						<lblModbusUniversalUI32 caption="Unsigned Int32 (4B)"/>
+						<lblModbusUniversalFloat caption="Float (4B)"/>
+						<lblModbusUniversalSI16 caption="Signed Int16 (2B)"/>
+						<lblModbusUniversalSI32 caption="Signed Int32 (4B)"/>
+					</pnlModbusUniversalLanguage>
+					<pnlModbusUniversal>
+						<lblModbusValueType caption="Variable type:"/>
+						<lblModbusAddress caption="Address:"/>
+						<lblModbusInstructionType caption="Registr type:"/>
+						<cbbModbusInstructionType>
+							<items>
+								<item value="Holding registrs"/>
+								<item value="Input registrs"/>
+							</items>
+						</cbbModbusInstructionType>
+					</pnlModbusUniversal>
+					<pnlModbusDVH5261>
+						<lblDVH5261IsLightVersion caption="Simple version:"/>
+					</pnlModbusDVH5261>
+				</pnlModbus>
+				<pnlTQS1>
+					<lblTQS1Address caption="Device address:"/>
+				</pnlTQS1>
+				<pnlTH2E>
+					<lblTHELogSupport caption="With values logging:"/>
+				</pnlTH2E>
+				<pnlHTTP>
+					<lblHTTPAuthorization caption="Authorization:"/>
+					<lblHTTPUser caption="User:"/>
+					<lblHTTPPassword caption="Password:"/>
+					<cbbHTTPUser>
+						<items>
+							<item value="user"/>
+							<item value="admin"/>
+						</items>
+					</cbbHTTPUser>
+					<pnlQuidoXML>
+						<lblQuidoXMLType caption="Quido type:"/>
+						<lblQuidoXMLTemp caption="With thermometer:"/>						
+					</pnlQuidoXML>
+					<pnlTMEMulti>
+						<lblTMEMultiInputCount caption="Number of set Inputs:"/>
+					</pnlTMEMulti>
+					<pnlXanMaster>
+						<btnXanMasterSetUnit caption="Device Units Settings"/>
+					</pnlXanMaster>
+				</pnlHTTP>
+				<pnlSNMP>
+					<lblSNMPCommunity caption="Community:"/>
+					<lblSNMPOIDs caption="OID list:"/>
+					<lblSNMPVersion caption="Version:"/>
+					<lblSNMPAuthorization caption="Authentication:"/>
+					<lblSNMPUser caption="User:"/>
+					<lblSNMPPassword caption="Password:"/>
+					<lblSNMPSecurity caption="Security:"/>
+					<lblSNMPSecurityKey caption="Key:"/>
+					<cbbSNMPCommunity>
+						<items>
+							<item value="public"/>
+						</items>
+					</cbbSNMPCommunity>
+					<cbbSNMPVersion>
+						<items>
+							<item value="v1"/>
+							<item value="v2c"/>
+							<item value="v3"/>
+						</items>
+					</cbbSNMPVersion>
+					<cbbSNMPAuthorization>
+						<items>
+							<item value="None"/>
+							<item value="MD5"/>
+							<item value="SHA1"/>
+						</items>
+					</cbbSNMPAuthorization>
+					<cbbSNMPSecurity>
+						<items>
+							<item value="None"/>
+							<item value="DES"/>
+							<item value="3DES"/>
+							<item value="AES"/>
+						</items>
+					</cbbSNMPSecurity>
+				</pnlSNMP>
+			</pnlCenter>
+			<pnlButtons>
+				<btnClose caption="Cancel"/>
+				<btnOK caption="OK"/>
+			</pnlButtons>
+			<pnlHint>
+				<mmoHint>
+					<items>
+						<item value="This dialog allows you to set devices. Ethernet devices like TH2E, Quido or AD4ETH have to be set in &quot;TCP Server&quot; mode."/>
+					</items>
+				</mmoHint>
+			</pnlHint>
+		</frmDeviceDialog>
+		<fRemoveMessageBox caption="Wix">
+			<bClose caption="Cancel"/>
+			<bOK caption="OK"/>
+		</fRemoveMessageBox>
+		<frmSMTPDialog caption="SMTP Server Settings">
+			<pnlCenter>
+				<grpSMTPServer caption="SMTP server">
+					<lblSMTPHost caption="SMTP server address"/>
+					<lblUserName caption="Username:"/>
+					<lblPassword caption="Password:"/>
+					<lblAuthentication caption="Authorization:"/>
+					<SMTPPort caption="SMTP port:"/>
+				</grpSMTPServer>
+			</pnlCenter>
+			<pnlButtons>
+				<btnOK caption="OK"/>
+				<btnClose caption="Cancel"/>
+			</pnlButtons>
+			<pnlLanguage>
+				<lblLanSSLWarning caption="SSL encryption protocol is not supported. Authentication to some SMTP servers may not work. To support SSL is needed to install Microsoft Visual C++ Redistributable Package."/>
+			</pnlLanguage>
+		</frmSMTPDialog>
+		<fConvertorDialog caption="Text Editing">
+			<pCenter>
+				<pRight>
+					<Label3 caption="Functions:"/>
+					<vstFce>
+						<Header>
+							<Column Text="Functions"/>
+						</Header>
+					</vstFce>
+				</pRight>
+				<pCenter2>
+					<pTop>
+						<Label1 caption="Definition:"/>
+					</pTop>
+					<pBottom>
+						<Label2 caption="Preview:"/>
+					</pBottom>
+				</pCenter2>
+			</pCenter>
+			<pButtons>
+				<bOk caption="Ok"/>
+				<bCancel caption="Cancel"/>
+			</pButtons>
+			<pHint>
+				<mmoHint>
+					<items>
+						<item value="This dialog allows you to set dynamic text (measured-out values, date, time etc). Dynamic text can be entered by special functions in vinculum. (For example: {TAB}, {Datetime(dd.mm.yyyy)}, {My_Device.My_Input.Value}). If there is an error in the function, it is in red font. Otherwise it is written in blue. Double click on the function in the &quot;Functions list&quot; will add it to the &quot;Definition&quot;."/>
+					</items>
+				</mmoHint>
+			</pHint>
+		</fConvertorDialog>
+		<fAddSetInputsValuesRanges caption="Representative Text Settings">
+			<pCenter>
+				<lCaption caption="Threshold values count:"/>
+				<SB>
+					<p0>
+						<l0 caption="Representative text:"/>
+					</p0>
+				</SB>
+			</pCenter>
+			<pButtons>
+				<bOK caption="Ok"/>
+				<bClose caption="Cancel"/>
+			</pButtons>
+			<pHint>
+				<lblHint caption="This dialog allows you to set alternative texts for the numeric values. Range can be divided by setting &quot;threshold values&quot;. Each interval has its alternative text."/>
+			</pHint>
+		</fAddSetInputsValuesRanges>
+		<fAddSetInputsBarGraph caption="Bargraph Settings">			
+			<pnlHint>
+				<lblHint caption="This dialog allows you to set colors of the bar graph displayed instead of measured-out values. Range can be divided by setting &quot;threshold values&quot;. Each interval has its color."/>
+			</pnlHint>
+			<pnlCenter>
+				<lblCaption caption="Threshold values count:"/>
+				<SB>
+					<p0>
+						<l0 caption="Threshold value:"/>
+					</p0>
+					<p1>
+						<l1 caption="Representative colour:"/>
+						<l2 caption="Threshold value:"/>
+					</p1>
+				</SB>
+			</pnlCenter>
+			<pButtons>
+				<bOK caption="Ok"/>
+				<btnClose caption="Cancel"/>
+			</pButtons>
+		</fAddSetInputsBarGraph>
+		<fCiLog caption="Communication Log">
+			<pnlButtons>
+				<sbPause caption="Pause"/>
+				<btnClear caption="Clear"/>
+				<edtDisabledInst/>
+			</pnlButtons>
+		</fCiLog>
+		<fDevTDS caption="Displaying values settings">
+			<pMain>
+				<Label1 caption="LED:"/>
+				<Label2 caption="Input:"/>
+				<Label3 caption="Display delay [s]:"/>
+				<pnlInput1>
+					<CheckBox1 caption="1. Value:"/>
+				</pnlInput1>
+				<pnlInput2>
+					<CheckBox4 caption="2. Value:"/>
+				</pnlInput2>
+				<pnlInput3>
+					<CheckBox7 caption="3. Value:"/>
+				</pnlInput3>
+				<pnlInput4>
+					<CheckBox10 caption="4. Value:"/>
+				</pnlInput4>
+			</pMain>
+			<pButtons>
+				<bOK caption="OK"/>
+				<bClose caption="Cancel"/>
+			</pButtons>
+		</fDevTDS>
+		<FDemoDialog caption="Wix">
+			<pCenter>
+				<Label2 caption="This program runs as a fully functional DEMO version. Usage is not limited by time. The only restriction is in the number of devices and inputs. &#xA;&#xA;Maximum number of devices: 5&#xA;Maximum number of inputs: 10&#xA;&#xA;Any device or input above these limits will be disabled!"/>
+			</pCenter>
+			<pButtons>
+				<bOK caption="OK"/>
+				<bFullVersion caption="Buy full version"/>
+			</pButtons>
+		</FDemoDialog>
+		<WCEAEX_fConditionDialog caption="Condition Settings">
+			<pCenter>
+				<lCaption caption="Caption:"/>
+				<pnlLanguage>
+					<lblLanRangeCheck caption="Range check"/>
+					<lblLanInputError caption="Input error"/>
+					<lblLanAlwaysTrue caption="Always true"/>
+					<lblLanTimeCheck caption="Time condition"/>
+					<lblLanTimeCheckTime caption="Time"/>
+					<lblLanTimeCheckDayOfWeek caption="Day of week"/>
+					<lblLanTimeCheckDayOfMonth caption="Day of month"/>
+					<lblLanTimeCheckMonth caption="Month"/>
+				</pnlLanguage>
+				<gbCondition caption="Condition:">
+					<pRangeCheck>
+						<lRangeCheckInput caption="Input:"/>
+						<lRangeCheckType caption="Measured input value:"/>
+						<lRangeCheckValueMax caption="Maximal value:"/>
+						<lRangeCheckValueMin caption="Minimal value:"/>
+						<lRangeCheckValue caption="Value:"/>
+						<lRangeCheckHysteresis caption="Hysteresis:"/>
+						<cbRangeCheckType>
+							<items>
+								<item value="is higher than"/>
+								<item value="is lower than"/>
+								<item value="is in range"/>
+								<item value="is out of range"/>
+							</items>
+						</cbRangeCheckType>
+						<pRangeCheckHint>
+							<lRangeCheckHint caption="In the event that the measured value oscillates around the chosen limits, the value of the resulting conditions change frequently. This phenomenon can be avoided by using hysteresis. The condition becomes false only in case if the value measured away from the limits more than the hysteresis."/>
+						</pRangeCheckHint>
+					</pRangeCheck>
+					<pInputError>
+						<lInputErrorInput caption="Input:"/>
+						<lInputErrorType caption="Input condition:"/>
+						<cbInputErrorType>
+							<items>
+								<item value="Input error"/>
+								<item value="Input valid"/>
+							</items>
+						</cbInputErrorType>
+					</pInputError>
+					<pEventTimer>
+						<lTimerInterval caption="Timer interval:"/>
+						<lTimerSyncronization caption="Synchronized with time:"/>
+						<cbTimerInterval>
+							<items>
+								<item value="milliseconds"/>
+								<item value="seconds"/>
+								<item value="minutet"/>
+								<item value="hours"/>
+								<item value="days"/>
+							</items>
+						</cbTimerInterval>
+					</pEventTimer>
+					<pAlwaysTrue>
+						<lblAlwaysTrueHint caption="The condition &quot;Always true&quot; should be used in conjunction with the periodic running actions. This combination can get a timer."/>
+					</pAlwaysTrue>
+					<pnlTimeCheck>
+						<lblTimeCheckValueType caption="Value type:"/>
+						<pnlTimeCheckTime>
+							<lblTimeCheckTimeMin caption="Low treshold:"/>
+							<lblTimeCheckTimeMax caption="High treshold:"/>
+							<lblTimeCheckTimeType caption="Condition trueness:"/>
+							<cbbTimeCheckTimeType>
+								<items>
+									<item value="In the set range"/>
+									<item value="Out of set range"/>
+								</items>
+							</cbbTimeCheckTimeType>
+						</pnlTimeCheckTime>
+						<pnlTimeCheckDayOfWeek>
+							<lblTimeCheckDayOfWeekType caption="Condition trueness:"/>
+							<chbTimeCheckDayOfWeek1 caption="Monday"/>
+							<chbTimeCheckDayOfWeek2 caption="Tuesday"/>
+							<chbTimeCheckDayOfWeek3 caption="Wednesday"/>
+							<chbTimeCheckDayOfWeek4 caption="Thursday"/>
+							<chbTimeCheckDayOfWeek5 caption="Friday"/>
+							<chbTimeCheckDayOfWeek6 caption="Saturday"/>
+							<chbTimeCheckDayOfWeek7 caption="Sunday"/>
+							<cbbTimeCheckDayOfWeekType>
+								<items>
+									<item value="For checked days"/>
+									<item value="For unchecked days"/>
+								</items>
+							</cbbTimeCheckDayOfWeekType>
+						</pnlTimeCheckDayOfWeek>
+						<pnlTimeCheckDayOfMonth>
+							<lblTimeCheckDayOfMonthType caption="Condition trueness:"/>
+							<chbTimeCheckDayOfMonthLast caption="Last"/>
+							<cbbTimeCheckDayOfMonthType>
+								<items>
+									<item value="For checked days"/>
+									<item value="For unchecked days"/>
+								</items>
+							</cbbTimeCheckDayOfMonthType>
+						</pnlTimeCheckDayOfMonth>
+						<pnlTimeCheckMonth>
+							<lblTimeCheckMonthType caption="Condition trueness:"/>
+							<chbTimeCheckMonth1 caption="January"/>
+							<chbTimeCheckMonth2 caption="February"/>
+							<chbTimeCheckMonth3 caption="March"/>
+							<chbTimeCheckMonth4 caption="April"/>
+							<chbTimeCheckMonth5 caption="May"/>
+							<chbTimeCheckMonth6 caption="June"/>
+							<chbTimeCheckMonth7 caption="July"/>
+							<chbTimeCheckMonth8 caption="August"/>
+							<chbTimeCheckMonth9 caption="September"/>
+							<chbTimeCheckMonth10 caption="October"/>
+							<chbTimeCheckMonth11 caption="November"/>
+							<chbTimeCheckMonth12 caption="December"/>
+							<cbbTimeCheckMonthType>
+								<items>
+									<item value="For checked days"/>
+									<item value="For unchecked days"/>
+								</items>
+							</cbbTimeCheckMonthType>
+						</pnlTimeCheckMonth>
+					</pnlTimeCheck>
+				</gbCondition>
+			</pCenter>
+			<pButtons>
+				<bOK caption="OK"/>
+				<bCancel caption="Cancel"/>
+			</pButtons>
+			<pHint>
+				<shpHint/>
+				<mmoHint>
+					<items>
+						<item value="This dialog allows you set condition."/>
+					</items>
+				</mmoHint>
+			</pHint>
+		</WCEAEX_fConditionDialog>
+		<WCEAEX_fActionDialog caption="Action Settings">
+			<pHint>
+				<shpHint/>
+				<mmoHint>
+					<items>
+						<item value="This dialog allows you to set action. You can put dynamic text (measured values, date, time etc.) to some fields (e-mail message, SMS message etc.) Easy settings for the dynamic text are accessible by clicking &quot;Edit the text&quot; button."/>
+					</items>
+				</mmoHint>
+			</pHint>
+			<pCenter>
+				<lCaption caption="Caption:"/>
+				<gbActions caption="Action:">
+					<pEmail>
+						<lEmailFrom caption="Sender email address:"/>
+						<lEmailTo caption="Recipient email address:"/>
+						<lEmailSubject caption="Subject:"/>
+						<lEmailHost caption="SMTP server:"/>
+						<lEmailText caption="Text:"/>
+						<bEmailSMTP caption="Settings"/>
+						<bEmailSetText caption="Edit the text"/>
+						<pEmailTextDefault>
+							<lEmailTextDefault caption="Date:{TAB}{Datetime(dd.mm.yyyy)}&#xA;Time:{TAB}{Datetime(hh:nn:ss)}&#xA;Event:{TAB}...&#xA;"/>
+						</pEmailTextDefault>
+					</pEmail>
+					<pSMS>
+						<lSMSNumber caption="Phone number:"/>
+						<lSMSComPort caption="Device serial port number:"/>
+						<lSMSText caption="Text:"/>
+						<lSMSCharCounter caption="Number of char. (estimation):"/>
+						<lSMSTextHint caption="Number of characters can increase when dynamic text is used!"/>
+						<lblSMSBaudrate caption="Baudrate:"/>
+						<lblSMSModemtype caption="Modem type:"/>
+						<bSMSSetText caption="Edit the text"/>
+						<pSMSTextDefault>
+							<lSMSTextDefault caption="Date: {Datetime(dd.mm.yyyy)}&#xA;Time: {Datetime(hh:nn:ss)}&#xA;Event: ...&#xA;"/>
+						</pSMSTextDefault>
+						<pSMSHint>
+							<lSMSHint caption="To use this event must be purchased and attached TC35 GSM modem."/>
+						</pSMSHint>
+						<pnlSMSModemType>
+							<lblSMSModemTypeTC35i caption="TC35i"/>
+							<lblSMSModemTypeTC65i caption="TC65i"/>
+							<lblSMSModemTypeOthers caption="Others"/>
+							<lblSMSModemTypeEGS5T caption="EGS5-T"/>
+							<lblSMSModemTypeBGS5232 caption="BGS5-232"/>
+							<lblSMSModemTypeBGSTUB caption="BGS3-TUB"/>
+						</pnlSMSModemType>
+					</pSMS>
+					<pSetDigitalOutput>
+						<Label18 caption="Output:"/>
+						<Label1 caption="Relay action"/>
+						<Label2 caption="Duration of relay action:"/>
+						<cbSetDigitalOutputValue>
+							<items>
+								<item value="Turn on"/>
+								<item value="Turn off"/>
+							</items>
+						</cbSetDigitalOutputValue>
+						<rbSetDigitalOutputDelayNotFull caption="For a period [sec.]"/>
+						<rbSetDigitalOutputDelayFull caption="Permanently"/>
+					</pSetDigitalOutput>
+					<pSetQuido>
+						<lSetQuidoDevice caption="Quido:"/>
+						<lSetQuidoOutputNum caption="Quido output:"/>
+						<lSetQuidoState caption="Relay action"/>
+						<lSetQuidoDurabilityType caption="ON/OFF time of the relay:"/>
+						<cbSetQuidoState>
+							<items>
+								<item value="Turn on"/>
+								<item value="Turn off"/>
+							</items>
+						</cbSetQuidoState>
+						<rbSetQuidoStateDurabilityFull caption="Allways"/>
+						<rbSetQuidoStateDurabilityNotFull caption="During [sec.]"/>
+					</pSetQuido>
+					<pSetAnalogOutput>
+						<Label4 caption="Output:"/>
+						<Label5 caption="Output value:"/>
+					</pSetAnalogOutput>
+					<pClearQuidoCounter>
+						<lClearQuidoCounterDevice caption="Quido counter:"/>
+						<lClearQuidoCounterNum caption="Quido counter:"/>
+					</pClearQuidoCounter>
+					<pnlSetDisplay>
+						<lblSetDiaplay caption="Display:"/>
+						<SetDiaplayValue caption="Displaying value:"/>
+					</pnlSetDisplay>
+					<pExportWeb>
+						<lExportURLText caption="URL Text:"/>
+						<bExportWebSetText caption="Edit the text"/>
+						<Panel2>
+							<lExportURLTextDefault caption="http://MyDomain/?Date={Datetime(dd.mm.yyyy)}&amp;Time={Datetime(hh:nn:ss)}&amp;Event=..."/>
+						</Panel2>
+					</pExportWeb>
+					<pExportCmd>
+						<lExportCmdBathName caption="Path and name of the file:"/>
+						<lExportCmdText caption="Bath file parameters"/>
+						<bExportCmdEdit caption="Edit the text"/>
+						<Panel3>
+							<lExportCmdTextDefault caption="/Date={Datetime(dd-mm-yyyy)} /Time={Datetime(hh-nn-ss)} /Event=..."/>
+						</Panel3>
+					</pExportCmd>
+					<pnlPlayWav>
+						<lblPlayWavFileName caption="Path and name of the file:"/>
+						<btnPlayWavFileName caption="Find"/>
+						<rbPlayWavPlay caption="Play sound file"/>
+						<rbPlayWavStop caption="Cancel playing"/>
+						<chbPlayWavLoop caption="Playing repeatedly"/>
+					</pnlPlayWav>
+					<pnlSaveToFile>
+						<lblSaveToFileFileName caption="Path and file name:"/>
+						<lblSaveToFileExample caption="Record example:"/>
+						<btnSaveToFileFileName caption="Search"/>
+						<btnSaveToFileGuide caption="Guide"/>
+						<btnSaveFileEdit caption="Edit record"/>
+						<pnlSaveToFileDefault>
+							<lblSaveToFileHeadDefault caption="Date{TAB}{TAB}Time{TAB}{TAB}..."/>
+							<lblSaveToFileDataDefault caption="{Datetime(dd.mm.yyyy)}{TAB}{Datetime(hh:nn:ss)}{TAB}..."/>
+							<lblSaveToFileFileNameDefault caption=".\{Datetime(dd.mm.yyyy)} Archiv.txt"/>
+						</pnlSaveToFileDefault>
+					</pnlSaveToFile>
+				</gbActions>
+			</pCenter>
+			<pButtons>
+				<bOK caption="OK"/>
+				<bCancel caption="Cancel"/>
+				<bTryAction caption="Test action"/>
+			</pButtons>
+			<pActionList>
+				<lActionTypeEmailCaption caption="Send email"/>
+				<lActionTypeSMSCaption caption="Send SMS"/>
+				<lActionTypeQuidoReleCaption caption="Set quido output"/>
+				<lActionTypeQuidoCountersCaption caption="Zero quido counter"/>
+				<lActionTypeExportWebCaption caption="Upload data to web"/>
+				<lActionTypeExportCmdCaption caption="Execute bath file"/>
+				<lActionTypeSetDigitalOutput caption="Set digital output (relay)"/>
+				<lActionTypeSetAnalogOutput caption="Set analog output"/>
+				<lblActionTypePlayWavCaption caption="Play sound file"/>
+				<lblActionTypeSaveToFile caption="Save record to file"/>
+				<lActionTypeSetDisplayCaption caption="Set display"/>
+			</pActionList>
+		</WCEAEX_fActionDialog>
+		<WCEAEX_fConditionActionDialog caption="Action Settings">
+			<pHint>
+				<lblHint caption="This dialog allows you to set actions following certain events. Action can by executed one time when the condition is satisfying or periodically over the validity of condition."/>
+			</pHint>
+			<pButtons>
+				<bOk caption="OK"/>
+				<bCancel caption="Cancel"/>
+			</pButtons>
+			<pCenter>
+				<lCaption caption="Caption:"/>
+				<lEventType caption="Action list">
+					<Label2 caption="Execute actions:"/>
+					<bActionAdd caption="Add"/>
+					<bActionEdit caption="Edit"/>
+					<bActionRemove caption="Remove"/>
+					<cbEventType>
+						<items>
+							<item value="One time when the condition is satisfied"/>
+							<item value="Periodically over the validity of condition"/>
+						</items>
+					</cbEventType>
+					<pEventTimer>
+						<lTimerInterval caption="Period:"/>
+						<lTimerSyncronization caption="Synchronize to time:"/>
+						<lTimerSynchronizationEnabled caption="Executing action synchronize to:"/>
+						<cbTimerInterval>
+							<items>
+								<item value="milliseconds"/>
+								<item value="seconds"/>
+								<item value="minutes"/>
+								<item value="hours"/>
+								<item value="days"/>
+							</items>
+						</cbTimerInterval>
+						<cbTimerSynchronizationEnabled>
+							<items>
+								<item value="Beginning of validity condition"/>
+								<item value="Specific date"/>
+							</items>
+						</cbTimerSynchronizationEnabled>
+					</pEventTimer>
+				</lEventType>
+				<gbConditions caption="Condition list">
+					<Label1 caption="Exec. actions when is satisfying:"/>
+					<lblConditionDelay caption="Min. duration of satisfaction:"/>
+					<bConditionAdd caption="Add"/>
+					<bConditionEdit caption="Edit"/>
+					<bConditionRemove caption="Remove"/>
+					<cbConditionListType>
+						<items>
+							<item value="At least one condition (OR)"/>
+							<item value="All condition (AND)"/>
+						</items>
+					</cbConditionListType>
+					<cbbConditionDelay>
+						<items>
+							<item value="milliseconds"/>
+							<item value="seconds"/>
+							<item value="minutes"/>
+							<item value="hours"/>
+							<item value="days"/>
+						</items>
+					</cbbConditionDelay>
+				</gbConditions>
+			</pCenter>
+		</WCEAEX_fConditionActionDialog>
+	</forms>
+	<const>
+	
+		<VirtualInputs text="Calculations"/>
+
+		<msgboxtext1-odstraneni text="Are you sure you want to remove panel "/>
+		<msgboxtext2-odstraneni text="?"/>
+		<msgboxtext3-odstraneni text="Remove with the device: "/>
+		<msgboxtext4-odstraneni text="Remove with the calculation"/>
+
+		<msgboxtext-pridani1 text="Name of the sensor isn't entered!" />
+		<msgboxtext-pridani2 text="Name of the sensor must be unique!" />
+		<msgboxtext-pridani3 text="Name of the sensor must contain only letters, numbers and chars:  -, _ !" />
+		<msgboxtext-pridani4 text="Names of inputs and name of the sensor must be unique!" />
+		<msgboxtext-pridani5 text="Names of inputs and name of the sensor must contain only letters, numbers and chars: -, _ !" />
+
+		<msgboxcapt-varovanigrafu text="Warning!"/>
+		<msgboxtext-varovanigrafu text="Units of selected sensors do not match!"/>
+		<msgboxtext2-varovanigrafu text="Units of selected sensors are not consistent with the graph units!"/>
+		<msgboxtext3-varovanigrafu text="Do you wish to continue?"/>
+
+		<csCOM text="Serial port"/>
+		<csVCOM text="Virtual port"/>
+		<csTCP text="TCP client"/>
+		<csUSB text="USB"/>
+
+        	<Allow text="Allow"/>
+		<sensor text="Sensor"/>
+		<graph text="Graph"/>
+		<name text="Name"/>
+		<interval text="Interval"/>
+		<head text="Head"/>
+		<data text="Data"/>
+		<faddVstup text="Input"/>
+		<Date text="Date"/>
+		<Time text="Time"/>
+		<Event text="Event"/>
+		<Storing text="Storing"/>
+		<Settings text="Settings"/>
+		<VisualElements text="Visual Elements"/>
+		<Show text="Show"/>
+		<Hide text="Hide"/>
+		<Window text="Window"/>
+		<NewWindow text="New Window"/>
+		<MyDomain text="MyDomain"/>
+
+		<miSetSensor text="Input Settings" />
+		<miSetGraph text="Graph Settings" />
+
+		<msgConnectionExists text="This connection already exists!"/>
+		<msgSaveDataConfuguration-UniqueName text="Enter the save name!"/>
+		<msgSaveDataConfuguration-NotEnteredName text="Name already exists!"/>
+		<msgfActions-SendEmail-Ok text="Email was successfully sent."/>
+		<msgfActions-SendEmail-Bad text="Following error occured in sending the mail: "/>
+		<msgfActions-SendSMS-Ok text="SMS message was successfully sent."/>
+		<msgfActions-SendSMS-Bad text="Message sending failed!"/>
+		<msgfActions-ExportWeb-Ok text="Data were successfully uploaded to web."/>
+		<msgfActions-ExportWeb-Bad text="Data uploading failed!"/>
+		<msgfActions-ExportBatch-Ok text="Batch file was successfully executed."/>
+		<msgfActions-ExportBatch-Bad text="Batch file executing failed!"/>
+		<msgfActions-NoQuido text="Any quido is not connected!"/>
+		<fActionsLabel-Value text="Value:"/>
+		<fActionsLabel-ValueMin text="Minimal value:"/>
+
+		<uWxUnitsConfiguration_acAdd    text="Add"/>
+		<uWxUnitsConfiguration_acRemove text="Remove"/>
+		<uWxUnitsConfiguration_acUp     text="Move Up"/>
+		<uWxUnitsConfiguration_acDown   text="Move Down"/>
+		<uWxUnitsConfiguration_MsgBox1_Text  text="Name of unit must be non-empty!"/>
+		<uWxUnitsConfiguration_MsgBox2_Text  text='Unit "'/>
+		<uWxUnitsConfiguration_MsgBox2_Text2 text='" is redefined!'/>
+
+		<WxDPExHigh text="Above 100"/>
+		<WxDPExNormal text="In range 0 - 100"/>
+		<WxDPExLow text="Below 0"/>
+
+		<InputStringValues-msgWrongBoundValues text="Threshold values are wrong entered!"/>
+		<InputStringValuesBoundValue text="Threshold value:"/>
+		<InputStringValuesTextValue text="Representative text:"/>
+		<InputStringValuesColorValue text="Representative colour:"/>
+
+		<fWxSaveDataConfiguration_TimeShift_Hint text="HINT"/>
+
+		<GraphSettings text="Graph Settings"/>
+		<GraphContinual text="Automatically Moving to Actual Values"/>
+
+		<smsCharCount text="Number of char (estimation): "/>
+
+		<DeviceDialogSpinelAddresMessage1 text="Device address can be set by the three ways:"/>
+		<DeviceDialogSpinelAddresMessage2 text=" 1. ASCII character"/>
+		<DeviceDialogSpinelAddresMessage3 text=" 2. Character &quot;#&quot; + number"/>
+		<DeviceDialogSpinelAddresMessage4 text=" 3. Characters &quot;#$&quot; + hexadecimal number"/>
+		<DeviceDialogSpinelAddresMessage5 text="Example:"/>
+
+		<SettingsWebServerMessage1 text="Measured values can be get at page: http://Server:Port/Data.xml"/>
+
+		<SpecialColorMessage1 text="You can use the special panel color when using graphs. If the graph shows several inputs, it is convinient to use the same color for inputs in the graph as well."/>		
+
+		<msgWrongLicenseFile text="License file is not valid!"/>
+		<msgCorrectLicenseFile text="License file was successfully loaded."/>
+		<msgWixAlreadyRunning text="Application Wix is already running!"/>
+		<msgDoYouWantToContinue text="Do you want to continue?"/>
+		<msgLicenseExpiration text="License file expired!"/>
+		<msgLicenseVersionMin texy="License file is not compatible with version of the Wix!"/>
+		
+		<Language-Shortcut text="en"/>
+
+		<DeviceGroup_Thermometers text="Thermometers"  />
+		<DeviceGroup_ADConvertors text="A/D Convertors"/>
+		<DeviceGroup_IOModules    text="I/O Modules"   />
+		<DeviceGroup_Anemometers  text="Anemometers"   />
+		<DeviceGroup_Tenzometers  text="Tenzometers"   />
+		<DeviceGroup_Others       text="Others"        />
+		<DeviceGroup_UsersDevices text="Users Devices" />
+		
+		<InCap_Temperature    text="Temperature"   />
+		<InCap_Humidity       text="Humidity"   />
+		<InCap_DewPoint       text="Dew Point" />
+		<InCap_Direction      text="Direction"      />
+		<InCap_Speed          text="Speed"  />
+		<InCap_Weight         text="Weight"  />
+		
+		<InCap_Input          text="Input"            />
+		<InCap_Output         text="Output"           />
+		<InCap_Counter        text="Counter"            />			
+
+		<InCap_Digital_input  text="Digital Input"  />
+		<InCap_Digital_output text="Digital Output" />
+		<InCap_Analog_input   text="Analog Input"  />
+		<InCap_Analog_output  text="Analog Output" />
+		<InCap_Counter_raw    text="Counter (raw)"      />
+		<InCap_Tara           text="Tare"            />
+		
+		<InCap_Display        text="Display"     />
+		<InCap_GreenLED       text="Green LED"  />
+		<InCap_RedLED         text="Red LED" />
+		
+		<InCap_Value          text="Input"       />
+		<InCap_Error          text="Error Code" />
+				
+		<InCap_Nominal_Voltage        text="Nominal Voltage"          />
+		<InCap_Line_Voltage           text="Line Voltage"             />		
+		<InCap_Current                text="Current"                  />
+		<InCap_Voltage                text="Voltage"                  />
+		<InCap_Wattage                text="Wattage"                  />
+		<InCap_Volt_Ampere_Reactive   text="Volt Ampere Reactive"     />
+		<InCap_Volt_Ampere            text="Volt Ampere"              />
+		<InCap_Power_Factor           text="Power Factor"             />		
+		<InCap_Frequency              text="Frequency"                />
+		<InCap_KWh_Imported           text="KWh Imported"             />
+		<InCap_KVarh_Imported         text="KVarh Imported"           />
+		
+		<InCap_GridFrequency          text="Grid Frequency"                   />
+		<InCap_TotalActivePower       text="Total Active Power"               />
+		<InCap_TotalReactivePower     text="Total Reactive Power"             />
+		<InCap_TotalApparentPower     text="Total Apparent Power"             />
+		<InCap_PowerFactor            text="Power Factor"                     />
+		<InCap_Tariff                 text="Tariff"                           />
+		<InCap_TotalActiveEnergy      text="Total Active Energy"              />
+		<InCap_TotalActiveEnergyT     text="Total Active Energy - Tariff"     />
+		<InCap_ForwardActiveEnergy    text="Forward Active Energy"            /> 
+		<InCap_ForwardActiveEnergyT   text="Forward Active Energy - Tariff"   />
+		<InCap_ReverseActiveEnergy    text="Reverse Active Energy"            />
+		<InCap_ReverseActiveEnergyT   text="Reverse Active Energy - Tariff"   />
+		<InCap_TotalReactiveEnergy    text="Total Reactive Energy"            />
+		<InCap_TotalReactiveEnergyT   text="Total Reactive Energy - Tariff"   />
+		<InCap_ForwardReactiveEnergy  text="Forward Reactive Energy"          />
+		<InCap_ForwardReactiveEnergyT text="Forward Reactive Energy - Tariff" />
+		<InCap_ReverseReactiveEnergy  text="Reverse Reactive Energy"          />
+		<InCap_ReverseReactiveEnergyT text="Reverse Reactive Energy - Tariff" />
+		
+		<InCap_EM_Tariff      text="Tariff"           />
+		
+		<InCap_EM_Cumulative  text="Cumulative"          />
+		<InCap_EM_Partial     text="Partial"         />
+		<InCap_EM_Monthly     text="Monthly (Actual)" />
+		<InCap_EM_MonthlyLast text="Monthly (Previous)"/>
+		<InCap_EM_Total       text="Total"/>
+		
+		<InCap_EM_ImportedActivePower   text="Imported Active Power P+"/>
+		<InCap_EM_ExportedActivePower   text="Exported Active Power P-"/>
+		<InCap_EM_ReactivePower         text="Reactive Power Q"/>
+		<InCap_EM_ImportedApparentPower text="Imported Apparent Power S+"/>
+		<InCap_EM_ExportedApparentPower text="Exported Apparent Power S-"/>
+		
+		<InCap_EM_Voltage             text="Voltage" />
+		<InCap_EM_Current             text="Current"  />
+		<InCap_EM_PowerFactor         text="Power Factor" />
+		<InCap_EM_MainsPowerFrequency text="Mains Power Frequency"  />
+		<InCap_EM_TgPhi               text="Tangent Phi"  />		
+		<InCap_EM_VoltageAbsence      text="Voltage Absence" />
+		<InCap_EM_PhaseError          text="Phase Error" />
+		
+		<InCap_EM_Instantaneous  text="Instantaneous" />
+		<InCap_EM_InstantaneousV text="Instantaneous" />
+		<InCap_EM_InstantaneousC text="Instantaneous" />
+		<InCap_EM_InstantaneousP text="Instantaneous" />
+		<InCap_EM_InstantaneousF text="Instantaneous" />
+		<InCap_EM_InstantaneousT text="Instantaneous" />
+		
+		<InCap_EM_Average  text="Average" />
+		<InCap_EM_AverageV text="Average" />
+		<InCap_EM_AverageC text="Average" />
+		<InCap_EM_AverageP text="Average" />
+		<InCap_EM_AverageF text="Average" />
+		<InCap_EM_AverageT text="Average" />
+
+		<TX20Direction_N   text="N" />
+		<TX20Direction_NNE text="NNE" />
+		<TX20Direction_NE  text="NE" />
+		<TX20Direction_ENE text="ENE" />
+		<TX20Direction_E   text="E" />
+		<TX20Direction_ESE text="ESE" />
+		<TX20Direction_SE  text="SE" />
+		<TX20Direction_SSE text="SSE" />
+		<TX20Direction_S   text="S" />
+		<TX20Direction_SSW text="SSW" />
+		<TX20Direction_SW  text="SW" />
+		<TX20Direction_WSW text="WSW" />
+		<TX20Direction_W   text="W" />
+		<TX20Direction_WNW text="WNW" />
+		<TX20Direction_NW  text="NW" />
+		<TX20Direction_NNW text="NNW" />
+		<TX20Direction_N   text="N" />
+
+
+
+		<XM_DevNumber   text="Device Number"/>
+		<XM_DevType     text="Device Type"/>
+		<XM_DcInId      text="DC In Identifier"/>
+		<XM_DcInVolt    text="DC In Voltage"/>
+		<XM_DcInCur     text="DC In Current"/>
+		<XM_DcInPow     text="DC In Power"/>
+		<XM_DcOutId     text="DC Out Identifier"/>
+		<XM_DcOutVolt   text="DC Out Voltage"/>
+		<XM_DcOutCur    text="DC Out Current"/>
+		<XM_DcOutPow    text="DC Out Power"/>
+		<XM_DcIOId      text="DC IO Identifier"/>
+		<XM_DcIOVolt    text="DC IO Voltage"/>
+		<XM_DcIOCur     text="DC IO Current"/>
+		<XM_DcIOPow     text="DC IO Power"/>
+		<XM_AcInId      text="AC In Identifier"/>
+		<XM_AcInLin     text="AC In Line"/>
+		<XM_AcInVolt    text="AC In Voltage"/>
+		<XM_AcInCur     text="AC In Current"/>
+		<XM_AcInAPow    text="AC In Apparent Power"/>
+		<XM_AcInRPow    text="AC In Real Power"/>
+		<XM_AcOutId     text="AC Out Identifier"/>
+		<XM_AcOutLin    text="AC Out Line"/>
+		<XM_AcOutVolt   text="AC Out Voltage"/>
+		<XM_AcOutCur    text="AC Out Current"/>
+		<XM_AcOutAPow   text="AC Out Apparent Power"/>
+		<XM_AcOutRPow   text="AC Out Real Power"/>
+		<XM_AcIOId      text="AC IO Identifier"/>
+		<XM_AcIOLin     text="AC IO Line"/>
+		<XM_AcIOVolt    text="AC IO Voltage"/>
+		<XM_AcIOCur     text="AC IO Current"/>
+		<XM_AcIOAPow    text="AC IO Apparent Power"/>
+		<XM_AcIORPow    text="AC IO Real Power"/>
+		<XM_BatId       text="Battery Identifier"/>
+		<XM_BatTemp     text="Battery Temperature"/>
+		<XM_BatType     text="Battery Type"/>
+		<XM_BatVolt     text="Battery Voltage"/>
+		<XM_DcSrcId     text="DC Source Identifier"/>
+		<XM_CntrlCurr   text="Control Current"/>
+		<XM_CntrlPerc   text="Control Current Perc"/>
+		<XM_ChrgAlg     text="Charging Algorithm"/>
+		<XM_ChrgOpState text="Operating State"/>
+		<XM_ChrgMode    text="Charger Mode"/>
+		<XM_CapRet      text="Capacity Returned"/>
+		<XM_Energy      text="Energy"/>
+		<XM_SrcId       text="AC Source Identifier"/>
+		<XM_InvOpState  text="Inverter Op State"/>
+		<XM_InvEnbl     text="Inverter Enabled"/>
+		<XM_InvMode     text="Inverter Mode"/>
+		<XM_InvSelEnbl  text="Inverter Sell Enabled"/>
+		<XM_InvPeakEnbl text="Inverter Peak Enabled"/>
+		<XM_InvGridEnbl text="Inverter Grid Enabled"/>
+		<XM_FaulTyp     text="Fault Type"/>
+		<XM_FaulId      text="Fault Identifier"/>
+		<XM_FaulTime    text="Fault Time"/>
+		<PowerOn        text="Power On"/>
+		<Current        text="Current"/>
+		<PowerFactor    text="Power Factor"/>
+		<Frequency      text="Frequency"/>
+		<Voltage        text="Voltage"/>
+
+	</const>
+</language>

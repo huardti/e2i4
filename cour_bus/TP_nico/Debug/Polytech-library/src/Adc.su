@@ -1,0 +1,6 @@
+Adc.c:21:6:InitAdc	8	static
+Adc.c:35:13:Adc_1_Init	4	static
+Adc.c:52:6:ADC_1_StartConversion	4	static
+Adc.c:64:9:ADC_1_CheckEndOfConversion	16	static
+Adc.c:79:6:ADC_1_ClearEndOfConversion	4	static
+Adc.c:91:10:ADC_1_GetResult	16	static

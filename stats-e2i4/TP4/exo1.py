@@ -63,7 +63,7 @@ def Intervalle_confiance_moyenne(ech,seuil,ecart_type):
     marge=2*zalpha2*ecart_type*ecart_type/(sqrt(n))
     print("Marge d'erreur de l'intervalle de confiance :",marge)
 
-    return (xbarre-marge/2,xbarre+marge/2)
+    return (xbarre-marge,xbarre+marge)
 
 print("intervalle de confiance moyenne population",Intervalle_confiance_moyenne(ech.values, 95,1))
 

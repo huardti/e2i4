@@ -1,0 +1,54 @@
+***  Installation Started 11/27/03 18:10  ***
+Title: Cypress Thermometer Driver Installation
+Source: A:\BLUEWATR\THERMUSB.EXE
+Made Dir: C:\Cypress\ThermUSB
+File Copy: C:\Cypress\ThermUSB\readme.htm
+File Copy: C:\Cypress\ThermUSB\dirs
+Made Dir: C:\Cypress\ThermUSB\Driver
+File Copy: C:\Cypress\ThermUSB\Driver\drventry.cpp
+File Copy: C:\Cypress\ThermUSB\Driver\Ioctlrw.cpp
+File Copy: C:\Cypress\ThermUSB\Driver\makefile
+File Copy: C:\Cypress\ThermUSB\Driver\sources
+File Copy: C:\Cypress\ThermUSB\Driver\ThermUsb.cpp
+File Copy: C:\Cypress\ThermUSB\Driver\ThermUsb.h
+File Copy: C:\Cypress\ThermUSB\Driver\ThermUsb.inf
+File Copy: C:\Cypress\ThermUSB\Driver\ThermUsb.rc
+Made Dir: C:\Cypress\ThermUSB\Inc
+File Copy: C:\Cypress\ThermUSB\Inc\DDThermU.h
+Made Dir: C:\Cypress\ThermUSB\UserTest
+File Copy: C:\Cypress\ThermUSB\UserTest\makefile
+File Copy: C:\Cypress\ThermUSB\UserTest\sources
+File Copy: C:\Cypress\ThermUSB\UserTest\ThermUsbTest.cpp
+File Copy: C:\Cypress\ThermUSB\UserTest\TTest.cpp
+File Copy: C:\Cypress\ThermUSB\UserTest\TTest.exe
+Made Dir: C:\Cypress\ThermUSB\ThermGUI
+File Copy: C:\Cypress\ThermUSB\ThermGUI\Resource.h
+File Copy: C:\Cypress\ThermUSB\ThermGUI\SliderBrightness.cpp
+File Copy: C:\Cypress\ThermUSB\ThermGUI\SliderBrightness.h
+File Copy: C:\Cypress\ThermUSB\ThermGUI\StdAfx.cpp
+File Copy: C:\Cypress\ThermUSB\ThermGUI\StdAfx.h
+File Copy: C:\Cypress\ThermUSB\ThermGUI\ThermGui.cpp
+File Copy: C:\Cypress\ThermUSB\ThermGUI\ThermGui.dsp
+File Copy: C:\Cypress\ThermUSB\ThermGUI\ThermGui.h
+File Copy: C:\Cypress\ThermUSB\ThermGUI\ThermGui.rc
+File Copy: C:\Cypress\ThermUSB\ThermGUI\ThermGuiDlg.cpp
+File Copy: C:\Cypress\ThermUSB\ThermGUI\ThermGuiDlg.h
+File Copy: C:\Cypress\ThermUSB\ThermGUI\ThermUsbFunctions.cpp
+File Copy: C:\Cypress\ThermUSB\ThermGUI\ThermUsbFunctions.h
+Made Dir: C:\Cypress\ThermUSB\ThermGUI\res
+File Copy: C:\Cypress\ThermUSB\ThermGUI\res\BlueLogo.bmp
+File Copy: C:\Cypress\ThermUSB\ThermGUI\res\ThermGui.ico
+File Copy: C:\Cypress\ThermUSB\ThermGUI\res\ThermGui.rc2
+File Copy: C:\Cypress\ThermUSB\ThermGUI\ThermGui.exe
+Made Dir: C:\Cypress\ThermUSB\InstallDiskette
+File Copy: C:\Cypress\ThermUSB\InstallDiskette\ThermUsb.inf
+File Copy: C:\Cypress\ThermUSB\InstallDiskette\ThermUsb.sys
+File Copy: C:\CYPRESS\THERMUSB\UNWISE.EXE
+RegDB Key: Software\Microsoft\Windows\CurrentVersion\Uninstall\Cypress Thermometer Reference Driver
+RegDB Val: Cypress Thermometer Reference Driver
+RegDB Name: DisplayName
+RegDB Root: 2
+RegDB Key: Software\Microsoft\Windows\CurrentVersion\Uninstall\Cypress Thermometer Reference Driver
+RegDB Val: C:\CYPRESS\THERMUSB\UNWISE.EXE C:\CYPRESS\THERMUSB\INSTALL.LOG
+RegDB Name: UninstallString
+RegDB Root: 2
