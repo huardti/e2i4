@@ -1,2 +1,2 @@
 Spi.c:14:6:Spi1_Init	4	static
-Spi.c:37:6:Spi1Write	16	static
+Spi.c:32:6:Spi1Write	16	static

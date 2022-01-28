@@ -81,9 +81,9 @@ Polytech-IESE-E2i-SPI.bin: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_
 	@echo ' '
 
 # Other Targets
-#clean:
-#	-$(RM) Polytech-IESE-E2i-SPI.bin Polytech-IESE-E2i-SPI.elf Polytech-IESE-E2i-SPI.list default.size.stdout
-#	-@echo ' '
+clean:
+	-$(RM) Polytech-IESE-E2i-SPI.bin Polytech-IESE-E2i-SPI.elf Polytech-IESE-E2i-SPI.list default.size.stdout
+	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_BIN)
 

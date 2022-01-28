@@ -80,14 +80,6 @@ Discarded input sections
  .text          0x0000000000000000        0x0 ./Polytech-library/src/Adc.o
  .data          0x0000000000000000        0x0 ./Polytech-library/src/Adc.o
  .bss           0x0000000000000000        0x0 ./Polytech-library/src/Adc.o
- .text.ADC_1_StartConversion
-                0x0000000000000000       0x20 ./Polytech-library/src/Adc.o
- .text.ADC_1_CheckEndOfConversion
-                0x0000000000000000       0x24 ./Polytech-library/src/Adc.o
- .text.ADC_1_ClearEndOfConversion
-                0x0000000000000000       0x20 ./Polytech-library/src/Adc.o
- .text.ADC_1_GetResult
-                0x0000000000000000       0x20 ./Polytech-library/src/Adc.o
  .group         0x0000000000000000        0x8 ./Polytech-library/src/Clocks.o
  .group         0x0000000000000000        0x8 ./Polytech-library/src/Clocks.o
  .group         0x0000000000000000        0x8 ./Polytech-library/src/Clocks.o
@@ -252,16 +244,8 @@ Discarded input sections
  .text          0x0000000000000000        0x0 ./Polytech-library/src/Timer.o
  .data          0x0000000000000000        0x0 ./Polytech-library/src/Timer.o
  .bss           0x0000000000000000        0x0 ./Polytech-library/src/Timer.o
- .text.StartTimer_1
-                0x0000000000000000       0x24 ./Polytech-library/src/Timer.o
- .text.StopTimer_1
-                0x0000000000000000       0x20 ./Polytech-library/src/Timer.o
  .text.GetTimer1Count
                 0x0000000000000000       0x18 ./Polytech-library/src/Timer.o
- .text.GetUpdateEvent
-                0x0000000000000000       0x20 ./Polytech-library/src/Timer.o
- .text.ResetUpdateEvent
-                0x0000000000000000       0x20 ./Polytech-library/src/Timer.o
  .debug_macro   0x0000000000000000      0x8b0 ./Polytech-library/src/Timer.o
  .debug_macro   0x0000000000000000       0x46 ./Polytech-library/src/Timer.o
  .debug_macro   0x0000000000000000       0x28 ./Polytech-library/src/Timer.o
@@ -359,7 +343,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x73b ./Polytech-library/src/Uart.o
  .debug_macro   0x0000000000000000       0x7f ./Polytech-library/src/Uart.o
  .debug_line    0x0000000000000000      0x38a ./Polytech-library/src/Uart.o
- .debug_str     0x0000000000000000    0x5205f ./Polytech-library/src/Uart.o
+ .debug_str     0x0000000000000000    0x52062 ./Polytech-library/src/Uart.o
  .comment       0x0000000000000000       0x32 ./Polytech-library/src/Uart.o
  .debug_frame   0x0000000000000000       0xe8 ./Polytech-library/src/Uart.o
  .ARM.attributes
@@ -405,12 +389,8 @@ Discarded input sections
  .text          0x0000000000000000        0x0 ./Polytech-library/src/code_eleve.o
  .data          0x0000000000000000        0x0 ./Polytech-library/src/code_eleve.o
  .bss           0x0000000000000000        0x0 ./Polytech-library/src/code_eleve.o
- .text.Timer_t1ms
-                0x0000000000000000       0x3c ./Polytech-library/src/code_eleve.o
  .text.SignalTriangle
-                0x0000000000000000        0xe ./Polytech-library/src/code_eleve.o
- .text.RestitutionAnalogue
-                0x0000000000000000        0xe ./Polytech-library/src/code_eleve.o
+                0x0000000000000000       0x30 ./Polytech-library/src/code_eleve.o
  .debug_macro   0x0000000000000000      0x8b0 ./Polytech-library/src/code_eleve.o
  .debug_macro   0x0000000000000000       0x28 ./Polytech-library/src/code_eleve.o
  .debug_macro   0x0000000000000000       0x3b ./Polytech-library/src/code_eleve.o
@@ -497,7 +477,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x73b ./cmsis_lib/source/misc.o
  .debug_macro   0x0000000000000000       0x79 ./cmsis_lib/source/misc.o
  .debug_line    0x0000000000000000      0x341 ./cmsis_lib/source/misc.o
- .debug_str     0x0000000000000000    0x5225d ./cmsis_lib/source/misc.o
+ .debug_str     0x0000000000000000    0x52260 ./cmsis_lib/source/misc.o
  .comment       0x0000000000000000       0x32 ./cmsis_lib/source/misc.o
  .debug_frame   0x0000000000000000       0xd8 ./cmsis_lib/source/misc.o
  .ARM.attributes
@@ -639,7 +619,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x7f ./cmsis_lib/source/stm32f4xx_adc.o
  .debug_macro   0x0000000000000000      0x44e ./cmsis_lib/source/stm32f4xx_adc.o
  .debug_line    0x0000000000000000      0x66a ./cmsis_lib/source/stm32f4xx_adc.o
- .debug_str     0x0000000000000000    0x55b0d ./cmsis_lib/source/stm32f4xx_adc.o
+ .debug_str     0x0000000000000000    0x55b10 ./cmsis_lib/source/stm32f4xx_adc.o
  .comment       0x0000000000000000       0x32 ./cmsis_lib/source/stm32f4xx_adc.o
  .debug_frame   0x0000000000000000      0x5ec ./cmsis_lib/source/stm32f4xx_adc.o
  .ARM.attributes
@@ -716,7 +696,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x73b ./cmsis_lib/source/stm32f4xx_crc.o
  .debug_macro   0x0000000000000000       0x7f ./cmsis_lib/source/stm32f4xx_crc.o
  .debug_line    0x0000000000000000      0x357 ./cmsis_lib/source/stm32f4xx_crc.o
- .debug_str     0x0000000000000000    0x520b0 ./cmsis_lib/source/stm32f4xx_crc.o
+ .debug_str     0x0000000000000000    0x520b3 ./cmsis_lib/source/stm32f4xx_crc.o
  .comment       0x0000000000000000       0x32 ./cmsis_lib/source/stm32f4xx_crc.o
  .debug_frame   0x0000000000000000       0xe8 ./cmsis_lib/source/stm32f4xx_crc.o
  .ARM.attributes
@@ -818,7 +798,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x7f ./cmsis_lib/source/stm32f4xx_dma.o
  .debug_macro   0x0000000000000000      0x471 ./cmsis_lib/source/stm32f4xx_dma.o
  .debug_line    0x0000000000000000      0x524 ./cmsis_lib/source/stm32f4xx_dma.o
- .debug_str     0x0000000000000000    0x526c3 ./cmsis_lib/source/stm32f4xx_dma.o
+ .debug_str     0x0000000000000000    0x526c6 ./cmsis_lib/source/stm32f4xx_dma.o
  .comment       0x0000000000000000       0x32 ./cmsis_lib/source/stm32f4xx_dma.o
  .debug_frame   0x0000000000000000      0x308 ./cmsis_lib/source/stm32f4xx_dma.o
  .ARM.attributes
@@ -899,7 +879,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x7f ./cmsis_lib/source/stm32f4xx_exti.o
  .debug_macro   0x0000000000000000       0xa6 ./cmsis_lib/source/stm32f4xx_exti.o
  .debug_line    0x0000000000000000      0x39a ./cmsis_lib/source/stm32f4xx_exti.o
- .debug_str     0x0000000000000000    0x521e0 ./cmsis_lib/source/stm32f4xx_exti.o
+ .debug_str     0x0000000000000000    0x521e3 ./cmsis_lib/source/stm32f4xx_exti.o
  .comment       0x0000000000000000       0x32 ./cmsis_lib/source/stm32f4xx_exti.o
  .debug_frame   0x0000000000000000      0x148 ./cmsis_lib/source/stm32f4xx_exti.o
  .ARM.attributes
@@ -992,7 +972,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x7f ./cmsis_lib/source/stm32f4xx_gpio.o
  .debug_macro   0x0000000000000000      0x25f ./cmsis_lib/source/stm32f4xx_gpio.o
  .debug_line    0x0000000000000000      0x44f ./cmsis_lib/source/stm32f4xx_gpio.o
- .debug_str     0x0000000000000000    0x52301 ./cmsis_lib/source/stm32f4xx_gpio.o
+ .debug_str     0x0000000000000000    0x52304 ./cmsis_lib/source/stm32f4xx_gpio.o
  .comment       0x0000000000000000       0x32 ./cmsis_lib/source/stm32f4xx_gpio.o
  .debug_frame   0x0000000000000000      0x23c ./cmsis_lib/source/stm32f4xx_gpio.o
  .ARM.attributes
@@ -1122,7 +1102,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x7f ./cmsis_lib/source/stm32f4xx_i2c.o
  .debug_macro   0x0000000000000000      0x2ab ./cmsis_lib/source/stm32f4xx_i2c.o
  .debug_line    0x0000000000000000      0x5d3 ./cmsis_lib/source/stm32f4xx_i2c.o
- .debug_str     0x0000000000000000    0x524d9 ./cmsis_lib/source/stm32f4xx_i2c.o
+ .debug_str     0x0000000000000000    0x524dc ./cmsis_lib/source/stm32f4xx_i2c.o
  .comment       0x0000000000000000       0x32 ./cmsis_lib/source/stm32f4xx_i2c.o
  .debug_frame   0x0000000000000000      0x530 ./cmsis_lib/source/stm32f4xx_i2c.o
  .ARM.attributes
@@ -1211,7 +1191,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x7f ./cmsis_lib/source/stm32f4xx_pwr.o
  .debug_macro   0x0000000000000000       0xa0 ./cmsis_lib/source/stm32f4xx_pwr.o
  .debug_line    0x0000000000000000      0x3df ./cmsis_lib/source/stm32f4xx_pwr.o
- .debug_str     0x0000000000000000    0x524a5 ./cmsis_lib/source/stm32f4xx_pwr.o
+ .debug_str     0x0000000000000000    0x524a8 ./cmsis_lib/source/stm32f4xx_pwr.o
  .comment       0x0000000000000000       0x32 ./cmsis_lib/source/stm32f4xx_pwr.o
  .debug_frame   0x0000000000000000      0x1dc ./cmsis_lib/source/stm32f4xx_pwr.o
  .ARM.attributes
@@ -1366,7 +1346,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x7f ./cmsis_lib/source/stm32f4xx_rcc.o
  .debug_macro   0x0000000000000000      0x532 ./cmsis_lib/source/stm32f4xx_rcc.o
  .debug_line    0x0000000000000000      0x69f ./cmsis_lib/source/stm32f4xx_rcc.o
- .debug_str     0x0000000000000000    0x52bae ./cmsis_lib/source/stm32f4xx_rcc.o
+ .debug_str     0x0000000000000000    0x52bb1 ./cmsis_lib/source/stm32f4xx_rcc.o
  .comment       0x0000000000000000       0x32 ./cmsis_lib/source/stm32f4xx_rcc.o
  .debug_frame   0x0000000000000000      0x6d4 ./cmsis_lib/source/stm32f4xx_rcc.o
  .ARM.attributes
@@ -1479,7 +1459,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x7f ./cmsis_lib/source/stm32f4xx_spi.o
  .debug_macro   0x0000000000000000      0x364 ./cmsis_lib/source/stm32f4xx_spi.o
  .debug_line    0x0000000000000000      0x553 ./cmsis_lib/source/stm32f4xx_spi.o
- .debug_str     0x0000000000000000    0x525bb ./cmsis_lib/source/stm32f4xx_spi.o
+ .debug_str     0x0000000000000000    0x525be ./cmsis_lib/source/stm32f4xx_spi.o
  .comment       0x0000000000000000       0x32 ./cmsis_lib/source/stm32f4xx_spi.o
  .debug_frame   0x0000000000000000      0x3f4 ./cmsis_lib/source/stm32f4xx_spi.o
  .ARM.attributes
@@ -1556,7 +1536,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x7f ./cmsis_lib/source/stm32f4xx_syscfg.o
  .debug_macro   0x0000000000000000       0xd9 ./cmsis_lib/source/stm32f4xx_syscfg.o
  .debug_line    0x0000000000000000      0x352 ./cmsis_lib/source/stm32f4xx_syscfg.o
- .debug_str     0x0000000000000000    0x522b9 ./cmsis_lib/source/stm32f4xx_syscfg.o
+ .debug_str     0x0000000000000000    0x522bc ./cmsis_lib/source/stm32f4xx_syscfg.o
  .comment       0x0000000000000000       0x32 ./cmsis_lib/source/stm32f4xx_syscfg.o
  .debug_frame   0x0000000000000000       0xf4 ./cmsis_lib/source/stm32f4xx_syscfg.o
  .ARM.attributes
@@ -1804,7 +1784,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x7f ./cmsis_lib/source/stm32f4xx_tim.o
  .debug_macro   0x0000000000000000      0x735 ./cmsis_lib/source/stm32f4xx_tim.o
  .debug_line    0x0000000000000000      0xbb9 ./cmsis_lib/source/stm32f4xx_tim.o
- .debug_str     0x0000000000000000    0x52c61 ./cmsis_lib/source/stm32f4xx_tim.o
+ .debug_str     0x0000000000000000    0x52c64 ./cmsis_lib/source/stm32f4xx_tim.o
  .comment       0x0000000000000000       0x32 ./cmsis_lib/source/stm32f4xx_tim.o
  .debug_frame   0x0000000000000000      0xe54 ./cmsis_lib/source/stm32f4xx_tim.o
  .ARM.attributes
@@ -1825,23 +1805,10 @@ Discarded input sections
  .group         0x0000000000000000        0x8 ./src/main.o
  .group         0x0000000000000000        0x8 ./src/main.o
  .group         0x0000000000000000        0x8 ./src/main.o
- .group         0x0000000000000000        0x8 ./src/main.o
- .group         0x0000000000000000        0x8 ./src/main.o
- .group         0x0000000000000000        0x8 ./src/main.o
- .group         0x0000000000000000        0x8 ./src/main.o
- .group         0x0000000000000000        0x8 ./src/main.o
- .group         0x0000000000000000        0x8 ./src/main.o
- .group         0x0000000000000000        0x8 ./src/main.o
- .group         0x0000000000000000        0x8 ./src/main.o
- .group         0x0000000000000000        0x8 ./src/main.o
- .group         0x0000000000000000        0x8 ./src/main.o
- .group         0x0000000000000000        0x8 ./src/main.o
- .group         0x0000000000000000        0x8 ./src/main.o
  .text          0x0000000000000000        0x0 ./src/main.o
  .data          0x0000000000000000        0x0 ./src/main.o
  .bss           0x0000000000000000        0x0 ./src/main.o
  .debug_macro   0x0000000000000000      0x8b0 ./src/main.o
- .debug_macro   0x0000000000000000       0x46 ./src/main.o
  .debug_macro   0x0000000000000000       0x28 ./src/main.o
  .debug_macro   0x0000000000000000       0x3b ./src/main.o
  .debug_macro   0x0000000000000000       0x22 ./src/main.o
@@ -1854,17 +1821,6 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x26 ./src/main.o
  .debug_macro   0x0000000000000000      0xd39 ./src/main.o
  .debug_macro   0x0000000000000000     0x9ce3 ./src/main.o
- .debug_macro   0x0000000000000000       0x43 ./src/main.o
- .debug_macro   0x0000000000000000      0x477 ./src/main.o
- .debug_macro   0x0000000000000000       0xac ./src/main.o
- .debug_macro   0x0000000000000000      0x265 ./src/main.o
- .debug_macro   0x0000000000000000      0x2b1 ./src/main.o
- .debug_macro   0x0000000000000000       0xa6 ./src/main.o
- .debug_macro   0x0000000000000000      0x538 ./src/main.o
- .debug_macro   0x0000000000000000      0x36a ./src/main.o
- .debug_macro   0x0000000000000000       0xdf ./src/main.o
- .debug_macro   0x0000000000000000      0x73b ./src/main.o
- .debug_macro   0x0000000000000000       0x7f ./src/main.o
  .debug_macro   0x0000000000000000       0x2e ./src/main.o
  .debug_macro   0x0000000000000000       0x28 ./src/main.o
  .debug_macro   0x0000000000000000       0x10 ./src/main.o
@@ -2018,7 +1974,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 ./src/tiny_printf.o
  .debug_macro   0x0000000000000000       0x35 ./src/tiny_printf.o
  .debug_line    0x0000000000000000      0x343 ./src/tiny_printf.o
- .debug_str     0x0000000000000000     0x6feb ./src/tiny_printf.o
+ .debug_str     0x0000000000000000     0x6fee ./src/tiny_printf.o
  .comment       0x0000000000000000       0x32 ./src/tiny_printf.o
  .debug_frame   0x0000000000000000      0x1bc ./src/tiny_printf.o
  .ARM.attributes
@@ -2256,7 +2212,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
                 0x0000000008000000                g_pfnVectors
                 0x00000000080001c4                . = ALIGN (0x4)
 
-.text           0x00000000080001c4      0x498
+.text           0x00000000080001c4      0x65c
                 0x00000000080001c4                . = ALIGN (0x4)
  *(.text)
  .text          0x00000000080001c4       0xa4 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
@@ -2267,220 +2223,248 @@ LOAD /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
                 0x00000000080002b8                InitAdc
  .text.Adc_1_Init
                 0x00000000080002d0       0x2c ./Polytech-library/src/Adc.o
+ .text.ADC_1_StartConversion
+                0x00000000080002fc       0x20 ./Polytech-library/src/Adc.o
+                0x00000000080002fc                ADC_1_StartConversion
+ .text.ADC_1_CheckEndOfConversion
+                0x000000000800031c       0x24 ./Polytech-library/src/Adc.o
+                0x000000000800031c                ADC_1_CheckEndOfConversion
+ .text.ADC_1_ClearEndOfConversion
+                0x0000000008000340       0x20 ./Polytech-library/src/Adc.o
+                0x0000000008000340                ADC_1_ClearEndOfConversion
+ .text.ADC_1_GetResult
+                0x0000000008000360       0x20 ./Polytech-library/src/Adc.o
+                0x0000000008000360                ADC_1_GetResult
  .text.ClockConfiguration
-                0x00000000080002fc       0x60 ./Polytech-library/src/Clocks.o
-                0x00000000080002fc                ClockConfiguration
+                0x0000000008000380       0x60 ./Polytech-library/src/Clocks.o
+                0x0000000008000380                ClockConfiguration
  .text.SetClocks
-                0x000000000800035c        0xc ./Polytech-library/src/Clocks.o
-                0x000000000800035c                SetClocks
+                0x00000000080003e0        0xc ./Polytech-library/src/Clocks.o
+                0x00000000080003e0                SetClocks
  .text.EnablePeripheralClocks
-                0x0000000008000368       0x30 ./Polytech-library/src/Clocks.o
+                0x00000000080003ec       0x30 ./Polytech-library/src/Clocks.o
  .text.InitPeripheral
-                0x0000000008000398       0x70 ./Polytech-library/src/Port_conf.o
-                0x0000000008000398                InitPeripheral
+                0x000000000800041c       0x78 ./Polytech-library/src/Port_conf.o
+                0x000000000800041c                InitPeripheral
  .text.Spi1_Init
-                0x0000000008000408       0x24 ./Polytech-library/src/Spi.o
-                0x0000000008000408                Spi1_Init
+                0x0000000008000494       0x24 ./Polytech-library/src/Spi.o
+                0x0000000008000494                Spi1_Init
  .text.Spi1Write
-                0x000000000800042c       0x20 ./Polytech-library/src/Spi.o
-                0x000000000800042c                Spi1Write
+                0x00000000080004b8       0x20 ./Polytech-library/src/Spi.o
+                0x00000000080004b8                Spi1Write
  .text.InitTimer_1
-                0x000000000800044c       0x38 ./Polytech-library/src/Timer.o
-                0x000000000800044c                InitTimer_1
+                0x00000000080004d8       0x38 ./Polytech-library/src/Timer.o
+                0x00000000080004d8                InitTimer_1
+ .text.StartTimer_1
+                0x0000000008000510       0x24 ./Polytech-library/src/Timer.o
+                0x0000000008000510                StartTimer_1
+ .text.StopTimer_1
+                0x0000000008000534       0x20 ./Polytech-library/src/Timer.o
+                0x0000000008000534                StopTimer_1
+ .text.GetUpdateEvent
+                0x0000000008000554       0x20 ./Polytech-library/src/Timer.o
+                0x0000000008000554                GetUpdateEvent
+ .text.ResetUpdateEvent
+                0x0000000008000574       0x20 ./Polytech-library/src/Timer.o
+                0x0000000008000574                ResetUpdateEvent
+ .text.Timer_t1ms
+                0x0000000008000594       0x3c ./Polytech-library/src/code_eleve.o
  .text.Drive_CS_pin
-                0x0000000008000484       0x2c ./Polytech-library/src/code_eleve.o
+                0x00000000080005d0       0x2c ./Polytech-library/src/code_eleve.o
  .text.WriteToDAC
-                0x00000000080004b0       0x4c ./Polytech-library/src/code_eleve.o
-                0x00000000080004b0                WriteToDAC
- .text.main     0x00000000080004fc       0x2a ./src/main.o
-                0x00000000080004fc                main
- *fill*         0x0000000008000526        0x2 
+                0x00000000080005fc       0x50 ./Polytech-library/src/code_eleve.o
+                0x00000000080005fc                WriteToDAC
+ .text.RestitutionAnalogue
+                0x000000000800064c       0x5c ./Polytech-library/src/code_eleve.o
+                0x000000000800064c                RestitutionAnalogue
+ .text.main     0x00000000080006a8       0x44 ./src/main.o
+                0x00000000080006a8                main
  .text.Reset_Handler
-                0x0000000008000528       0x50 ./src/startup_stm32f446xx.o
-                0x0000000008000528                Reset_Handler
+                0x00000000080006ec       0x50 ./src/startup_stm32f446xx.o
+                0x00000000080006ec                Reset_Handler
  .text.Default_Handler
-                0x0000000008000578        0x2 ./src/startup_stm32f446xx.o
-                0x0000000008000578                RTC_Alarm_IRQHandler
-                0x0000000008000578                EXTI2_IRQHandler
-                0x0000000008000578                TIM8_CC_IRQHandler
-                0x0000000008000578                SPI4_IRQHandler
-                0x0000000008000578                TIM1_CC_IRQHandler
-                0x0000000008000578                QuadSPI_IRQHandler
-                0x0000000008000578                DMA2_Stream5_IRQHandler
-                0x0000000008000578                DMA1_Stream5_IRQHandler
-                0x0000000008000578                PVD_IRQHandler
-                0x0000000008000578                SDIO_IRQHandler
-                0x0000000008000578                TAMP_STAMP_IRQHandler
-                0x0000000008000578                CAN2_RX1_IRQHandler
-                0x0000000008000578                EXTI3_IRQHandler
-                0x0000000008000578                TIM8_TRG_COM_TIM14_IRQHandler
-                0x0000000008000578                TIM1_UP_TIM10_IRQHandler
-                0x0000000008000578                TIM8_UP_TIM13_IRQHandler
-                0x0000000008000578                I2C3_ER_IRQHandler
-                0x0000000008000578                FMPI2C1_Event_IRQHandler
-                0x0000000008000578                EXTI0_IRQHandler
-                0x0000000008000578                I2C2_EV_IRQHandler
-                0x0000000008000578                DMA1_Stream2_IRQHandler
-                0x0000000008000578                CAN1_RX0_IRQHandler
-                0x0000000008000578                FPU_IRQHandler
-                0x0000000008000578                OTG_HS_WKUP_IRQHandler
-                0x0000000008000578                CAN2_SCE_IRQHandler
-                0x0000000008000578                DMA2_Stream2_IRQHandler
-                0x0000000008000578                SPI1_IRQHandler
-                0x0000000008000578                TIM6_DAC_IRQHandler
-                0x0000000008000578                TIM1_BRK_TIM9_IRQHandler
-                0x0000000008000578                DCMI_IRQHandler
-                0x0000000008000578                CAN2_RX0_IRQHandler
-                0x0000000008000578                DMA2_Stream3_IRQHandler
-                0x0000000008000578                SAI2_IRQHandler
-                0x0000000008000578                USART6_IRQHandler
-                0x0000000008000578                USART3_IRQHandler
-                0x0000000008000578                CAN1_RX1_IRQHandler
-                0x0000000008000578                UART5_IRQHandler
-                0x0000000008000578                DMA2_Stream0_IRQHandler
-                0x0000000008000578                TIM4_IRQHandler
-                0x0000000008000578                I2C1_EV_IRQHandler
-                0x0000000008000578                DMA1_Stream6_IRQHandler
-                0x0000000008000578                DMA1_Stream1_IRQHandler
-                0x0000000008000578                UART4_IRQHandler
-                0x0000000008000578                TIM3_IRQHandler
-                0x0000000008000578                RCC_IRQHandler
-                0x0000000008000578                TIM8_BRK_TIM12_IRQHandler
-                0x0000000008000578                Default_Handler
-                0x0000000008000578                CEC_IRQHandler
-                0x0000000008000578                EXTI15_10_IRQHandler
-                0x0000000008000578                ADC_IRQHandler
-                0x0000000008000578                DMA1_Stream7_IRQHandler
-                0x0000000008000578                TIM7_IRQHandler
-                0x0000000008000578                CAN2_TX_IRQHandler
-                0x0000000008000578                TIM5_IRQHandler
-                0x0000000008000578                DMA2_Stream7_IRQHandler
-                0x0000000008000578                I2C3_EV_IRQHandler
-                0x0000000008000578                EXTI9_5_IRQHandler
-                0x0000000008000578                RTC_WKUP_IRQHandler
-                0x0000000008000578                SPDIF_RX_IRQHandler
-                0x0000000008000578                SPI2_IRQHandler
-                0x0000000008000578                OTG_HS_EP1_IN_IRQHandler
-                0x0000000008000578                DMA1_Stream0_IRQHandler
-                0x0000000008000578                CAN1_TX_IRQHandler
-                0x0000000008000578                EXTI4_IRQHandler
-                0x0000000008000578                OTG_HS_EP1_OUT_IRQHandler
-                0x0000000008000578                WWDG_IRQHandler
-                0x0000000008000578                TIM2_IRQHandler
-                0x0000000008000578                OTG_FS_WKUP_IRQHandler
-                0x0000000008000578                TIM1_TRG_COM_TIM11_IRQHandler
-                0x0000000008000578                OTG_HS_IRQHandler
-                0x0000000008000578                EXTI1_IRQHandler
-                0x0000000008000578                USART2_IRQHandler
-                0x0000000008000578                I2C2_ER_IRQHandler
-                0x0000000008000578                DMA2_Stream1_IRQHandler
-                0x0000000008000578                CAN1_SCE_IRQHandler
-                0x0000000008000578                FLASH_IRQHandler
-                0x0000000008000578                DMA2_Stream4_IRQHandler
-                0x0000000008000578                USART1_IRQHandler
-                0x0000000008000578                OTG_FS_IRQHandler
-                0x0000000008000578                SPI3_IRQHandler
-                0x0000000008000578                DMA1_Stream4_IRQHandler
-                0x0000000008000578                I2C1_ER_IRQHandler
-                0x0000000008000578                FMC_IRQHandler
-                0x0000000008000578                DMA2_Stream6_IRQHandler
-                0x0000000008000578                SAI1_IRQHandler
-                0x0000000008000578                DMA1_Stream3_IRQHandler
-                0x0000000008000578                FMPI2C1_Error_IRQHandler
+                0x000000000800073c        0x2 ./src/startup_stm32f446xx.o
+                0x000000000800073c                RTC_Alarm_IRQHandler
+                0x000000000800073c                EXTI2_IRQHandler
+                0x000000000800073c                TIM8_CC_IRQHandler
+                0x000000000800073c                SPI4_IRQHandler
+                0x000000000800073c                TIM1_CC_IRQHandler
+                0x000000000800073c                QuadSPI_IRQHandler
+                0x000000000800073c                DMA2_Stream5_IRQHandler
+                0x000000000800073c                DMA1_Stream5_IRQHandler
+                0x000000000800073c                PVD_IRQHandler
+                0x000000000800073c                SDIO_IRQHandler
+                0x000000000800073c                TAMP_STAMP_IRQHandler
+                0x000000000800073c                CAN2_RX1_IRQHandler
+                0x000000000800073c                EXTI3_IRQHandler
+                0x000000000800073c                TIM8_TRG_COM_TIM14_IRQHandler
+                0x000000000800073c                TIM1_UP_TIM10_IRQHandler
+                0x000000000800073c                TIM8_UP_TIM13_IRQHandler
+                0x000000000800073c                I2C3_ER_IRQHandler
+                0x000000000800073c                FMPI2C1_Event_IRQHandler
+                0x000000000800073c                EXTI0_IRQHandler
+                0x000000000800073c                I2C2_EV_IRQHandler
+                0x000000000800073c                DMA1_Stream2_IRQHandler
+                0x000000000800073c                CAN1_RX0_IRQHandler
+                0x000000000800073c                FPU_IRQHandler
+                0x000000000800073c                OTG_HS_WKUP_IRQHandler
+                0x000000000800073c                CAN2_SCE_IRQHandler
+                0x000000000800073c                DMA2_Stream2_IRQHandler
+                0x000000000800073c                SPI1_IRQHandler
+                0x000000000800073c                TIM6_DAC_IRQHandler
+                0x000000000800073c                TIM1_BRK_TIM9_IRQHandler
+                0x000000000800073c                DCMI_IRQHandler
+                0x000000000800073c                CAN2_RX0_IRQHandler
+                0x000000000800073c                DMA2_Stream3_IRQHandler
+                0x000000000800073c                SAI2_IRQHandler
+                0x000000000800073c                USART6_IRQHandler
+                0x000000000800073c                USART3_IRQHandler
+                0x000000000800073c                CAN1_RX1_IRQHandler
+                0x000000000800073c                UART5_IRQHandler
+                0x000000000800073c                DMA2_Stream0_IRQHandler
+                0x000000000800073c                TIM4_IRQHandler
+                0x000000000800073c                I2C1_EV_IRQHandler
+                0x000000000800073c                DMA1_Stream6_IRQHandler
+                0x000000000800073c                DMA1_Stream1_IRQHandler
+                0x000000000800073c                UART4_IRQHandler
+                0x000000000800073c                TIM3_IRQHandler
+                0x000000000800073c                RCC_IRQHandler
+                0x000000000800073c                TIM8_BRK_TIM12_IRQHandler
+                0x000000000800073c                Default_Handler
+                0x000000000800073c                CEC_IRQHandler
+                0x000000000800073c                EXTI15_10_IRQHandler
+                0x000000000800073c                ADC_IRQHandler
+                0x000000000800073c                DMA1_Stream7_IRQHandler
+                0x000000000800073c                TIM7_IRQHandler
+                0x000000000800073c                CAN2_TX_IRQHandler
+                0x000000000800073c                TIM5_IRQHandler
+                0x000000000800073c                DMA2_Stream7_IRQHandler
+                0x000000000800073c                I2C3_EV_IRQHandler
+                0x000000000800073c                EXTI9_5_IRQHandler
+                0x000000000800073c                RTC_WKUP_IRQHandler
+                0x000000000800073c                SPDIF_RX_IRQHandler
+                0x000000000800073c                SPI2_IRQHandler
+                0x000000000800073c                OTG_HS_EP1_IN_IRQHandler
+                0x000000000800073c                DMA1_Stream0_IRQHandler
+                0x000000000800073c                CAN1_TX_IRQHandler
+                0x000000000800073c                EXTI4_IRQHandler
+                0x000000000800073c                OTG_HS_EP1_OUT_IRQHandler
+                0x000000000800073c                WWDG_IRQHandler
+                0x000000000800073c                TIM2_IRQHandler
+                0x000000000800073c                OTG_FS_WKUP_IRQHandler
+                0x000000000800073c                TIM1_TRG_COM_TIM11_IRQHandler
+                0x000000000800073c                OTG_HS_IRQHandler
+                0x000000000800073c                EXTI1_IRQHandler
+                0x000000000800073c                USART2_IRQHandler
+                0x000000000800073c                I2C2_ER_IRQHandler
+                0x000000000800073c                DMA2_Stream1_IRQHandler
+                0x000000000800073c                CAN1_SCE_IRQHandler
+                0x000000000800073c                FLASH_IRQHandler
+                0x000000000800073c                DMA2_Stream4_IRQHandler
+                0x000000000800073c                USART1_IRQHandler
+                0x000000000800073c                OTG_FS_IRQHandler
+                0x000000000800073c                SPI3_IRQHandler
+                0x000000000800073c                DMA1_Stream4_IRQHandler
+                0x000000000800073c                I2C1_ER_IRQHandler
+                0x000000000800073c                FMC_IRQHandler
+                0x000000000800073c                DMA2_Stream6_IRQHandler
+                0x000000000800073c                SAI1_IRQHandler
+                0x000000000800073c                DMA1_Stream3_IRQHandler
+                0x000000000800073c                FMPI2C1_Error_IRQHandler
  .text.NMI_Handler
-                0x000000000800057a        0xe ./src/stm32f4xx_it.o
-                0x000000000800057a                NMI_Handler
+                0x000000000800073e        0xe ./src/stm32f4xx_it.o
+                0x000000000800073e                NMI_Handler
  .text.HardFault_Handler
-                0x0000000008000588        0x6 ./src/stm32f4xx_it.o
-                0x0000000008000588                HardFault_Handler
+                0x000000000800074c        0x6 ./src/stm32f4xx_it.o
+                0x000000000800074c                HardFault_Handler
  .text.MemManage_Handler
-                0x000000000800058e        0x6 ./src/stm32f4xx_it.o
-                0x000000000800058e                MemManage_Handler
+                0x0000000008000752        0x6 ./src/stm32f4xx_it.o
+                0x0000000008000752                MemManage_Handler
  .text.BusFault_Handler
-                0x0000000008000594        0x6 ./src/stm32f4xx_it.o
-                0x0000000008000594                BusFault_Handler
+                0x0000000008000758        0x6 ./src/stm32f4xx_it.o
+                0x0000000008000758                BusFault_Handler
  .text.UsageFault_Handler
-                0x000000000800059a        0x6 ./src/stm32f4xx_it.o
-                0x000000000800059a                UsageFault_Handler
+                0x000000000800075e        0x6 ./src/stm32f4xx_it.o
+                0x000000000800075e                UsageFault_Handler
  .text.SVC_Handler
-                0x00000000080005a0        0xe ./src/stm32f4xx_it.o
-                0x00000000080005a0                SVC_Handler
+                0x0000000008000764        0xe ./src/stm32f4xx_it.o
+                0x0000000008000764                SVC_Handler
  .text.DebugMon_Handler
-                0x00000000080005ae        0xe ./src/stm32f4xx_it.o
-                0x00000000080005ae                DebugMon_Handler
+                0x0000000008000772        0xe ./src/stm32f4xx_it.o
+                0x0000000008000772                DebugMon_Handler
  .text.PendSV_Handler
-                0x00000000080005bc        0xe ./src/stm32f4xx_it.o
-                0x00000000080005bc                PendSV_Handler
+                0x0000000008000780        0xe ./src/stm32f4xx_it.o
+                0x0000000008000780                PendSV_Handler
  .text.SysTick_Handler
-                0x00000000080005ca        0xe ./src/stm32f4xx_it.o
-                0x00000000080005ca                SysTick_Handler
+                0x000000000800078e        0xe ./src/stm32f4xx_it.o
+                0x000000000800078e                SysTick_Handler
  .text.SystemInit
-                0x00000000080005d8       0x6c ./src/system_stm32f4xx.o
-                0x00000000080005d8                SystemInit
+                0x000000000800079c       0x6c ./src/system_stm32f4xx.o
+                0x000000000800079c                SystemInit
  *(.glue_7)
- .glue_7        0x0000000008000644        0x0 linker stubs
+ .glue_7        0x0000000008000808        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0000000008000644        0x0 linker stubs
+ .glue_7t       0x0000000008000808        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x0000000008000644        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+ .eh_frame      0x0000000008000808        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
  *(.init)
- .init          0x0000000008000644        0x4 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
-                0x0000000008000644                _init
- .init          0x0000000008000648        0x8 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
+ .init          0x0000000008000808        0x4 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
+                0x0000000008000808                _init
+ .init          0x000000000800080c        0x8 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
  *(.fini)
- .fini          0x0000000008000650        0x4 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
-                0x0000000008000650                _fini
- .fini          0x0000000008000654        0x8 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
-                0x000000000800065c                . = ALIGN (0x4)
-                0x000000000800065c                _etext = .
+ .fini          0x0000000008000814        0x4 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
+                0x0000000008000814                _fini
+ .fini          0x0000000008000818        0x8 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
+                0x0000000008000820                . = ALIGN (0x4)
+                0x0000000008000820                _etext = .
 
-.vfp11_veneer   0x000000000800065c        0x0
- .vfp11_veneer  0x000000000800065c        0x0 linker stubs
+.vfp11_veneer   0x0000000008000820        0x0
+ .vfp11_veneer  0x0000000008000820        0x0 linker stubs
 
-.v4_bx          0x000000000800065c        0x0
- .v4_bx         0x000000000800065c        0x0 linker stubs
+.v4_bx          0x0000000008000820        0x0
+ .v4_bx         0x0000000008000820        0x0 linker stubs
 
-.iplt           0x000000000800065c        0x0
- .iplt          0x000000000800065c        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+.iplt           0x0000000008000820        0x0
+ .iplt          0x0000000008000820        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
 
-.rel.dyn        0x000000000800065c        0x0
- .rel.iplt      0x000000000800065c        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+.rel.dyn        0x0000000008000820        0x0
+ .rel.iplt      0x0000000008000820        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
 
-.rodata         0x000000000800065c        0x0
-                0x000000000800065c                . = ALIGN (0x4)
+.rodata         0x0000000008000820        0x0
+                0x0000000008000820                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
-                0x000000000800065c                . = ALIGN (0x4)
+                0x0000000008000820                . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x000000000800065c        0x0
-                0x000000000800065c                __exidx_start = .
+.ARM            0x0000000008000820        0x0
+                0x0000000008000820                __exidx_start = .
  *(.ARM.exidx*)
-                0x000000000800065c                __exidx_end = .
+                0x0000000008000820                __exidx_end = .
 
-.preinit_array  0x000000000800065c        0x0
-                0x000000000800065c                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x0000000008000820        0x0
+                0x0000000008000820                PROVIDE (__preinit_array_start, .)
  *(.preinit_array*)
-                0x000000000800065c                PROVIDE (__preinit_array_end, .)
+                0x0000000008000820                PROVIDE (__preinit_array_end, .)
 
-.init_array     0x000000000800065c        0x4
-                0x000000000800065c                PROVIDE (__init_array_start, .)
+.init_array     0x0000000008000820        0x4
+                0x0000000008000820                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array*)
- .init_array    0x000000000800065c        0x4 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
-                0x0000000008000660                PROVIDE (__init_array_end, .)
+ .init_array    0x0000000008000820        0x4 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+                0x0000000008000824                PROVIDE (__init_array_end, .)
 
-.fini_array     0x0000000008000660        0x4
-                0x0000000008000660                PROVIDE (__fini_array_start, .)
+.fini_array     0x0000000008000824        0x4
+                0x0000000008000824                PROVIDE (__fini_array_start, .)
  *(SORT(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0000000008000660        0x4 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
-                0x0000000008000664                PROVIDE (__fini_array_end, .)
-                0x0000000008000664                _sidata = LOADADDR (.data)
+ .fini_array    0x0000000008000824        0x4 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+                0x0000000008000828                PROVIDE (__fini_array_end, .)
+                0x0000000008000828                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000        0x0 load address 0x0000000008000664
+.data           0x0000000020000000        0x0 load address 0x0000000008000828
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -2488,21 +2472,21 @@ LOAD /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _edata = .
 
-.jcr            0x0000000020000000        0x0 load address 0x0000000008000664
+.jcr            0x0000000020000000        0x0 load address 0x0000000008000828
  .jcr           0x0000000020000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
 
 .tm_clone_table
-                0x0000000020000000        0x0 load address 0x0000000008000664
+                0x0000000020000000        0x0 load address 0x0000000008000828
  .tm_clone_table
                 0x0000000020000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
  .tm_clone_table
                 0x0000000020000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtend.o
 
-.igot.plt       0x0000000020000000        0x0 load address 0x0000000008000664
+.igot.plt       0x0000000020000000        0x0 load address 0x0000000008000828
  .igot.plt      0x0000000020000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
                 0x0000000020000000                . = ALIGN (0x4)
 
-.bss            0x0000000020000000       0x1c load address 0x0000000008000664
+.bss            0x0000000020000000       0x1c load address 0x0000000008000828
                 0x0000000020000000                _sbss = .
                 0x0000000020000000                __bss_start__ = _sbss
  *(.bss)
@@ -2514,7 +2498,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
                 0x000000002000001c                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x000000002000001c      0x400 load address 0x0000000008000664
+                0x000000002000001c      0x400 load address 0x0000000008000828
                 0x000000002000001c                . = ALIGN (0x4)
                 [!provide]                        PROVIDE (end, .)
                 [!provide]                        PROVIDE (_end, .)
@@ -2584,31 +2568,31 @@ OUTPUT(Polytech-IESE-E2i-SPI.elf elf32-littlearm)
  .comment       0x0000000000000031       0x32 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-init.o)
  .comment       0x0000000000000031       0x32 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtend.o
 
-.debug_info     0x0000000000000000     0x1ee6
+.debug_info     0x0000000000000000     0x1f2e
  .debug_info    0x0000000000000000      0x2be ./Polytech-library/src/Adc.o
  .debug_info    0x00000000000002be      0x354 ./Polytech-library/src/Clocks.o
- .debug_info    0x0000000000000612      0x1fe ./Polytech-library/src/Port_conf.o
- .debug_info    0x0000000000000810      0x182 ./Polytech-library/src/Spi.o
- .debug_info    0x0000000000000992      0x26d ./Polytech-library/src/Timer.o
- .debug_info    0x0000000000000bff      0xaa2 ./Polytech-library/src/code_eleve.o
- .debug_info    0x00000000000016a1       0xf6 ./src/main.o
- .debug_info    0x0000000000001797       0x75 ./src/startup_stm32f446xx.o
- .debug_info    0x000000000000180c       0xc3 ./src/stm32f4xx_it.o
- .debug_info    0x00000000000018cf      0x507 ./src/system_stm32f4xx.o
- .debug_info    0x0000000000001dd6      0x110 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-init.o)
+ .debug_info    0x0000000000000612      0x175 ./Polytech-library/src/Port_conf.o
+ .debug_info    0x0000000000000787      0x182 ./Polytech-library/src/Spi.o
+ .debug_info    0x0000000000000909      0x26d ./Polytech-library/src/Timer.o
+ .debug_info    0x0000000000000b76      0xacb ./Polytech-library/src/code_eleve.o
+ .debug_info    0x0000000000001641      0x19b ./src/main.o
+ .debug_info    0x00000000000017dc       0x78 ./src/startup_stm32f446xx.o
+ .debug_info    0x0000000000001854       0xc3 ./src/stm32f4xx_it.o
+ .debug_info    0x0000000000001917      0x507 ./src/system_stm32f4xx.o
+ .debug_info    0x0000000000001e1e      0x110 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-init.o)
 
-.debug_abbrev   0x0000000000000000      0x91f
+.debug_abbrev   0x0000000000000000      0x978
  .debug_abbrev  0x0000000000000000      0x10e ./Polytech-library/src/Adc.o
  .debug_abbrev  0x000000000000010e      0x102 ./Polytech-library/src/Clocks.o
  .debug_abbrev  0x0000000000000210       0xc5 ./Polytech-library/src/Port_conf.o
  .debug_abbrev  0x00000000000002d5       0xdc ./Polytech-library/src/Spi.o
  .debug_abbrev  0x00000000000003b1       0xcd ./Polytech-library/src/Timer.o
- .debug_abbrev  0x000000000000047e      0x1f6 ./Polytech-library/src/code_eleve.o
- .debug_abbrev  0x0000000000000674       0x8e ./src/main.o
- .debug_abbrev  0x0000000000000702       0x12 ./src/startup_stm32f446xx.o
- .debug_abbrev  0x0000000000000714       0x2f ./src/stm32f4xx_it.o
- .debug_abbrev  0x0000000000000743      0x122 ./src/system_stm32f4xx.o
- .debug_abbrev  0x0000000000000865       0xba /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-init.o)
+ .debug_abbrev  0x000000000000047e      0x205 ./Polytech-library/src/code_eleve.o
+ .debug_abbrev  0x0000000000000683       0xd8 ./src/main.o
+ .debug_abbrev  0x000000000000075b       0x12 ./src/startup_stm32f446xx.o
+ .debug_abbrev  0x000000000000076d       0x2f ./src/stm32f4xx_it.o
+ .debug_abbrev  0x000000000000079c      0x122 ./src/system_stm32f4xx.o
+ .debug_abbrev  0x00000000000008be       0xba /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-init.o)
 
 .debug_aranges  0x0000000000000000      0x238
  .debug_aranges
@@ -2646,7 +2630,7 @@ OUTPUT(Polytech-IESE-E2i-SPI.elf elf32-littlearm)
  .debug_ranges  0x0000000000000118       0x50 ./src/stm32f4xx_it.o
  .debug_ranges  0x0000000000000168       0x18 ./src/system_stm32f4xx.o
 
-.debug_macro    0x0000000000000000     0xeadc
+.debug_macro    0x0000000000000000     0xea54
  .debug_macro   0x0000000000000000      0x13c ./Polytech-library/src/Adc.o
  .debug_macro   0x000000000000013c      0x8b0 ./Polytech-library/src/Adc.o
  .debug_macro   0x00000000000009ec       0x46 ./Polytech-library/src/Adc.o
@@ -2703,43 +2687,43 @@ OUTPUT(Polytech-IESE-E2i-SPI.elf elf32-littlearm)
  .debug_macro   0x000000000000e5d0       0xd7 ./Polytech-library/src/code_eleve.o
  .debug_macro   0x000000000000e6a7       0x16 ./Polytech-library/src/code_eleve.o
  .debug_macro   0x000000000000e6bd      0x15f ./Polytech-library/src/code_eleve.o
- .debug_macro   0x000000000000e81c      0x16c ./src/main.o
- .debug_macro   0x000000000000e988       0x1b ./src/stm32f4xx_it.o
- .debug_macro   0x000000000000e9a3      0x139 ./src/system_stm32f4xx.o
+ .debug_macro   0x000000000000e81c       0xe4 ./src/main.o
+ .debug_macro   0x000000000000e900       0x1b ./src/stm32f4xx_it.o
+ .debug_macro   0x000000000000e91b      0x139 ./src/system_stm32f4xx.o
 
-.debug_line     0x0000000000000000     0x1b51
+.debug_line     0x0000000000000000     0x1a70
  .debug_line    0x0000000000000000      0x363 ./Polytech-library/src/Adc.o
  .debug_line    0x0000000000000363      0x33e ./Polytech-library/src/Clocks.o
  .debug_line    0x00000000000006a1      0x318 ./Polytech-library/src/Port_conf.o
- .debug_line    0x00000000000009b9      0x20c ./Polytech-library/src/Spi.o
- .debug_line    0x0000000000000bc5      0x365 ./Polytech-library/src/Timer.o
- .debug_line    0x0000000000000f2a      0x3c0 ./Polytech-library/src/code_eleve.o
- .debug_line    0x00000000000012ea      0x337 ./src/main.o
- .debug_line    0x0000000000001621       0x7b ./src/startup_stm32f446xx.o
- .debug_line    0x000000000000169c       0xf1 ./src/stm32f4xx_it.o
- .debug_line    0x000000000000178d      0x306 ./src/system_stm32f4xx.o
- .debug_line    0x0000000000001a93       0xbe /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-init.o)
+ .debug_line    0x00000000000009b9      0x20a ./Polytech-library/src/Spi.o
+ .debug_line    0x0000000000000bc3      0x365 ./Polytech-library/src/Timer.o
+ .debug_line    0x0000000000000f28      0x3d5 ./Polytech-library/src/code_eleve.o
+ .debug_line    0x00000000000012fd      0x243 ./src/main.o
+ .debug_line    0x0000000000001540       0x7b ./src/startup_stm32f446xx.o
+ .debug_line    0x00000000000015bb       0xf1 ./src/stm32f4xx_it.o
+ .debug_line    0x00000000000016ac      0x306 ./src/system_stm32f4xx.o
+ .debug_line    0x00000000000019b2       0xbe /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-init.o)
 
-.debug_str      0x0000000000000000    0x56a6e
- .debug_str     0x0000000000000000    0x51fa6 ./Polytech-library/src/Adc.o
-                                      0x52151 (size before relaxing)
- .debug_str     0x0000000000051fa6      0x1a4 ./Polytech-library/src/Clocks.o
-                                      0x52174 (size before relaxing)
- .debug_str     0x000000000005214a       0x94 ./Polytech-library/src/Port_conf.o
-                                      0x52062 (size before relaxing)
- .debug_str     0x00000000000521de       0x3b ./Polytech-library/src/Spi.o
-                                      0x4147f (size before relaxing)
- .debug_str     0x0000000000052219       0xd6 ./Polytech-library/src/Timer.o
-                                      0x520b0 (size before relaxing)
- .debug_str     0x00000000000522ef     0x4429 ./Polytech-library/src/code_eleve.o
-                                      0x45a1a (size before relaxing)
- .debug_str     0x0000000000056718       0x29 ./src/main.o
-                                      0x520fe (size before relaxing)
- .debug_str     0x0000000000056741       0xb8 ./src/stm32f4xx_it.o
-                                       0x25b0 (size before relaxing)
- .debug_str     0x00000000000567f9       0xcd ./src/system_stm32f4xx.o
-                                      0x521c6 (size before relaxing)
- .debug_str     0x00000000000568c6      0x1a8 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-init.o)
+.debug_str      0x0000000000000000    0x56a71
+ .debug_str     0x0000000000000000    0x51fa9 ./Polytech-library/src/Adc.o
+                                      0x52154 (size before relaxing)
+ .debug_str     0x0000000000051fa9      0x1a4 ./Polytech-library/src/Clocks.o
+                                      0x52177 (size before relaxing)
+ .debug_str     0x000000000005214d       0x6e ./Polytech-library/src/Port_conf.o
+                                      0x52037 (size before relaxing)
+ .debug_str     0x00000000000521bb       0x61 ./Polytech-library/src/Spi.o
+                                      0x41482 (size before relaxing)
+ .debug_str     0x000000000005221c       0xd6 ./Polytech-library/src/Timer.o
+                                      0x520b3 (size before relaxing)
+ .debug_str     0x00000000000522f2     0x4429 ./Polytech-library/src/code_eleve.o
+                                      0x45a31 (size before relaxing)
+ .debug_str     0x000000000005671b       0x29 ./src/main.o
+                                      0x4157e (size before relaxing)
+ .debug_str     0x0000000000056744       0xb8 ./src/stm32f4xx_it.o
+                                       0x25b3 (size before relaxing)
+ .debug_str     0x00000000000567fc       0xcd ./src/system_stm32f4xx.o
+                                      0x521c9 (size before relaxing)
+ .debug_str     0x00000000000568c9      0x1a8 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-init.o)
                                         0x253 (size before relaxing)
 
 .debug_frame    0x0000000000000000      0x528

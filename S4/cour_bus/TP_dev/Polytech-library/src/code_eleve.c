@@ -65,31 +65,43 @@ void WriteToDAC(unsigned int value)
 {
 	value = value | ((0b0011)<<12); // 4 bits de configuration AB, BUF, GA, SHDN et 11 bits de data
 
-	// while(!(SPI1->SR & SPI_SR_TXE)); //On vérifie si TXE soit à 1
+	while(!(SPI1->SR & SPI_SR_TXE)); //On vérifie si TXE soit à 1
 
 	Drive_CS_pin(0);
-
 	Spi1Write(value);
-	while(!(SPI1->SR & SPI_SR_TXE)); //On vérifie si TXE soit à 1
-	while(SPI1->SR & SPI_SR_BSY);//On vérifie si bsy soit libre
-
+	while(!(SPI1->SR & SPI_SR_RXNE)); //On vérifie si TXE soit à 1
+	SPI1->DR;
 	Drive_CS_pin(1);
-
-
 }
-
 
 //------------------------------------------------------------------------------------------
 void SignalTriangle(void)
 {
-	// A compl�ter ...
+	WriteToDAC(count);
+	count++;
+	if(count > 0xFFF)
+	{
+		count = 0;
+	}
 }
 
 
 //------------------------------------------------------------------------------------------
 void RestitutionAnalogue(void)
 {
-	// A compl�ter ...
+	GPIOA->ODR  &= ~GPIO_ODR_ODR_1;
+	uint16_t value;
+	ADC_1_StartConversion();
+	while(ADC_1_CheckEndOfConversion() == 0)
+	{;
+	}
+	value = ADC_1_GetResult();
+	ADC_1_ClearEndOfConversion();
+	WriteToDAC(value);
+
+	Timer_t1ms(9);
+	GPIOA->ODR  |= GPIO_ODR_ODR_1;
+	Timer_t1ms(1);
 }
 
 

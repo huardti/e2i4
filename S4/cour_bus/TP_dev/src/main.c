@@ -2,7 +2,7 @@
 /* IESE/E2i */
 /* TP SPI */
 /********************* INCLUDES *********************************/
-#include "stm32f4xx.h"
+#include "stm32f446xx.h"
 
 #include "Adc.h"
 #include "code_eleve.h"
@@ -10,6 +10,8 @@
 #include "Port_conf.h"
 #include "Spi.h"
 #include "Timer.h"
+
+
 
 
 /********************** VARIABLES *********************************************************************/
@@ -39,10 +41,12 @@ int main(void)
 
 	while(1)
 	{
-		WriteToDAC(0x7FF);	//demi-�chelle
+		GPIOA->ODR  &= ~GPIO_ODR_ODR_2;
+		// WriteToDAC(0x7FF);	//demi-�chelle
 
-		//SignalTriangle();
+		// SignalTriangle();
 
-		//RestitutionAnalogue();
+		RestitutionAnalogue();
+		GPIOA->ODR  |= GPIO_ODR_ODR_2;
 	}
 }
