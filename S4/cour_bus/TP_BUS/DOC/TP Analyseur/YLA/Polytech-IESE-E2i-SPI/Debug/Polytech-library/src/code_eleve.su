@@ -1,5 +1,0 @@
-code_eleve.c:36:13:Timer_t100ms	24	static
-code_eleve.c:56:13:Drive_CS_pin	16	static
-code_eleve.c:70:6:WriteToDAC	16	static
-code_eleve.c:93:6:SignalTriangle	8	static
-code_eleve.c:107:6:RestitutionAnalogue	8	static

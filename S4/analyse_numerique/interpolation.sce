@@ -48,3 +48,7 @@ endfunction
 function I = simpson(a,b,n,F)
     I = ((b-a)/6) * (F(a) + 4 * F((a+b)/2) + F(b))
 endfunction
+
+function R = calcul_erreur_rectangle_gauche(n, )
+    R = 
+endfunction

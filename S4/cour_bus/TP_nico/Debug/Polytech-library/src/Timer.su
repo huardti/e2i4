@@ -1,6 +1,0 @@
-Timer.c:22:6:InitTimer_1	4	static
-Timer.c:39:6:StartTimer_1	4	static
-Timer.c:51:6:StopTimer_1	4	static
-Timer.c:63:10:GetTimer1Count	4	static
-Timer.c:74:10:GetUpdateEvent	4	static
-Timer.c:85:6:ResetUpdateEvent	4	static
