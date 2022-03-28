@@ -1,5 +1,9 @@
 function y=f(x)
-    y=-3*x+4;
+    y= x - exp(1) * sin(x);
+endfunction
+
+function y=F(x)
+    y= exp(1) * cos(x);
 endfunction
 
 function ret = dichitomie(a, b, err, F)
