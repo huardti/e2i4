@@ -11,7 +11,8 @@ C_SRCS += \
 ../Polytech-library/src/Spi.c \
 ../Polytech-library/src/Timer.c \
 ../Polytech-library/src/Uart.c \
-../Polytech-library/src/code_eleve.c 
+../Polytech-library/src/code_eleve.c \
+../Polytech-library/src/filtrage.c
 
 OBJS += \
 ./Polytech-library/src/Adc.o \
@@ -20,7 +21,9 @@ OBJS += \
 ./Polytech-library/src/Spi.o \
 ./Polytech-library/src/Timer.o \
 ./Polytech-library/src/Uart.o \
-./Polytech-library/src/code_eleve.o 
+./Polytech-library/src/code_eleve.o \
+./Polytech-library/src/filtrage.o
+
 
 C_DEPS += \
 ./Polytech-library/src/Adc.d \
@@ -34,7 +37,7 @@ C_DEPS += \
 
 # Each subdirectory must supply rules for building sources it contributes
 Polytech-library/src/%.o: ../Polytech-library/src/%.c Polytech-library/src/subdir.mk
-	arm-none-eabi-gcc "$<" -mcpu=cortex-m4 -std=gnu11 -g3 -D__FPU_PRESENT -DSTM32F446xx -c -I../src -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../src -I../cmsis_lib/include -I../Polytech-library/inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "$@"
+	arm-none-eabi-gcc -Wall -Wextra "$<" -mcpu=cortex-m4 -std=gnu11 -g3 -D__FPU_PRESENT -DSTM32F446xx -c -I../src -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../src -I../cmsis_lib/include -I../Polytech-library/inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "$@"
 
 clean: clean-Polytech-2d-library-2f-src
 

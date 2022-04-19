@@ -1,0 +1,253 @@
+>> transfoz01
+Ts=1
+
+Gp =
+ 
+     1
+  --------
+  10 s + 1
+ 
+Continuous-time transfer function.
+
+
+Gzi =
+ 
+    0.1 z
+  ----------
+  z - 0.9048
+ 
+Sample time: 1 seconds
+Discrete-time transfer function.
+
+
+Gzz =
+ 
+   0.09516
+  ----------
+  z - 0.9048
+ 
+Sample time: 1 seconds
+Discrete-time transfer function.
+
+>> transfoz02
+Ts=1
+L=5.000000e-01
+
+Gp =
+ 
+                   1
+  exp(-0.5*s) * --------
+                10 s + 1
+ 
+Continuous-time transfer function.
+
+
+Gzi =
+ 
+   0.09512
+  ----------
+  z - 0.9048
+ 
+Sample time: 1 seconds
+Discrete-time transfer function.
+
+
+Gzz =
+ 
+           0.04877 z + 0.04639
+  z^(-1) * -------------------
+               z - 0.9048
+ 
+Sample time: 1 seconds
+Discrete-time transfer function.
+
+Ts=1
+L=2
+
+Gp =
+ 
+                 1
+  exp(-2*s) * --------
+              10 s + 1
+ 
+Continuous-time transfer function.
+
+
+Gzi =
+ 
+             0.1 z
+  z^(-2) * ----------
+           z - 0.9048
+ 
+Sample time: 1 seconds
+Discrete-time transfer function.
+
+
+Gzz =
+ 
+            0.09516
+  z^(-2) * ----------
+           z - 0.9048
+ 
+Sample time: 1 seconds
+Discrete-time transfer function.
+
+Ts=1
+L=3
+
+Gp =
+ 
+                 1
+  exp(-3*s) * --------
+              10 s + 1
+ 
+Continuous-time transfer function.
+
+
+Gzi =
+ 
+             0.1 z
+  z^(-3) * ----------
+           z - 0.9048
+ 
+Sample time: 1 seconds
+Discrete-time transfer function.
+
+
+Gzz =
+ 
+            0.09516
+  z^(-3) * ----------
+           z - 0.9048
+ 
+Sample time: 1 seconds
+Discrete-time transfer function.
+
+>> transfoz03
+Ts=1
+
+Gp =
+ 
+          1
+  -----------------
+  10 s^2 + 11 s + 1
+ 
+Continuous-time transfer function.
+
+
+Gzi =
+ 
+        0.05966 z
+  ----------------------
+  z^2 - 1.273 z + 0.3329
+ 
+Sample time: 1 seconds
+Discrete-time transfer function.
+
+
+Gzz =
+ 
+    0.0355 z + 0.02465
+  ----------------------
+  z^2 - 1.273 z + 0.3329
+ 
+Sample time: 1 seconds
+Discrete-time transfer function.
+
+>> transfoz04
+
+omega0 =
+
+    0.0500
+
+Zeta=1.000000e-01
+
+Gp =
+ 
+         0.0025
+  ---------------------
+  s^2 + 0.01 s + 0.0025
+ 
+Continuous-time transfer function.
+
+
+Gzi =
+ 
+  0.002487 z + 5.521e-19
+  ----------------------
+   z^2 - 1.988 z + 0.99
+ 
+Sample time: 1 seconds
+Discrete-time transfer function.
+
+
+Gzz =
+ 
+  0.001246 z + 0.001241
+  ---------------------
+  z^2 - 1.988 z + 0.99
+ 
+Sample time: 1 seconds
+Discrete-time transfer function.
+
+Zeta=5.000000e-01
+
+Gp =
+ 
+         0.0025
+  ---------------------
+  s^2 + 0.05 s + 0.0025
+ 
+Continuous-time transfer function.
+
+
+Gzi =
+ 
+  0.002438 z - 2.706e-19
+  ----------------------
+  z^2 - 1.949 z + 0.9512
+ 
+Sample time: 1 seconds
+Discrete-time transfer function.
+
+
+Gzz =
+ 
+  0.001229 z + 0.001209
+  ----------------------
+  z^2 - 1.949 z + 0.9512
+ 
+Sample time: 1 seconds
+Discrete-time transfer function.
+
+Zeta=8.000000e-01
+
+Gp =
+ 
+         0.0025
+  ---------------------
+  s^2 + 0.08 s + 0.0025
+ 
+Continuous-time transfer function.
+
+
+Gzi =
+ 
+  0.002402 z - 1.333e-18
+  ----------------------
+  z^2 - 1.921 z + 0.9231
+ 
+Sample time: 1 seconds
+Discrete-time transfer function.
+
+
+Gzz =
+ 
+  0.001217 z + 0.001185
+  ----------------------
+  z^2 - 1.921 z + 0.9231
+ 
+Sample time: 1 seconds
+Discrete-time transfer function.
+
+>> 

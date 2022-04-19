@@ -5,6 +5,7 @@
 "./Polytech-library/src/Timer.o"
 "./Polytech-library/src/Uart.o"
 "./Polytech-library/src/code_eleve.o"
+"./Polytech-library/src/filtrage.o"
 "./cmsis_lib/source/misc.o"
 "./cmsis_lib/source/stm32f4xx_adc.o"
 "./cmsis_lib/source/stm32f4xx_crc.o"

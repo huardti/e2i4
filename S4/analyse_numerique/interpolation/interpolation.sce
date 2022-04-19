@@ -6,7 +6,7 @@ f = 1 ./ (1+x^2)
 ref_val = integrate('1/(1+x^2)','x', a,b)
 
 function F = test(x)
-    F =  (1 ./ (1+x^2))
+    F = abs(x^2 - 0.25)
 endfunction
 
 function H = compute_h(a,b,n)
@@ -45,10 +45,18 @@ function I = trapeze(a, b, n, F)
     I = h * s
 endfunction
 
-function I = simpson(a,b,n,F)
+function I = simpson(a,b,F)
     I = ((b-a)/6) * (F(a) + 4 * F((a+b)/2) + F(b))
 endfunction
 
-function R = calcul_erreur_rectangle_gauche(n, )
-    R = 
+function I = simpson_aprox(a,b,n,F)
+    val = a:((b-a)/n):b
+    I = 0
+    for i = 1: (n-1)
+        I = I + simpson(val(i), val(i+1), F)
+    end
 endfunction
+
+// function R = calcul_erreur_rectangle_gauche(n, )
+//     R = 
+// endfunction

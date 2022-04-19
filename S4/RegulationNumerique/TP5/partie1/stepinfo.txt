@@ -1,0 +1,42 @@
+>> partie1
+
+ans = 
+
+  struct with fields:
+
+        RiseTime: 0.0127
+    SettlingTime: 2.2980
+     SettlingMin: 0.1399
+     SettlingMax: 1.9274
+       Overshoot: 92.7432
+      Undershoot: 0
+            Peak: 1.9274
+        PeakTime: 0.0377
+
+
+ans = 
+
+  struct with fields:
+
+        RiseTime: 0.0040
+    SettlingTime: 2.2985
+     SettlingMin: 0.0465
+     SettlingMax: 1.9765
+       Overshoot: 97.6464
+      Undershoot: 0
+            Peak: 1.9765
+        PeakTime: 0.0119
+
+
+ans = 
+
+  struct with fields:
+
+        RiseTime: 0.0089
+    SettlingTime: 0.0555
+     SettlingMin: 0.9255
+     SettlingMax: 1.2888
+       Overshoot: 28.8770
+      Undershoot: 0
+            Peak: 1.2888
+        PeakTime: 0.0235

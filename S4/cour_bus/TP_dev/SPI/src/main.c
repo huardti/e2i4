@@ -11,6 +11,7 @@
 #include "Spi.h"
 #include "Timer.h"
 
+#include "filtrage.h"
 
 
 
@@ -39,14 +40,25 @@ int main(void)
 
 	Spi1_Init();			//init SPI mode
 
+	//init filtre
+	void init_filtre();
+
 	while(1)
 	{
-		GPIOA->ODR  &= ~GPIO_ODR_ODR_2;
-		// WriteToDAC(0x7FF);	//demi-�chelle
+		uint16_t value;
+		int16_t res;
+		ADC_1_StartConversion();
+		while(ADC_1_CheckEndOfConversion() == 0)
+		{;
+		}
+		value = ADC_1_GetResult();
+		ADC_1_ClearEndOfConversion();
 
-		// SignalTriangle();
+		inst_buff(value);
+		res = filtre();
+		WriteToDAC(res);
 
-		RestitutionAnalogue();
-		GPIOA->ODR  |= GPIO_ODR_ODR_2;
+
+		Timer_t1ms(8);
 	}
 }

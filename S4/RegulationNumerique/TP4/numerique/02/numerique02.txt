@@ -1,0 +1,48 @@
+>> numerique
+
+Te =
+
+     1
+
+
+K =
+
+    2.5000
+
+
+L =
+ 
+    0.9197 z + 0.6606
+  ----------------------
+  z^2 - 1.368 z + 0.3679
+ 
+Sample time: 1 seconds
+Discrete-time transfer function.
+
+
+T =
+ 
+    0.9197 z + 0.6606
+  ----------------------
+  z^2 - 0.4482 z + 1.028
+ 
+Sample time: 1 seconds
+Discrete-time transfer function.
+
+
+ans =
+
+         0
+    0.9197
+    1.0728
+   -0.4651
+   -1.3118
+
+
+ans =
+
+         0
+    0.9197
+    1.9925
+    1.5274
+    0.2156

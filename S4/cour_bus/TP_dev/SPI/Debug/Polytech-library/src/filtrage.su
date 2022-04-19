@@ -1,0 +1,5 @@
+filtrage.c:8:6:init_filtre	8	static
+filtrage.c:13:6:raz_tamp	16	static
+filtrage.c:20:6:inst_buff	24	static
+filtrage.c:28:16:calc_conv	16	static
+filtrage.c:38:9:filtre	16	static

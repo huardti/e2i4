@@ -1,5 +1,5 @@
 /* Polytech Grenoble */
-/* Technologie de l'information pour la santé*/
+/* Technologie de l'information pour la santï¿½*/
 /*TP 2*/
 
 /********************************************************************************/

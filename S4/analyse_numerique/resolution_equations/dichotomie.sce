@@ -1,5 +1,5 @@
 function y=f(x)
-    y= x - exp(1) * sin(x);
+    y= exp(x) - 9;
 endfunction
 
 function y=F(x)

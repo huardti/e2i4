@@ -1,0 +1,44 @@
+>> partie2
+
+Cz =
+ 
+  4.932 z - 4.691
+  ---------------
+     z - 0.732
+ 
+Sample time: 0.001 seconds
+Discrete-time transfer function.
+
+
+Gz =
+ 
+  0.003475 z + 0.003471
+  ---------------------
+  z^2 - 1.996 z + 0.996
+ 
+Sample time: 0.001 seconds
+Discrete-time transfer function.
+
+
+Tz =
+ 
+  0.01714 z^2 + 0.0008131 z - 0.01628
+  -----------------------------------
+  z^3 - 2.711 z^2 + 2.458 z - 0.7453
+ 
+Sample time: 0.001 seconds
+Discrete-time transfer function.
+
+
+ans = 
+
+  struct with fields:
+
+        RiseTime: 0.0080
+    SettlingTime: 0.0520
+     SettlingMin: 0.9021
+     SettlingMax: 1.3265
+       Overshoot: 32.6505
+      Undershoot: 0
+            Peak: 1.3265
+        PeakTime: 0.0220

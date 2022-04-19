@@ -1,0 +1,28 @@
+>> analogique
+
+Te =
+
+     1
+
+
+K =
+
+     5
+
+
+L =
+ 
+     5
+  -------
+  s^2 + s
+ 
+Continuous-time transfer function.
+
+
+T =
+ 
+       5
+  -----------
+  s^2 + s + 5
+ 
+Continuous-time transfer function.

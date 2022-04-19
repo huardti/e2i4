@@ -1,0 +1,62 @@
+>> numerique
+
+Te =
+
+    0.0300
+
+
+K =
+
+    2.5000
+
+
+L =
+ 
+  0.001114 z + 0.001103
+  ---------------------
+  z^2 - 1.97 z + 0.9704
+ 
+Sample time: 0.03 seconds
+Discrete-time transfer function.
+
+
+T =
+ 
+  0.001114 z + 0.001103
+  ----------------------
+  z^2 - 1.969 z + 0.9715
+ 
+Sample time: 0.03 seconds
+Discrete-time transfer function.
+
+
+ans =
+
+         0
+    0.0371
+    0.1099
+    0.1803
+    0.2483
+
+
+ans =
+
+         0
+    0.0011
+    0.0044
+    0.0098
+    0.0173
+
+
+ans = 
+
+  struct with fields:
+
+        RiseTime: 0.8400
+    SettlingTime: 7.1100
+     SettlingMin: 0.8656
+     SettlingMax: 1.3665
+       Overshoot: 36.6460
+      Undershoot: 0
+            Peak: 1.3665
+        PeakTime: 2.1000

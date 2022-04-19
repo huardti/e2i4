@@ -1,4 +1,4 @@
-function P = Lagrange(x, y, X)
+function Y = Lagrange(x, y, X)
     n = size(x)(2)
     Y = 0
     for i=1:n,

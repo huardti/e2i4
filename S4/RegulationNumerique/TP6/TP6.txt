@@ -1,0 +1,64 @@
+>> partie1
+
+r0 =
+
+  -24.5033
+
+
+r1 =
+
+   26.9303
+
+
+T =
+ 
+  1.056 z - 0.9608
+  ----------------
+   z^2 - 0.9048 z
+ 
+Sample time: 0.4 seconds
+Discrete-time transfer function.
+
+
+ans = 
+
+  struct with fields:
+
+        RiseTime: 0
+    SettlingTime: 7.6000
+     SettlingMin: 1.0001
+     SettlingMax: 1.0560
+       Overshoot: 5.5952
+      Undershoot: 0
+            Peak: 1.0560
+        PeakTime: 0.4000
+
+
+ans = 
+
+  struct with fields:
+
+        RiseTime: 8.8000
+    SettlingTime: 18.8000
+     SettlingMin: 0.9093
+     SettlingMax: 0.9999
+       Overshoot: 0
+      Undershoot: 0
+            Peak: 0.9999
+        PeakTime: 39.6000
+
+
+ans = 
+
+  struct with fields:
+
+        RiseTime: 8.8000
+    SettlingTime: 19.2000
+     SettlingMin: 0.9093
+     SettlingMax: 0.9999
+       Overshoot: 0
+      Undershoot: 0
+            Peak: 0.9999
+        PeakTime: 39.6000
+
+>> 

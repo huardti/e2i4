@@ -18,7 +18,6 @@
 /********************************************************************************/
 /*					STATIC														*/
 /********************************************************************************/
-static void Timer_t1ms(unsigned int period);
 static void Drive_CS_pin(char value);
 
 /********************************************************************************/
@@ -35,7 +34,7 @@ unsigned int count;
 /*					SOURCE CODE													*/
 /********************************************************************************/
 /* timer par d�cr�ment d'une variable ou par utilisation du timer 1*/
-static void Timer_t1ms(unsigned int period)
+void Timer_t1ms(unsigned int period)
 {
 	unsigned int i;
 
